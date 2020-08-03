@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>intro to trigonometry</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/03-2-intro-to-trigonometry.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-3   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 2:
+
+
+Intro To Trigonometry 
+</h1>
+    
+    
+
+<article>
+
+
+  <section class="development">
+    <h2>Introduction</h2>
+
+    <p>The escalator at the Wheaton metro station in Silver Spring,
+    Maryland, is the longest escalator in the Western Hemisphere.
+    If you ride it you will travel a diagonal distance of 508 feet,
+    which will take two minutes and forty-five seconds. You’re
+    about to build a bigger one – your goal is to make an escalator
+    with a diagonal distance of 520 feet. Before you can start,
+    though, you need to do some planning. You need to figure out
+    how much space along the ground your escalator will take so
+    that you can prepare the foundation. Standard escalator
+    construction rules require that:</p>
+    
+    <ul class="bulleted">
+      <li>the steps each be 1.2 feet long<br><br>.</li>
+      <li>The measure of the angle between the ground and the
+      diagonal path of the escalator must be no more than 30°</li>
+    </ul>
+
+    <figure class="fig-50">
+      <img src="../images/03-2-intro-to-trigonometry/The%20Wheaton%20Escalator.tif.jpg" >
+    </figure>
+
+    <div class="problem">
+      <p>You start to build your escalator and measure a diagonal
+      distance of 1.3856 feet per step. What is the horizontal
+      distance, along the ground, you’ll need to clear in order to
+      build your escalator with a diagonal distance of 520
+      feet?</p>
+      <figure class="fig-50">
+        <img src="../images/03-2-intro-to-trigonometry/into%20trig%20Step%20%232.tif.jpg" >
+      </figure>
+    </div>
+
+    <h2>Development</h2>
+
+    <p>Your solution to the escalator problem probably involved
+    ratios or scale factors in some way. Here’s one way of thinking
+    about the problem:</p>
+
+    <div class="problem">
+      <p>If you haven’t already, explain how you know that
+      $\frac{1.2}{1.3856} = \frac{\textrm{the required horizontal distance}}{520}$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Use a similar method to find the height of the Wheaton
+      escalator.</p>
+    </div>
+
+    <div class="problem">
+      <p>Imagine a large right triangle $ABC$ with the right angle at
+      $A$ and angle $C = {30^ \circ }$. Based on your work in
+      problems 1-3:</p>
+
+      <p class="problem-part">What would you expect the ratio of
+      $AC$ to $BC$ to be? Why?</p>
+
+      <p class="problem-part">How about the ratio of $AB$ to
+      $BC$?</p>
+
+      <p class="problem-part">Go ahead and check your thinking by
+      using a protractor and ruler to accurately draw such a
+      triangle, and measure the sides. Convince yourself that these
+      ratios are the same no matter how large or small the right
+      triangle is, provided the measure of angle $C$ remains
+      30°.</p>
+    </div>
+
+    <p>As problem 4 emphasizes, certain ratios will always stay
+    constant in a right triangle with an angle measuring 30°. In
+    the escalator example, the ratio of the vertical distance to
+    the diagonal distance is called the <em class="vocab">sine</em> of 30°. The ratio of
+    the horizontal distance to the diagonal distance is called the
+    <em class="vocab">cosine</em> of 30°.</p>
+
+    <p>A third ratio is called the <em class="vocab">tangent</em> ratio. In the escalator
+    example, this is the ratio of the vertical distance to the
+    horizontal distance.</p>
+
+    <div class="problem">
+      <p>If you asked your calculator to tell you the sine of 30°
+      what do you suppose it would give you? How about the cosine
+      of 30°? Tangent of 30°?</p>
+    </div>
+
+    <p>If you think of the escalator as a triangle with a 30° angle and a 90° angle, you can label the sides as
+    follows:</p>
+    
+    <figure>
+      <img src="../images/03-2-intro-to-trigonometry/Intro Trig image after problem 5.png">
+    </figure>
+
+    <p>There are two sides that form the 30° angle. One is of
+    course the <em class="vocab">hypotenuse</em>; the other is called the side <em class="vocab">adjacent</em> to
+    the 30° angle. The vertical side of the triangle is called
+    the side <em class="vocab">opposite</em> to the 30° angle, since it is all the way
+    across the triangle from the angle.</p>
+
+    <div class="problem">
+      <p>For each of the following, use a protractor to draw a
+      RIGHT triangle with the angle given. Then use a ruler to
+      measure the lengths and calculate the sine, cosine, and
+      tangent of each angle.</p>
+
+      <p class="problem-part">25°</p>
+
+      <p class="problem-part">63°</p>
+
+      <p class="problem-part">42°</p>
+    </div>
+
+    <div class="problem">
+      <p>For each part in the previous problem, use the SIN, COS,
+      and TAN buttons on your calculator to see how close your
+      estimates were.</p>
+    </div>
+
+    <p>Here’s the picture in general. We’re using $\theta$ (“theta”) to
+    stand for any angle, just like we can use $x$ to stand for any
+    number.</p>
+
+    <figure class="fig-50">
+      <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20def%20triangle.tif.jpg" >
+    </figure>
+
+    <p>If $\theta$ is an angle in a right triangle, but not the right
+    angle, then here’s how we define the three trigonometric
+    ratios:</p>
+
+    $$\sin(\theta)= \frac{\textrm{opposite}}{\textrm{hypotenuse}}$$
+
+    $$\cos(\theta)= \frac{\textrm{adjacent}}{\textrm{hypotenuse}}$$
+
+    $$\tan(\theta)= \frac{\textrm{opposite}}{\textrm{adjacent}}$$
+
+    <div class="problem">
+      <p>Using the two triangles below, find the sine, cosine, and
+      tangent of a 70° angle, a 20° angle, a 35° angle, and a 55°
+      angle.</p>
+      <figure class="fig-50">
+        <img style="width: 30%; display:inline-block;" src="../images/03-2-intro-to-trigonometry/intro%20trig%2070-90%20triangle.tif.jpg" >
+        <img style="width: 65%; display:inline-block;" src="../images/03-2-intro-to-trigonometry/9-3-2%20Introduction%20to%20Trigo.tif.jpg" >
+      </figure>
+    </div>
+
+
+    <div class="problem">
+      <p>Did you notice any repeated answers in your calculations
+      above?</p>
+
+      <p class="problem-part">Make a conjecture based on your
+      findings.</p>
+
+      <p class="problem-part">Try out your conjecture on a
+      triangle that you create.</p>
+
+      <p class="problem-part">Can you explain why this is going
+      on?</p>
+    </div>
+
+    <p>In the similar triangles lesson, and also in the escalator
+    problem, you were able to find missing lengths in certain
+    triangles because you had a second, similar triangle that
+    allowed you to find the scale factor. One reason that sine,
+    cosine, and tangent ratios are so important is that they help
+    you find lengths in triangles even when you don’t have a second
+    triangle to help you get the scale factor.</p>
+
+    <div class="problem">
+      <p>Here is a problem that allows you to “solve a triangle”
+      using only trigonometry.</p>
+
+      <p class="problem-part">Use this triangle to write an
+      expression for the tangent of
+      35 degrees. Your expression will, of course, contain the
+      letter $x$.</p>
+
+      <figure class="fig-50">
+        <img src="../images/03-2-intro-to-trigonometry/10.png" >
+      </figure>
+      
+      <p class="problem-part">Using the equation “$\tan {35^ \circ
+      } = ...$”, find $x$. (You should know the value of $\tan
+      35^\circ $ from a previous problem)</p>
+
+      <p class="problem-part">Find the length of the hypotenuse of
+      the triangle.</p>
+
+    </div>
+
+    <p>In the previous problem, you were lucky that you already
+    knew the tangent of 35°. You are not always so lucky.
+    However, your calculator can help you out.</p>
+
+    <div class="problem">
+      <p>Press the MODE button on your calculator and make sure
+      “degree” is selected. Then type “tan(35)”. The number on your
+      screen should look familiar.</p>
+    </div>
+
+    <div class="problem">
+      <p>Find both of the missing sides in the following
+      triangle:</p>
+      <figure class="fig-25">
+        <img src="../images/03-2-intro-to-trigonometry/find%20both%20missing%20sides.tif.jpg" >
+      </figure>
+    </div>
+
+
+    <p class>Often, trigonometry is used to find lengths of triangles in
+    the “real world” that are too difficult to measure
+    directly.</p>
+
+    <div class="problem">
+      <p>You’d like to know how tall a flagpole is, but you can’t
+      reach the top to measure it. So instead you use your tape
+      measure to measure 50 ft along the ground. Standing 50 ft
+      away from the flagpole, you can see the top of the flagpole
+      by looking up at a 22° angle. How tall is the flagpole?</p>
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20flagpole2.tif.jpg" >
+      </figure>
+    </div>
+
+
+    <div class="problem">
+      <p>In the previous problem, you might have ignored your
+      height. Say your eyes are at a level of 5 feet 6 inches above
+      the ground. Taking this into account, figure out how tall the
+      flagpole <em>really</em> is.</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>Find the length $x$ in each triangle.</p>
+
+      <p class="problem-part">
+        <figure class="fig-25">
+          <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20practice%20a.tif.jpg" >
+        </figure>
+      </p>
+
+      <p class="problem-part">
+        <figure class="fig-50">
+          <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20practice%20b.tif.jpg" >
+        </figure>
+      </p>
+
+      <p class="problem-part">
+        <figure class="fig-50">
+          <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20practice%20c.tif.jpg" >
+        </figure>
+      </p>
+      
+    </div>
+
+
+
+    <div class="problem">
+      <p>Stephen can see the head of the Loch Ness Monster if he
+      looks up at an angle of 35°. He’s standing on the level floor
+      of a shallow lake, and he’s six feet tall. If it is 20 yards
+      along the ground from where he’s standing to where the Loch
+      Ness Monster is standing, how tall is “Nessie”?</p>
+    </div>
+
+    <div class="problem">
+      <p>Think about the location of Stephen's eyes. Is your answer to
+      the previous question actually a little bit too big, or a
+      little bit too small?</p>
+    </div>
+
+    <div class="problem">
+      <p>A 20-ft ladder is placed against a wall at an angle of
+      72
+      degrees with the ground.</p>
+
+      <p class="problem-part">How far from the base of the wall
+      is the ladder?</p>
+
+      <p class="problem-part">How high does the ladder reach on
+      the wall?</p>
+    </div>
+  </section>
+
+  <section class="problems">
+    <h2>Problems</h2>
+    <div class="problem">
+      <p>Your fifth-story apartment window looks out over a
+      courtyard 50 feet long. To see your friend in the
+      eighth-story window across the courtyard, you need to tilt
+      your head up at a 31° angle. How far apart are the floors
+      positioned in your apartment building? (Assume they’re spaced
+      evenly).</p>
+    </div>
+
+    <div class="problem">
+      <p>Say that, for some angle $\theta$, $\sin \theta =
+      \frac{5}{8}$. Mark’s triangle has a 90° angle and an angle
+      of $\theta$. The side opposite $\theta$ is 45 cm long. How long is the
+      hypotenuse of Mark’s triangle?</p>
+    </div>
+
+    <div class="problem">
+      <p>The sine of 25 degrees is about .4226. What angle has a
+      cosine of about .4226?</p>
+    </div>
+
+    <div class="problem">
+      <p>John looks at a building whose base is 100 ft. away from
+      where he is standing. He sees a friend leaning out of a
+      window at an angle of elevation of 30 degrees. His friend
+      yells to him that the people in the building are part of a
+      “flash mob” (see http://en.wikipedia.org/wiki/Flash_mob), and
+      that a mutual friend will be appearing at a window that is
+      twice as high up. So John looks at the window at an angle of
+      elevation of 60 degrees, but their mutual friend never
+      appears. Why?</p>
+    </div>
+
+    <p class='new-column'>In problems 23-27, <em class="vocab">geometric tinkering</em> will prove very
+    helpful.</p>
+
+    <div class="problem">
+      <p>Find $x$.</p>
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20first%20geo%20tinker.tif.jpg" >
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Find $x$.</p>
+      <figure class="fig-50">
+        <img src="../images/03-2-intro-to-trigonometry/extra%20geometric%20tinkering.tif.jpg" >
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Find $x$.</p>
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/last%20geo%20tinkering.tif.jpg" >
+      </figure>
+    </div>
+
+    <p class="new-column">Your calculator gives you approximate answers when you ask
+    it to tell you the sine, cosine, or
+    tangent of an angle. (See <a href="http://www.mathsisfun.com/irrational-numbers.html">http://www.mathsisfun.com/irrational-numbers.html</a>
+    for more information and a juicy, though probably apocryphal,
+    tidbit.) Sometimes you would rather know the answer
+    exactly. Some geometry can help you do this.</p>
+
+    <p>Below are two triangles. The first one is an
+    equilateral triangle. The second is an isosceles
+    right triangle.</p>
+
+    <figure class="fig-50">
+      <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20split%20up%20eq%20tri%20.tif.jpg" ><img src="../images/03-2-intro-to-trigonometry/intro%20trig%20split%20up%20isc%20rgt.tif.jpg" >
+    </figure>
+
+    <div class="problem">
+      <p>Find all the sides and angles in the figures on the previous page, including
+      the height of the equilateral triangle. Do not use a
+      calculator, and do not convert your answers to decimals.</p>
+      <p >Here are two more triangles.
+      Again, the first is equilateral and the second is an isosceles
+      right triangle.</p>
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20split%20up%20eq%20tri1.tif.jpg" >
+        <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20split%20up%20isc%20rg1.tif.jpg" >
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Now find all the sides and angles. You’ll have to give
+      some of your answers in terms of $x$.</p>
+    </div>
+
+    <p>Your answer to the previous exercise turns out to be
+    tremendously useful. For instance, let’s say that you have a
+    triangle that you know to have angles of 30, 60, and 90
+    degrees. We’ll call this a <em class="vocab">30-60-90 triangle</em>. Normally, you’d
+    need to know two sides of a right triangle in order to figure
+    out the third side of a triangle. But the result in the
+      previous exercise can help you find <em>both</em> missing sides.</p>
+
+    <div class="problem">
+      <p>For example, say you have a 30-60-90 triangle with its
+      shortest side of length 3. Find the lengths of the other two
+      sides.</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose you have a 30-60-90 triangle and the hypotenuse
+      has length 5. What are the lengths of the other two
+      sides?</p>
+    </div>
+
+    <div class="problem">
+      <p>Find the lengths of the legs in a 45-45-90 triangle if the
+      hypotenuse has length $7\sqrt 2 $.</p>
+    </div>
+
+    <div class="problem">
+      <p>If you haven’t already, make a good sketch in your
+      notebook of a 30-60-90 triangle with shortest side $x$, and
+      label its other sides in terms of $x$. Then do the same thing
+      for a 45-45-90 triangle.</p>
+    </div>
+
+    <div class="problem">
+      <p>Copy the following chart into your
+      notebook and use the diagrams you drew in problem 31 to help
+      find exact values
+      for the sine, cosine, and tangent of the
+      following angles.</p>
+
+      <table id="table-1" class="No-Table-Style table-style-override-1">
+        <tbody>
+          <tr>
+            <td>
+              <p class="Table---Cell-Header">$\theta$</p>
+            </td>
+
+            <td>
+              <p class="Table---Cell-Header">Sine of $\theta$</p>
+            </td>
+
+            <td>
+              <p class="Table---Cell-Header">Cosine of $\theta$</p>
+            </td>
+
+            <td>
+              <p class="Table---Cell-Header">Tangent of $\theta$</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="Table---Cell-Header">30°</p>
+            </td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="Table---Cell-Header">45°</p>
+            </td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>
+              <p class="Table---Cell-Header">60°</p>
+            </td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="problem">
+      <p>Sally spies Bigfoot, who is a bit too close for comfort.
+      With her trusty protractor in hand, she notices that, if she
+      looks up at a 60-degree angle, she can just see the bald spot
+      on the top of his head. When Bigfoot sees her protractor, he
+      shies and runs away. Sally then measures along the ground to
+      the spot where he was standing, and finds that he was 10
+        meters away. Five-foot-tall Sally can calculate <em>exactly</em> how
+      tall Bigfoot is. Can you?</p>
+    </div>
+
+    <div class="problem">
+      <p>Now that Sally knows how tall Bigfoot is, she decides to
+      spy on him from a distance. If she can now see the top of his
+      head by looking up at a 30° angle, exactly how far away is
+      she from Bigfoot?</p>
+    </div>
+
+    <div class="problem">
+      <p>Kenya computes the sine of 45 degrees from her isosceles
+      right triangle and gets $\frac{1}{{\sqrt 2 }}$, while
+      Victoria computes the sine of 45 degrees from her isosceles
+      right triangle and gets instead $\frac{{\sqrt 2 }}{2}$.
+      Are these answers actually the same answer, or not?
+      Explain.</p>
+    </div>
+
+    <div class="problem">
+      <p>Are there other right triangles besides 30°-60°-90°
+      triangles for which one of the sides is half the length of
+      the hypotenuse?</p>
+    </div>
+
+    <div class="problem">
+      <p>Recall that an <em class="vocab">altitude</em> of a triangle is a
+      line segment drawn from the vertex
+      of a triangle at a right angle to the line containing the
+      opposite <em>side</em>.</p>
+      <p>The three altitudes of an
+      equilateral
+      triangle all have length 12 cm. How long are its sides?</p>
+
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20eq%20tri%20w%20altitud.tif.jpg" >
+      </figure>
+
+    </div>
+
+
+    <div class="problem">
+      <p>An isosceles triangle has two $65^\circ $ angles. The
+      altitudes drawn from those angles are 12 cm. What are the
+      lengths of the three sides of the triangle? Answer to the
+      nearest tenth of a millimeter.</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose you have a rectangle with dimensions a and b. The
+      Oblongness function is defined by: ${\rm{Oblongness}}(a,b) =
+      \frac{{{\rm{max}}(a,{\rm{ }}b)}}{{{\rm{min}}(a,b)}}$.</p>
+
+      <p class="problem-part">Draw rectangles with the following
+      oblongnesses: 3, 10, 1.618.</p>
+
+      <p class="problem-part">For which pairs of values of a and
+      b is ${\rm{Oblongness}}(a,b)$ as small as possible?</p>
+
+      <p class="problem-part">Wouldn’t it be easier to just
+      define ${\rm{Oblongness}}(a,b)$ simply as $\frac{a}{b}$? Why
+      is the given definition better?</p>
+
+      <p class="problem-part">Cody has a rectangle, in which he
+      has drawn one diagonal. He finds that the angle between the
+      diagonal and the long side of the rectangle is 12 degrees.
+      What is the oblongness of Cody’s rectangle?</p>
+    </div>
+
+    <div class="problem">
+      <p>This diagram shows a rectangle that has been formed by
+      bordering an isosceles right triangle with three other
+      right
+      triangles, one of which has a 60-degree angle as shown.</p>
+
+      <p class="problem-part">Given that the length marked is 1
+      unit long, find as many lengths and angles in the picture as
+      you can. (Give answers in exact form.)</p>
+
+      <p class="problem-part">Use this diagram to find the exact
+      value of the sine of a 75-degree angle.</p>
+
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/tan%2075.tif.jpg" >
+      </figure>
+    </div>
+
+
+    <div class="problem">
+      <p>Susan and Emily are both standing on an east-west
+      sidewalk, looking at the top of a 20-foot building. Susan is
+      standing due south of the building, and has to look up at an
+      angle of 50° to see it. Emily, who is standing to Susan’s
+      right, has to look up at an angle of 35° to see the building.
+      How far apart are Susan and Emily?</p>
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">Simplify: $- (7x)(x - 5)$</p>
+
+      <p class="problem-part">Simplify: $3(x-1) - 2(x-4)$</p>
+
+      <p class="problem-part">Solve the inequality $\left| {x -
+      5} \right| &gt; 7$.</p>
+
+      <p class="problem-part">Factor: ${x^2} - 9x + 20$</p>
+
+      <p class="problem-part">Solve for $x$: $\frac{2}{x} - 5 =
+      4$</p>
+    </div>
+
+    <div class="problem">
+      <p>In the diagram below, find $x$ and $y$.</p>
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/algebra%20strand.tif.jpg" >
+      </figure>
+
+    </div>
+
+
+    <div class="problem">
+      <p>The following questions are related to a famous puzzle
+      called “Buffon’s needle,” which you may want to look up if
+      you
+      are interested.</p>
+
+      <p class="problem-part">You’re throwing a tiddlywink with a
+      4 cm radius onto a floor with square tiles measuring 12 cm on
+      a side. What’s the probability that the tiddlywink will make
+      it onto the floor without landing on a crack?</p>
+
+      <p class="problem-part">Now you’re playing a different
+      version of the game, where you throw a needle between evenly
+      spaced stripes on the floor. Your needle is 2 inches long,
+      and the stripes are also 2 inches apart. Assuming that the
+      needle will land at an angle of 72 degrees to the stripes,
+      what’s the probability that it will land without overlapping
+      any of the stripes?</p>
+    </div>
+
+    <div class="problem">
+      <p>Here are some questions about an
+      “extreme value” of the sine.</p>
+
+      <p class="problem-part">Ask your calculator to tell you the
+      sine of an 80° angle. Then ask for the sine of an 89° angle.
+      Does this suggest a value for the sine of a 90° angle? Have
+      your calculator confirm your guess.</p>
+
+      <p class="problem-part">Using a protractor, draw a right
+      triangle with an 80° angle. Then measure the hypotenuse and
+      the side opposite the 80° angle. How do they compare? How do
+      you think those two sides would compare in a right triangle
+      with an 89° angle?</p>
+
+      <p class="problem-part">Have a conversation with a
+      classmate (or friend, guardian, spiritual advisor) about how
+      someone might have decided what the sine of a 90° angle
+      should be. Remember that our definition of sine as
+      $\frac{{{\rm{opposite}}}}{{{\rm{hypotenuse}}}}$ in a right
+      triangle won’t quite work.</p>
+    </div>
+
+    <h2 class="new-page">Exploring in Depth</h2>
+    <cite>(Problems 46-49 copyright Phillips Exeter Academy.)</cite>
+
+    <div class="problem">
+      <p>A rhombus has four 6-inch sides and two 120° angles. Two
+      altitudes are drawn in from one of the 120° angles. Find
+      the
+      area of each of the three pieces of the rhombus.</p>
+      <figure>
+        <img src="../images/03-2-intro-to-trigonometry/intro%20trig%20rhombus.tif.jpg" >
+      </figure>
+
+    </div>
+
+
+    <div class="problem">
+      <p>A right triangle has a 24 cm perimeter,
+      and its hypotenuse is twice as long as its shorter leg. Find
+      the lengths of all three sides of this triangle.</p>
+    </div>
+
+    <div class="problem">
+      <p>A triangle has a 60-degree angle and a 45-degree angle,
+      and the side opposite the 45-degree angle is 240 mm long. To
+      the nearest mm, how long is the side opposite the 60-degree
+      angle?</p>
+    </div>
+
+    <div class="problem">
+      <p>A line of positive slope is drawn so that it makes a 60
+      degree angle with the x-axis. What is the slope of this
+      line?</p>
+      <figure class="fig-50">
+        <img src="../images/03-2-intro-to-trigonometry/diagram%2050.tif.jpg" >
+      </figure>
+
+    </div>
+
+    <div class="problem">
+      <p>Play the “Buffon’s needle” game: take a needle and draw
+      parallel lines on a sheet of paper, spaced the needle’s
+      length apart. Toss the needle so that it lands on the paper,
+      and record whether the needle crosses a line or not. Pool
+      your data with others who have played the game, and use the
+      data to compute the probability that a needle thrown on the
+      paper will cross a line. Once you have the probability, try
+      dividing by two and then taking the reciprocal of your
+      answer. This process should result in something close to a
+      number with which you’re familiar.</p>
+    </div>
+
+    <div class="problem">
+      <p>Pick an angle, any angle. Use your calculator to find its
+      sine and cosine. Now square each of these numbers and add
+      them together. Try it again with another angle. Notice
+      anything? Write down your conjecture in as concise a form as
+      you can.</p>
+    </div>
+
+    <div class="problem">
+      <p>Let’s try to prove your conjecture in
+      Problem 51. Draw a right triangle $ABC$, with the right angle
+      at $C$, and use $a$, $b$ and $c$ to represent the lengths of the
+      sides opposite angles $A$, $B$, and $C$ respectively. Write ratios
+      for $\sin A$ and $\cos A$, and with the help of the
+      Pythagorean Theorem, prove your conjecture.</p>
+    </div>
+  </section>
+
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

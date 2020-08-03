@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>similar triangles</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/03-1-similar-triangles.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-3   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 1:
+
+
+Similar Triangles 
+</h1>
+    
+    
+
+<article>
+  
+  <section class="development">
+
+    <h2>Introduction</h2>
+
+    <p>Thales of Miletus (625-547 B.C.) is generally regarded as
+    the first of the Seven Wise Men of antiquity. Among other
+    things, he is known for having calculated the height of the
+    Great Pyramid in Egypt using the length of its shadow when
+    compared to a stick in the ground and its shadow at the same
+    time of the day.</p>
+
+   
+    <figure class="fig-50 two-up">
+      <img style="display: inline-block;" src="../images/03-1-similar-triangles/image1.svg" >
+      <img style="display: inline-block;" src="../images/03-1-similar-triangles/image2.svg" >
+    </figure>
+    
+  
+
+    <div class="problem">
+      <p>Inspired by Thales’ method, Robert and Mary calculated the
+      height of a tree. At a certain time of day, Robert stood at a
+      point such that the tip of his shadow coincided with the tip
+      of the tree’s shadow. Then they measured both the shadow of
+      Robert, who is 1.8 m tall, and the shadow of the tree. They
+      found that Robert’s shadow was 4.32 m and the tree’s shadow
+      was 18 m long. With this information they were able to
+      calculate the height of the tree to be 7.5 m. Could you
+      explain how they might have found the height of the tree?</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/similar trangles 1.png" >
+      </figure>
+  	</div>
+
+    <div class="problem allow-break">
+      <p><em class="vocab">Taking things apart</em> in the figure in Problem 1, we have
+      two triangles. One right triangle whose legs are the tree and
+      its shadow, and another right triangle whose legs are Robert
+      and his shadow (see figure below). What can you conjecture
+      about the angles in these two triangles? Explain your
+      answer.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/similar triangles 2.png" >
+      </figure>
+    </div>
+
+    <h2>Development</h2>
+
+    <div class="problem">
+      <p>Kristi is sitting in the back seat of her parents’ car,
+      driving from Omaha, NE to visit her grandparents in
+      Hastings.
+        The scale on her map is <nobr>1 inch = 20 miles.</nobr> She’s using a
+      Bazooka gum wrapper, which she knows is 1.5 inches long, to
+      estimate distances.</p>
+
+      <p class="problem-part">When leaving her parents’ garage,
+      Kristi first opens the map, she notices that there are about
+      five gum wrapper lengths from Omaha to Hastings. How many
+      miles will her trip be?</p>
+
+      <p class="problem-part">How many “gum wrapper lengths” will
+      Kristi measure between her position on the map and Hastings
+      if she is 100 miles away from Hastings?</p>
+
+      <p class="problem-part">Much later in the trip, Kristi
+      notices that the distance remaining on the map is about a
+      third of a gum wrapper. How many miles are remaining?</p>
+    </div>
+
+    <div class="problem">
+      <p>In Baltimore, Maryland, Union Memorial Hospital is the
+      largest building in the triangular region bounded by E
+      University Pkwy, N Calvert St, and E 33rd St (the higher on
+      the map below). If the Union Memorial Hospital’s left side,
+      the side on N Calvert St, is 250 meters long, use the map
+      below to estimate the other two side lengths of this
+      triangular region. You can either measure with a ruler or
+      measure with some other object, like Kristi.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/9-3 Similar Triangles Map.png" alt="">
+      </figure>
+    </div>
+
+    <p class="new-page">In Middle School, you may have learned how to scale down (or
+    up) a figure.
+    In fact, you may now realize that in doing dilations or
+    contractions, you are changing the scale of a figure. When you
+    scale a figure by a factor of $r$, your
+    new figure will have lengths $r$ times the corresponding lengths
+    of the original
+    figure. This can also be expressed by saying that the sides of
+    the second figure are <em class="vocab">proportional</em> to the corresponding sides
+    of the first figure by a factor of $r$. In this case, we say as
+    well that the second figure is a <em class="vocab">scaled copy</em> of the first
+    figure by a factor of $r$.</p>
+
+    <div class="problem">
+      <p>Below there are some pairs of figures. In Part b, the
+      segments in each figure are perpendicular. Determine whether
+      or not one is a scaled copy of the other. Explain.</p>
+
+      <p class="problem-part">
+        <figure class="fig-50">
+          <img src="../images/03-1-similar-triangles/9-3.1-Similar-Triangles-12-14-image6.tif.png" alt="">
+        </figure>
+      </p>
+
+      <p class="problem-part">
+        <figure class="fig-50">
+          <img src="../images/03-1-similar-triangles/image7.svg">
+        </figure>
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Two triangles are given in the picture below.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/image8.svg">
+      </figure>
+
+    
+      <p class="problem-part">Take whatever measurements and do
+      whatever calculations are necessary to check whether or not the
+      two triangles are scaled copies of each other. If they are,
+      determine the scale factor.</p>
+
+      <p class="problem-part">Determine the coordinates of the
+      triangle $\triangle A'B'C'$
+      obtained when you translate triangle $\triangle ABC$ 1 unit down.</p>
+
+      <p class="problem-part">Based on your answer to Question (b),
+      what can you conclude about $\angle B$ and $\angle E$?</p>
+
+      <p class="problem-part">What can you say about the two other
+      pairs of angles $\angle A$ and $\angle D$, and $\angle
+      C$ and $\angle F$? Explain.</p>
+    </div>
+
+
+    <div class="problem">
+      <p>Triangle $\triangle DEF$ is the image of under a dilation centered at the
+      origin $O\left( {0,0} \right)$.</p>
+
+      <figure>
+        <img src="../images/03-1-similar-triangles/image19.svg" >
+      </figure>
+
+      <p class="problem-part">Are triangles $\triangle ABC$ and $\triangle DEF$ scaled copies of
+      each other? If so, what is the scale factor? Explain.</p>
+
+      <p class="problem-part">How are the angles of triangle $\triangle ABC$
+        related to the angles of <nobr>$\triangle DEF$?</nobr> Explain.</p>
+    </div>
+
+
+    <p>In our study of dilations, you may have noticed that the
+    angles of the image of a figure under a dilation have the same
+    measurements as the corresponding angles of the original
+    figure. What’s more, you can see in Problem 7 that the
+    following relationship holds:</p>
+
+    <p>side length of image = (scale factor) $\cdot$ (side length of corresponding side in
+    original figure)</p>
+
+    <p>The next two problems use the important vocabulary word
+    <em class="vocab">congruent</em>. Two angles are congruent if they have the same
+    measure, just as two line segments are congruent if they have
+    the same length.</p>
+
+    <div class="problem">
+      <p>Discuss the following statement with the members of your
+      group.</p>
+      <p>“If the three angles of a
+      triangle are congruent to the three angles of a second
+      triangle, then the triangles are scaled copies of each
+      other.”</p>
+      <p>If you disagree, give a
+        counterexample showing that this statement is false.</p>
+    </div>
+
+
+    <div class="problem">
+      <p>Now examine the following statement.</p>
+      <p>“If two angles of a
+      triangle are congruent to two angles of another triangle, then
+      the triangles are scaled copies of each other.”</p>
+      <p>If you disagree, give a
+      counterexample showing that this statement is false.</p>
+    </div>
+
+    <p>The word <em class="vocab">similar</em> is used in mathematics to describe two
+    triangles that are scaled copies of each other. Similarity
+    plays an important role in the design of large or small objects
+    such as automobiles, airplanes, or integrated circuits. As a
+    matter of fact, before building an automobile, engineers sketch
+    out scale drawings and use them to build scale models which
+    they then use to run tests. Also, as we saw in the introduction
+    of this section, Thales of Miletus may have used similar
+    triangles to calculate the height of the Great Pyramid in
+    Egypt, more than 2500 years ago. Similarity is thus a
+    mathematical instrument that allows us to zoom in or zoom out
+    when examining the physical world.</p>
+
+    <div class="problem">
+      <p>Thus far, you have discovered several features of similar
+      triangles.</p>
+
+      <p class="problem-part">Why does it make sense to use the
+      word “similar” to describe two triangles that are scaled
+      copies of each other?</p>
+
+      <p class="problem-part">If two triangles are similar, how
+      are their angles related? How are their sides related?</p>
+
+      <p class="problem-part">If you are given a $\triangle ABC$, describe a
+      procedure for drawing a $\triangle A'B'C'$ similar to it.</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <p>In many of the problems that follow, you will see a
+    convention that will be used throughout your high school
+    career. If two angles are marked with arcs that are the same
+    style (both bold, or double instead of single), that means
+    those angles are congruent.</p>
+
+    <div class="problem">
+      <p>Calculate the lengths of the sides marked by small
+      letters. Angles marked equally have the same angle
+      measurement.</p>
+
+      <p class="problem-part">Calculate $x$ and $y$.
+        <figure class="fig-50">
+          <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 11a.png" alt="">
+        </figure>
+      </p>
+
+      <p class="problem-part">Calculate $q$.
+        <figure class="fig-50">
+          <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 11b.png" >
+        </figure>
+      </p>
+
+      <p class="problem-part">Calculate $a$.
+        <figure class="fig-50">
+          <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 11c.png" >
+        </figure>
+      </p>
+
+      <p class="problem-part">Calculate $h$.
+        <figure class="fig-50">
+          <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 11d.png" >
+        </figure>
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>In the figure below, angles marked equally have the same
+      angle measurement.</p>
+      <figure class="fig-50">
+        <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 12.png" >
+      </figure>
+
+      <p class="problem-part">Find the perimeter of triangle $\triangle ABC$.</p>
+
+      <p class="problem-part">Triangle $\triangle DEF$ is a scaled copy of $\triangle ABC$. What
+      is the scale factor?</p>
+
+      <p class="problem-part">What is the ratio of the perimeter of $\triangle DEF$
+      to the perimeter of $\triangle ABC$?</p>
+
+      <p class="problem-part">What is the ratio of the area of $\triangle DEF$ to
+      the area of $\triangle ABC$?</p>
+    </div>
+
+    <div class="problem">
+      <p>In the figure below, what is the ratio of $x$ to $y$?</p>
+      <figure class="fig-50">
+        <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 13.png" >
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Claudia and Rodolfo were walking together on a sunny day.
+      Claudia is 1.5 meters tall and casts a 2.1-meter shadow. How
+      tall is her taller brother Rodolfo if he casts a shadow at
+      the same time which is 0.42 meters longer?</p>
+    </div>
+
+    <div class="problem">
+      <p>Examine the following statement.</p>
+
+      <p>“If two triangles have one pair of angles congruent, the
+      triangles are similar.”</p>
+
+<p>      If you disagree, give a counterexample showing that this
+      statement is false.</p>
+    </div>
+
+    <h2>Further Development</h2>
+
+    <div class="problem">
+      <p>Jasmine has two triangles with equal angle
+      measurements.</p>
+
+      <figure class="fig-50">
+        <img src="../images/03-1-similar-triangles/image37.jpg" >
+      </figure>
+      <p>
+      The sides of one triangle are 4, 6, and 8. <br>The sides of the
+      other are 9, 6, 12. <br>She says that the triangles are not
+      scaled copies because:
+      
+      $$\frac{4}{9} = 0.444..., \textrm{  } \frac{6}{6}=1, \textrm{  and  }\frac{8}{{12}} =
+      0.666...$$</p>
+      <p>Do you agree with Jasmine? Thoroughly explain your answer.</p>
+    </div>
+
+    <p>In two similar triangles, angles with the same measure are
+    called <em class="vocab">corresponding
+      angles</em>, and sides opposite corresponding angles are called
+    <em class="vocab">corresponding sides</em>. As a matter of fact, in the previous
+    problem, $\angle A$ and $\angle R$ are
+    corresponding angles, and $\overline {BC}$ and $\overline {PQ}$ 
+    are corresponding sides. Given
+    misunderstandings such as that of Jasmine’s in the previous
+    problem, it is
+    important to state explicitly what pair of angles have the same
+    measurement when describing similar triangles. A natural way of
+    doing this is by listing their corresponding angles in the same
+    order. Thus, regarding the triangles in the previous exercise,
+    we say that $\triangle ABC$ and $\triangle RQP$ are similar, and write $\triangle ABC \sim \triangle RQP$. The symbol $\sim $ is read “is similar to.”</p>
+
+    <div class="problem">
+      <p>$\triangle BUD \sim \triangle PAT$</p>
+      <p>$BU = 7$, $UD = 8$,
+      $BD = 10$, and $PT = 12$.</p>
+      <p>Draw the figure and find
+      $PA$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Let $\triangle DEF \sim \triangle ABC$.</p>
+      <figure class="fig-50">
+        <img src="../images/03-1-similar-triangles/image48.jpg" >
+      </figure>
+
+      <p class="problem-part">List all pairs of corresponding
+      sides.</p>
+
+      <p class="problem-part">Let $k$ be the scale factor, that is,
+      the lengths of the sides of $\triangle DEF$ are $k$ times the lengths of the
+      corresponding sides of $\triangle ABC$. So, for example, $AB = k\cdot ED$. <br><br>Write two more equations
+      involving $k$, each one using a different pair of sides.</p>
+
+      <p class="problem-part">Solve each of the three equations for
+      $k$.</p>
+
+      <p class="problem-part">In part c, you should have found
+      three quantities that all equal $k$. Translate this into a
+      statement about side lengths
+      in similar triangles.</p>
+      
+    </div>
+
+    <p>
+    In the previous problem you may have concluded that if $\triangle DEF \sim \triangle ABC$,
+    then</p>
+
+    <p>$$\dfrac{{DE}}{{AB}} = \dfrac{{EF}}{{BC}} =
+    \dfrac{{FD}}{{CA}}$$</p>
+
+    <p>These equalities are also used to express that in two
+    similar triangles corresponding sides are proportional. These
+    equalities allow us to relate corresponding sides of similar
+    triangles without explicitly mentioning the scale factor.
+    </p>
+
+    <div class="problem">
+      <p>In the following figure, angles marked equally have the
+      same angle measurements.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/9-3-1 Similar Triangles %2319.png" alt="">
+      </figure>
+      <p class="problem-part">Take into account the convention
+      stated in the paragraph above problem 17 to determine whether
+      or not $\triangle ABC \sim \triangle DEF$. Explain your answer.</p>
+
+      <p class="problem-part">Describe the relationship between
+      these two triangles using the $\sim$ notation.</p>
+
+      <p class="problem-part">Below, you have a list of equalities
+      between two ratios
+      relating to the triangles above. Determine which ones
+      are true and which ones are false, if any. Explain.
+      <figure>
+        <img src="../images/03-1-similar-triangles/19.png">
+       </figure>
+
+</p>
+
+     
+    </div>
+
+
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>In the following figure, angles marked equally have the
+      same angle measurements.</p>
+      <figure class="fig-50">
+        <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 20.png" alt="">
+      </figure>
+
+      <p class="problem-part">Is $\triangle PRQ \sim \triangle STU$? Explain your answer.</p>
+
+      <p class="problem-part">Describe the relationship between
+      these two triangles using the $\sim$ notation.</p>
+
+      <p class="problem-part">Find $r$ and $u$.</p>
+    </div>
+
+    <div class="problem">
+      <p>In the following figure, angles marked equally have the
+      same angle measurements, and $\overline {BD} $ and $\overline
+      {AE} $ intersect at $C$.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/Similar triangles 21.png" alt="">
+      </figure>
+
+      <p class="problem-part">Describe the relationship between
+      these two triangles using the $\sim$ notation.</p>
+
+      <p class="problem-part">Find $x$ and $y$.</p>
+
+      <p class="problem-part">In this problem, you needed to use
+      the fact that $\angle BCA$ was congruent to $\angle DCE$. Is
+      this assumption justified?</p>
+    </div>
+
+    <div class="problem">
+      <p>In each of the following exercises, pieces of information
+      about a pair of triangles are given. A figure is provided for
+      exercise in Part a. In each case, find $x$.</p>
+
+      <p class="problem-part">Angles marked equally have the same
+      angle measurements.
+        <figure>
+          <img src="../images/03-1-similar-triangles/9-3-1 Similar Triangles 22.png" alt="">
+        </figure>
+      </p>
+
+      <p class="problem-part">$\triangle PQR \sim \triangle STU$, $PQ = 3$, $QR = x$, $ST =
+      x$, and $TU = 7$.</p>
+
+      <p class="problem-part">$\triangle ABC \sim \triangle DEF$, $AB = x + 1$, $BC = 50$,
+        $DE = 2$, and <nobr>$EF = x + 1$.</nobr></p>
+    </div>
+
+    <div class="problem">
+      <p>Felipe looks at a dot on a perpendicular wall 20 ft. away.
+      If he looks .1 degrees to the right, he will be looking at a
+      point on the wall about 3/8 of an inch to the right of the
+      dot. Later Felipe (carefully) looks at the center of the Sun,
+      which is 93 million miles away. If he looks at a sunspot that
+      is .1 degrees to the right, how far away from the center of
+      the Sun will he be looking? Would you estimate it was
+      about:</p>
+
+      <p class="problem-part">16 miles to the right</p>
+
+      <p class="problem-part">1,600 miles to the right</p>
+
+      <p class="problem-part">16,000 miles to the right</p>
+
+      <p class="problem-part">160,000 miles to the right</p>
+
+      <p class="problem-part">16,000,000 miles to the right?</p>
+
+      <p>Now check your estimate by actually figuring out the answer.</p>
+    </div>
+  </section>
+
+  <section class="problems">
+    <h2>Problems</h2>
+    <div class="problem">
+      <p>Let $\triangle ABC \sim \triangle DEF$ and $k = \frac{DE}{AB}$ be the scale factor.</p>
+
+      <p class="problem-part">What is the ratio of the perimeter
+      of $\triangle DEF$ to the perimeter of $\triangle ABC$? Justify your answer.</p>
+
+      <p class="problem-part">What is the ratio of the area of $\triangle DEF$ to
+      the area of $\triangle ABC$?
+      Justify your answer.</p>
+    </div>
+
+    <p>When studying similarity, it is important to determine when
+    two angles in a figure have the same measurements. The
+    following exercises will refresh or make clear some ideas
+    regarding the angles formed when a line, called a <em class="vocab">transversal</em>,
+    intersects two parallel lines.</p>
+
+    <div class="problem new-column">
+      <p>If line $r$ is parallel to line $s$, written $r \parallel s$, determine the angle measurements of
+      the remaining angles shown in each of these figures.</p>
+
+      <p class="problem-part">
+        <figure>
+          <img src="../images/03-1-similar-triangles/25a.jpg" >
+        </figure>
+      </p>
+
+
+      <p class="problem-part">
+        <figure>
+          <img src="../images/03-1-similar-triangles/Similar Triangles 25b.png" >
+        </figure>
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>In the following figure, $\overline {AB} \parallel
+      {\overline {FD} }$, $\overline {BC} \parallel
+      {\overline {DE} }$, and points $A$ and $C$ lie on
+      $\overline {EF} $.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/26.jpg" >
+      </figure>
+      <p>Are these two triangles
+      similar? If so, say why and express their similarity using the
+      $\sim $ notation.</p>
+    </div>
+
+
+
+    <div class="problem">
+      <p>In the following figure $\overline {BC} \parallel \overline {DE} $.</p>
+
+      <p class="problem-part">Determine all the angles in the
+      triangles below.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/27.jpg" >
+      </figure>
+
+      <p class="problem-part">Identify a pair of similar triangles
+      in this figure. Using the $\sim $ notation, describe their
+      relationship.</p>
+
+    </div>
+
+
+    <div class="problem">
+      <p>Given a triangle $PQR$, let point $S$ be on $\overline {PQ}
+      $ and point $T$ on $\overline {PR} $ such that $
+      {\overline {ST} } \parallel \overline {QR} $. Determine
+      whether there is any relationship between the triangles $PST$ and $PQR$. Explain your answer.</p>
+    </div>
+
+    <div class="problem">
+      <p>In the figure below $\overline {BC} \parallel \overline {DE}$. Find $x$
+      and $y$.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/29.jpg" >
+      </figure>
+    </div>
+
+
+    <div class="problem">
+      <p>In a $\triangle ABC$, $BC = 9$ and point $D$ lies on $\overline {AB} $ 4
+      units from $A$ and 2 units from $B$. Furthermore, $E$ lies on
+        $\overline {AC} $ and <nobr>$\overline {DE} \parallel \overline {BC}$.</nobr>
+      Find the length of $\overline {DE} $.</p>
+    </div>
+
+    <div class="problem">
+      <p>In a trapezoid, the lower base is 15, the upper base is 5,
+      and each of the two legs is 6. How far must each of the legs
+      be extended to form a triangle?</p>
+    </div>
+
+    <div class="problem">
+      <p>The height of the larger cone below is 9, and its slant
+      height is 15. If the height of the smaller upper cone is 3,
+      find its slant height $x$.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/32.jpg" >
+      </figure>
+
+    </div>
+
+
+    <div class="problem">
+      <p>The shapes below are known to be scaled copies of each
+      other. Calculate the missing side lengths for each of the two
+      shapes.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/33.png" >
+      </figure>
+    </div>
+
+
+    <div class="problem">
+      <p>In order to estimate its width, Amy, Bruce, and Carmen
+      stood at the vertices of a right triangle ABC on one side of
+      a river, with Bruce standing at the right angle. Their
+      distances from one another are indicated in the figure below.
+      If it is known that the distance between the tree and the
+      rock shown on the other side is 20 meters, what is the width
+      of the river?</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/34.jpg" >
+      </figure>
+
+    </div>
+
+
+    <div class="problem">
+      <p>An airplane P is flying at an elevation of 1720 m,
+      directly above a straight highway. Two cars, C and A, are
+      moving on the highway on opposite sides of the plane, and the
+      <em class="vocab">angle of depression</em> from airplane to car C is ${38^ \circ
+      }$ and to car A is ${52^ \circ }$, as shown in the figure
+      below (the dashed line is the imaginary horizontal line
+      through P). If the second car is at a horizontal distance of
+      $1343.8{\rm{ m}}$ to the right of the airplane, how far
+      apart are the cars at this time?</p>
+      
+      <figure>
+        <img src="../images/03-1-similar-triangles/35.jpg" >
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Cindy, Jan, and Marsha have come up with an ingenious
+      method for measuring the
+      height of a tree. Marsha stands at a distance she measures to
+      be 119.8 feet away from the tree. Jan walks 4/3 more feet
+      away from the tree than Marsha. Cindy then finds a spot in
+      which she can crouch down and see Jan’s head, Marsha’s head,
+      and the top of the tree all in one continuous sightline.
+      Cindy (when crouching) is 2.5 feet tall, Jan is 5 feet tall,
+      and Marsha is 5.5 feet tall. Here is a diagram depicting the
+      situation:</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/Similar Triangles Brady Bunch.png">
+      </figure>
+      <p class="problem-part"> How far away from Jan did Cindy go in
+      order to make this work?</p>
+
+      <p class="problem-part">How tall is the tree?</p>
+    </div>
+
+
+    <div class="problem">
+      <p>The two triangles below are similar but not congruent:</p>
+      <figure class='fig-50'>
+        <img src="../images/03-1-similar-triangles/diagram 37.tif.jpg" alt="">
+      </figure>
+
+      <p>Can $x$ and $y$ both be integers, neither of them equal to 1? Why
+      or why not?</p>
+    </div>
+
+    <div class="problem">
+      <p>In the figure below, right has been split into two smaller
+      right triangles.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/38.jpg" >
+      </figure>
+      <p class="problem-part">Find all the angles in the
+      figure.</p>
+
+      <p class="problem-part">Name all pairs of similar
+      triangles.</p>
+    </div>
+
+
+    <div class="problem">
+      <p>Regarding $\triangle IRT$ shown below, do the following.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/39.jpg" >
+      </figure>
+
+      <p class="problem-part">Mark in another angle whose
+      measure is ${x^ \circ }$ and another
+      whose measure is ${y^ \circ }$.</p>
+
+      <p class="problem-part">Name all pairs of similar
+      triangles.
+      Hint: Take things apart.</p>
+
+      <p class="problem-part">Calculate the length of $\overline
+      {IA} $.
+      Hint: Use similarity.</p>
+
+      <p class="problem-part">Calculate the length of $\overline
+      {IR} $.</p>
+
+      <p class="problem-part">Calculate the length of $\overline
+      {IT} $.</p>
+
+      <p class="problem-part">Check your answers by using
+      Pythagoras’ theorem on $\triangle TRI$.</p>
+    </div>
+
+
+
+    <div class="problem">
+      <p>Andrew wanted to cover the upper part of his kite with
+      yellow paper and the bottom part with blue paper (see
+      figure). The leftmost and rightmost angles of the kite are
+      right angles. Taking into account that the diagonals of a
+      kite are perpendicular, how much paper of each color does he
+      need?</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/40.jpg" >
+      </figure>
+
+    </div>
+
+
+    <div class="problem">
+      <p>$\triangle ABC$ is an equilateral triangle of side length equal to 1, that
+      is, each side of this triangle is one unit long. $D$, $E$, and $F$
+      are the midpoints of $\overline {AB} $, $\overline {BC}
+      $, and $\overline {CA} $ respectively. Determine the side
+      lengths of $\triangle DEF$. Thoroughly explain your work.</p>
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">Add: $3\frac{5}{8} +
+      7\frac{7}{8}$</p>
+
+      <p class="problem-part">Factor: $4{x^2} - 16$</p>
+
+      <p class="problem-part">Factor: $14{x^2}{y^3} -
+      28{x^4}{y^2} + 7{x^2}y$</p>
+
+      <p class="problem-part">Reduce: $\frac{{2x + 12}}{{2x +
+      6}}$</p>
+
+      <p class="problem-part">Are
+      lines with slopes $\frac{{42a}}{{ - 14b}}$ and
+      $\frac{{7b}}{{21a}}$ parallel, perpendicular, or
+      neither?</p>
+
+    </div>
+
+
+    <div class="problem">
+      <p>Consider an equilateral triangle with sides of length 1.
+      This triangle is considered to be stage number 0 of the
+      Sierpinski triangle. Then the central triangle obtained by
+      joining the midpoints of each side is removed. This is
+      considered to be stage number 1 of the Sierpinski triangle.
+      Stage number 2 is obtained when from each of the three
+      remaining triangles the central triangle is removed, as was
+      done on the initial triangle when going from stage number 0
+      to stage number 1 (see figure below).</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/43.jpg" alt="">
+      </figure>
+
+      <p>
+      Appropriately shade the last triangle above to examine stage
+      number 3. Then complete the table.</p>
+
+      <table id="table-1" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>Stage number</p>
+            </td>
+
+            <td>
+              <p>0</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>n</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Number of shaded
+              triangles</p>
+            </td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Total perimeter of
+              shaded triangles</p>
+            </td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Total area of shaded
+              triangles</p>
+            </td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="problem">
+      <p>Thinking of his will, Mr. Maury wants to leave a portion
+      of his farm to each of his four children. This farm is a
+      triangular piece of land whose dimensions are $1000$,
+      $1200$, and $2000$ meters. However, Mr. Maury wants to
+      be as fair as possible and leave pieces of equal size and
+      shape to his children. Do you think that it is actually
+      possible to split Mr. Maury’s farm into four pieces of equal
+      size and shape? Thoroughly explain your answer.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/44.jpg" >
+      </figure>
+    </div>
+
+
+    <div class="problem">
+      <p>Is the result you found in Problem 44
+      true for any triangle? That is, is it always possible to
+      divide a triangle into four triangles of equal size and
+      shape? Explain.
+      </p>
+    </div>
+
+    <div class="problem">
+      <p><strong>Case SAS</strong><br>
+      
+      <figure class="fig-50">
+        <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 46 fig 1.png" alt="">
+    </figure>
+    <figure>
+        <img src="../images/03-1-similar-triangles/9-3 Similar Triangles 46 fig 2.png">
+      </figure><p>
+      
+      <p>Regarding triangles $PQR$ and $STW$ above, we have the following:</p>
+
+      <p>$m\angle P = {60^ \circ }$, $PQ = 2$, $PR = 3$,<br>
+      $m\angle S = {60^ \circ }$, $ST = 4$, and $SW = 6$.</p>
+
+      <p>Are these two triangles similar? How could you justify your
+      answer?</p>
+    </div>
+
+
+
+    <div class="problem">
+      <p>For each statement below, draw a picture illustrating it.
+      Then decide whether or not this statement is true. For each
+      “Case” with which you disagree, give a counterexample showing
+      that it is false.</p>
+      
+      <p><strong>AA Case</strong><br>
+      If two angles of one triangle are congruent to two angles of
+      another triangle, then the two triangles are similar.</p>
+
+            <p><strong>SSS Case</strong><br>
+
+      If the three sides of one triangle are proportional to the
+      three sides of another triangle, then the two triangles are
+      similar.</p>
+
+      <p><strong>SAS Case</strong><br>
+      
+      If the following conditions are met:<br><br>
+
+      i) Two sides of one triangle are proportional to two sides of
+      another triangle. That is, the lengths of two sides of one
+      triangle are a constant times the lengths of two sides of the
+      other triangle.<br><br>
+      
+      ii) The included angles are
+      congruent. That is, the angle formed in one of the triangles by
+      the two sides that are proportional to two sides of the other
+      triangle is congruent to the corresponding angle in the other
+      triangle.<br><br>
+      
+      Then the two triangles are
+      similar.</p>
+
+      <p><strong>SSA Case</strong><br>
+
+      If two sides of one triangle are proportional to two sides of
+      another triangle and the angle opposite one of those sides of
+      the first triangle is congruent to the corresponding angle
+      opposite one of those sides of the second triangle, then the
+      two triangles are similar.</p>
+    </div>
+
+
+
+    <div class="problem">
+      <p>A certain crop of black-eyed peas has been genetically
+      altered such that each pea is flat and perfectly circular,
+      and its “eye” runs in a straight line through the center of
+      the pea. The $PeaEye$ function takes any pea and divides
+      its circumference by the length of its eye. If pea #1 is
+      twice the size (total area) of pea #2, then which is bigger:
+      $PeaEye\left( {pea\# 1} \right)$ or $PeaEye\left(
+      {pea\# 2} \right)$?</p>
+    </div>
+    
+  <br>
+  <br>
+  
+    <h2>Exploring in Depth</h2>
+
+    <p>In a triangle, a segment drawn from a vertex of a triangle
+    perpendicular to its opposite side, or to the extension of its
+    opposite side, is called an <em class="vocab">altitude</em> to this side of the
+    triangle.</p>
+    
+    <figure>
+      <img src="../images/03-1-similar-triangles/exploring-in-depth.jpg" alt="">
+    </figure>
+<br>
+  <br>
+  
+    <p>If in a right triangle the altitude to the hypotenuse is
+    drawn, the hypotenuse is divided into two segments. The lengths
+    of these segments and the length of the altitude to the
+    hypotenuse are related. This relationship has already been
+    revealed in Problem 39. In the following problems, we will try
+    to make this relationship more explicit.</p>
+
+    <div class="problem">
+      <p>In the right $\triangle ABC$ below, draw the
+      altitude $\overline {CD} $ to the hypotenuse. Then:</p>
+
+      <p class="problem-part">Mark in all the angles that turn
+      out to be congruent.</p>
+
+      <p class="problem-part">Name all pairs of similar
+      triangles. Justify your answer.</p>
+      
+      <figure>
+        <img src="../images/03-1-similar-triangles/49.jpg" >
+      </figure>
+
+    </div>
+
+
+    <p>Very likely, you have been using the Pythagorean Theorem for
+    quite some time now. However, have you ever created a formal
+    proof of this theorem? You might not have known enough until
+    now.</p>
+
+    <div class="problem">
+      <p>Regarding a right triangle as the one below, answer the
+      following questions.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/50.jpg" >
+      </figure>
+      
+      <p class="problem-part">Write an equation relating, $h$, the
+      length of the altitude to the hypotenuse, with $m$ and $n$, the two
+      lengths into which this altitude divides the hypontenuse.
+      Hint: Consider triangles $\triangle ADC$
+      and $\triangle CBD$.</p>
+
+      <p class="problem-part">Write an equation relating the legs,
+      the hypotenuse, and the length
+      of the altitude to the hypotenuse.
+      In other words, write an equation
+      involving a, b, c, and h in the above triangle.
+      Hint: Consider triangles $\triangle ABC$ and $\triangle ACD$</p>
+
+      <p class="problem-part">$\overline {AD} $ is called the
+      <em class="vocab">projection</em> of leg $\overline {AC} $ onto the hypotenuse
+      $\overline {AB} $. Also, $\overline {DB} $ is the projection
+      of leg $\overline {CB} $ onto the hypotenuse $\overline {AB} $. How is each leg related to the hypotenuse and its projection
+      onto the hypotenuse? In other words, write an equation relating
+      $a$, $c$, and $n$ in the triangle shown above. Then write an
+      equation, relating $b$, $c$, and $m$.
+      Hint: Consider $\triangle ABC$ and $\triangle CBD$, and 
+      $\triangle ABC$ and $\triangle ACD$.</p>
+
+      <p class="problem-part">Use Part c above to prove the
+      Pythagorean Theorem. That is,
+      prove that ${a^2} + {b^2} = {c^2}$.</p>
+    </div>
+
+
+
+
+    <div class="problem">
+      <p>In the figure below, $\triangle ABC$ is a right triangle and $\overline
+      {CD} $ is the altitude to the hypotenuse. As shown in the
+      figure, the lengths of the projections of the legs $b$ and $a$
+      over the hypotenuse are, respectively, $m = 3$ and $n =
+      9$. Find $h$.</p>
+      <figure>
+        <img src="../images/03-1-similar-triangles/51.jpg" >
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>In the figure below, $\triangle ABC$ is a right triangle and $\overline
+      {CD} $ is the altitude to the hypotenuse. As shown in the
+      figure, the lengths of the projections of the legs $b$ and $a$
+      onto the hypotenuse are, respectively, $m = 4$ and $n$. As
+      usual, $c$ is the length of the hypotenuse $\overline {AB} $.</p>
+      <figure class="fig-50">
+        <img src="../images/03-1-similar-triangles/52.jpg" >
+      </figure>
+      <p class="problem-part">Find AB.</p>
+
+      <p class="problem-part">Find $h$.</p>
+    </div>
+
+
+    <div class="problem">
+      <p>Let us recall Andrew’s kite problem (#40).</p>
+
+      <p>Can you use the ideas developed in the problems of this
+        section to find out how much paper of each color Andrew needs
+        to cover his kite?</p>
+        
+      <figure>
+        <img src="../images/03-1-similar-triangles/53.jpg" >
+      </figure>
+    </div>
+
+  </section>
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

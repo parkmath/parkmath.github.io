@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>prove</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/09-0-prove.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-9   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 0:
+
+
+Prove 
+</h1>
+    
+    
+
+<article>
+<section class="development">
+  <div class="problem">
+    <div class="problem-content">
+      <p>At Arnaldo’s small party, people shook hands with as many
+      people they liked, from 0 up to everyone else at the party.
+      Nayla has been paying close attention, and says that if you
+      add up everyone’s personal “handshake total”, you will get
+      15. Can she be correct? Explain.</p>
+    </div>
+  </div>
+
+    <p>Often in life, when someone says something that seems
+    surprising, counter-intuitive, or even reasonable, we will look
+    not at the conviction with which the speaker is speaking, but
+    instead for the evidence and reasoning needed to back up their
+    claim. In mathematics, we do the same thing. It is a fun fact
+    of mathematics that many things that initially appear to be
+    false are in fact true, and as well many things that appear to
+    be true are false. So the only way to know if a statement is
+    correct is to use clear reasoning based on assumptions we all
+    agree upon.</p>
+
+    <p>Proving is a way of demonstrating to yourself and others
+    that something you think may be true (or false), must in fact
+    be true (or false). Although there are many different ways of
+    proving a statement, everyone agrees that the steps of a proof
+    should be clear: a careful reader should be able to read each
+    step of your proof and see how it connects and follows from the
+    one before. That way, at the conclusion of your proof, they
+    will agree with you!</p>
+
+    <p>In the “Arnaldo’s party” problem above, at first it may seem
+    a bit mystifying how to approach testing Nayla’s claim.
+    Probably the best thing to do at first is to Tinker by trying
+    to see if you can get a “handshake total” for all party members
+    to be equal or close to 15. If you can get to exactly 15,
+    you’re done; Nayla is correct, and the problem is over. On the
+    other hand, if you have tried a number of different handshake
+    “scenarios” and only gotten close to 15 in each case,
+    nevertheless you will probably have noticed something
+    interesting about handshake totals in general—something you
+    might try to prove (and which will tell us if Nayla can be
+    correct as well).</p>
+
+    <p>So, when presented with a claim, do three things. First,
+    decide whether it seems reasonable – do you believe it at first
+    glance? Next, try to find evidence that the claim is or is not
+    true. Finally, for any claim that you believe to be true, try
+    to prove that it’s true by making a sequence of logical
+    statements, each of which your peers could understand and agree
+    to; and for any claim you believe to be false, provide an
+    example that shows the claim is false—such an example is called
+    a counterexample.</p>
+
+    <p>Here’s a problem that many students have enjoyed:</p>
+
+    <div class="problem">
+    <div class="problem-content">
+      <figure class="fig-50">  
+       <img src="../images/09-0-prove/Prove checkerboard.png">
+      </figure>
+      <p>A 64-square black and white checkerboard (see above) can
+      clearly be completely covered by 32 dominos. If the top right
+      and bottom left squares are removed, what is left is a
+      62-square board. How many dominoes will be required to cover
+        the 62-square board?</p>
+    </div>
+    </div>
+    
+    <div class="problem">
+    <div class="problem-content">
+      <p>[Continuation of problem 2] Did you check your answer to
+      problem 2? A 64 square checkerboard is covered by 32 dominoes
+      since every domino covers 2 squares, a white one and a black
+      one. In the altered checkerboard, how many black squares are
+      there? How many white squares? Would 31 dominoes do the
+      job?</p>
+    </div>
+    </div>
+
+    <p>Here’s another problem that might seem very tricky at first,
+    but with a little persistence and some tinkering . . .</p>
+
+    <div class="problem">
+      <div class="problem-content">
+      <p>In a stock market game, Traci claims that she can purchase
+      any stock above $\$26$ by using only $\$5$ and $\$6$ coupons. (For
+      example, there is no way she could purchase $\$13$ of stock with
+      these coupons, but she could purchase $\$41$ of stock by using
+      one $\$6$ coupon and seven $\$5$ coupons.) Do you think that Traci
+      can really pull this off?</p>
+    </div>
+  </div>
+
+    <p>As a token of our affection to you, the answer is given on
+    the reverse.</p>
+
+    <p class="new-page">While it may seem plausible that there is always some
+    combination of $\$5$ and $\$6$ coupons that is equivalent to a
+    specific amount of money, it at first seems unlikely that we
+    may be able to prove that any amount over $\$26$ can be produced
+    by some combination of the two coupons. How would we know for
+    sure that $\$329876$ could be paid out?</p>
+
+    <p>Our best strategy is to begin by tinkering, and then see if
+    there are any interesting patterns that emerge. We can then try
+    to establish through careful reasoning that the patterns we see
+    are no fluke, that they have to continue.</p>
+
+    <p>So let’s start.</p>
+
+    <p>The first few dollar amounts one can figure out just by
+    tinkering:</p>
+
+    <p>$\$27$ stock can be paid by using three $\$5$ coupons and two $\$6$
+    coupons.</p>
+
+    <p>$\$28$ stock can be paid by using two $\$5$ coupons and three $\$6$
+    coupons.</p>
+
+    <p>$\$29$ stock can be paid by using one $\$5$ coupon and four $\$6$
+    coupons.</p>
+
+    <p>$\$30$ stock can be paid by using no $\$5$ coupons and five $\$6$
+    coupons.</p>
+
+    <p>$\$31$ stock can be paid by using five $\$5$ coupons and one $\$6$
+    coupon.</p>
+
+    <p>Wait a second. Isn’t this sort of tedious? Doesn’t it seem
+    like this approach would take us forever, and even then we
+    would still have an infinity of numbers left to check? And
+    weren’t we supposed to look for a pattern? There doesn’t seem
+    to be any pattern in the $\$5$’s and $\$6$’s at all.</p>
+
+    <p>Well, let’s think about a $\$32$ stock. Traci knows how to
+    purchase a $\$27$ stock—three $\$5$ coupons and two $\$6$ coupons. What
+    coupon should she now add in order to purchase a $\$32$ stock?</p>
+
+    <p>Now convince yourself that Traci’s claim is valid.</p>
+  
+  </section>
+  
+  <section class="problems">
+
+    <div class="problem">
+      <p>Phillip says that every whole number has an even number of
+      positive integer factors (for example, 6 is $1 \cdot 6$ and
+      $2 \cdot 3$ so its factors are 1,6,2,3). Either explain why
+      he is correct, or give a counterexample.
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Think of any three consecutive integers and add them
+      together. If you repeat this a few times you will notice
+      something interesting about the sum. What is it?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>If I own 12 blue socks, 16 red socks, and 18 green socks,
+      and I reach in the dark in to my sock drawer, how many socks
+      will I have to take out to guarantee that I have a pair that
+      are the same color?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>In the diagram below, the area of the gray rectangle is $x
+      \cdot 1 = x$, while the area of the whole square is $x \cdot x = x^2$. Ringo
+      says that since the gray rectangle fits inside of the square,
+      this shows that $x$ is smaller than ${x^{\rm{2}}}$&nbsp;for
+      any positive number. What do you think of Ringo’s
+      argument?</p>
+      
+  <figure class="fig-50">
+    <img src="../images/09-0-prove/image002.gif" >
+  </figure>
+    </div>
+
+    <div class="problem">
+      <p>In the “matches” game, 30 matches are laid on a table. The
+      first player picks up anywhere from 1 to 6 matches, the
+      second player also picks up anywhere from 1 to 6 matches, and
+      the two then alternate picking up 1 to 6 matches until all
+      the matches have been picked up. The player who picks up the
+      last match loses. Can the first player always win with clever
+      play?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>If $\lfloor k \rfloor$ represents the smallest integer
+      greater than or equal to $k$, we can agree that $\lfloor 2
+      \rfloor = 2$ and $\lfloor 5.3 \rfloor = 6$.
+
+      Are either of the following true?</p>
+
+      <p>i. $\lfloor x \rfloor + \lfloor y \rfloor = \lfloor {x + y}
+      \rfloor$</p>
+
+<p>      ii. $\lfloor x \rfloor \lfloor y \rfloor = \lfloor {xy}
+      \rfloor$</p>
+    </div>
+
+    <div class="problem">
+      <p>The French mathematician, Pierre Fermat (1601-1665)
+      claimed that no one could find positive integers $n$, $m$ and $r$
+      such that ${n^x} + {m^x} = {r^x}$ for any integer $x$ greater
+        than 2. But in an episode of <em>The Simpsons</em>, the equation
+      ${1782^{12}} + {1841^{12}} = {1922^{12}}$ appears. What do
+      you think?</p>
+    </div>
+
+    <div class="problem">
+      <p>Prove that if there are 6 people who can arbitrarily shake
+      hands with one another, there is always a pair of persons who
+      shake hands with the same number of people. Then prove this
+      is true if there are $n$ people.
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>When asked to square a certain integer, Joshua came up
+      with an answer of 637812, Wendy came up with 637813, and
+      Anthwaran with 637818. Without using a calculator, determine
+      which of them could be right.
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Can one make change for a 25-ruble bill, using exactly ten
+      smaller bills of denominations of 1, 3, or 5 rubles? (The 1,
+      3, 5, and 25 ruble denominations used to be standard in
+      Russian currency.)</p>
+    </div>
+
+    <div class="problem">
+      <p>Imagine you are at a school that has a row of 500 lockers,
+      all shut. Initially a student goes along the row and opens
+      every locker. Then a second student goes along and shuts
+      every other locker beginning with locker number 2. A third
+      student changes the state of every third locker beginning
+      with locker number 3—that is, if a locker is open the student
+      shuts it, and if a locker is closed the student opens it. A
+      fourth student changes the state of every fourth locker
+      beginning with locker number 4.</p>
+
+<p>      This continues until all 500 students have followed the
+      pattern with the 500 lockers. At the end, which lockers will
+      be open and which will be closed?</p>
+    </div>
+
+    <div class="problem">
+      <p>In a certain year there were exactly four Fridays and
+      exactly four Mondays in January. Gisele says that, given only
+      that information, she can determine what day of the week the
+      20th of January must fall on in that year. Is Gisele
+      correct?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>There are 12 million people in New York City. The number
+      of hairs on a human head never exceeds 750,000. Must there be
+      2 people in New York who have the same number of hairs on
+      their head?</p>
+    </div>
+  </section>
+
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

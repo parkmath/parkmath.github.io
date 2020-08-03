@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>geometric proof</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/06-3-geometric-proof.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-6   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 3:
+
+
+Geometric Proof 
+</h1>
+    
+    
+
+<article>
+
+  <section class="development">
+
+
+
+
+    <h2>Introduction</h2>
+
+    <p><em>C’est Mathematique!</em> is a French expression meaning that
+    something is so certain, it is definite. Indeed, the
+    19th-Century French mathematician Pierre-Simon Laplace imagined
+    a demon that could predict every future event because it knew
+    the exact position of every particle in the universe, and the
+    mathematical laws that governed the motion of those
+    particles.</p>
+
+    <p>Though no such demon exists, we can see why Laplace might
+    have imagined one. Our mathematical knowledge does seem more
+    certain than some other facts we believe to be true about
+    politics or human nature. For instance, maybe you think that
+    passing laws to ban handguns will reduce homicides. Then you
+    read a study that says that actually these bans don’t have that
+    effect. You might change your mind about whether banning
+    handguns is a good idea… until you read another study that says
+      that the bans <em>do</em> reduce accidental death among children.
+    You’ll always have to remain open to changing your opinion
+    based on new information.</p>
+
+    <p>Likewise, in the history of science, people once thought
+    that the atom was the smallest particle that existed (the word
+    “atom” comes from a Greek word
+    meaning “indivisible”). Now we know that atoms are made up of
+    protons and neutrons, and in recent decades scientists have
+    discovered quarks. In the scientific community, people are
+    constantly revising and improving accepted theories.</p>
+
+    <p>In mathematics, on the other hand, we still accept the
+    results of ancient texts. Archimedes, Pythagoras, and Euclid
+    are credited with many of the results that we still use today.
+      You have probably already <em class="vocab">proven</em> things mathematically in such
+    a way that you’re sure they must be true. In this lesson we’ll
+    look at what it means for a proof to be absolutely airtight —
+    with no possibility you’ll want to revise your opinion
+    later.</p>
+
+    <h2 class="new-page">Development</h2>
+
+    <p>Let’s think about the following two statements:</p>
+
+    <p><em>The diagonals of a parallelogram bisect each other.</em></p>
+    <p><em>The diagonals of a parallelogram bisect the angles from which
+      they’re drawn.</em></p>
+
+    <div class="problem">
+      <p>Make some sketches to determine whether you think each of
+      these statements is true or false. Recall that “bisect” means
+      “cut exactly in half.”</p>
+    </div>
+
+    <p>When we do proofs in this section, we’re going to focus on
+    making them airtight. We’ll use the following standard. Any
+    time we make a statement as part of a proof, we need to be able
+    to give a reason for that statement. That reason, in turn,
+    needs to be a statement about geometry that we $already$ know
+    to be true.</p>
+
+    <p>Here are some statements about geometry you already know to
+    be true:</p>
+
+    <ul style="margin-left: 21%; width: 79%;">
+    <li>In an isosceles triangle, the angles opposite the congruent
+    sides are
+      congruent.<br><br></li>
+
+   <li>When parallel lines are cut by a transversal, same-side
+    interior angles
+     add up to 180 degrees.<br><br></li>
+
+    <li>Vertical angles are equal.<br><br></li>
+
+    <li>If two sides and the angle between them in one triangle are
+    congruent to two sides and the angle between them in another
+    triangle, then the triangles are congruent. (SAS congruence
+      theorem)<br><br></li>
+    <li>If the three sides of one triangle are all related to the sides
+    of another
+    triangle by the same proportion, then the triangles are
+    similar.
+    (SSS similarity theorem)<br><br></li>
+
+<li>    In a parallelogram, opposite sides are congruent.<br><br></li>
+                </ul>
+
+    <div class="problem">
+      <p>Make a list of statements about geometry that you know to
+      be true, including the six statements above. To get ideas,
+      try paging through your notes from the past few weeks, or
+      through the lessons earlier in this textbook. Which results
+      seem worth remembering? Also think about some basic shapes
+      you know, like quadrilaterals, and write down some facts you
+      know to be true about each one.</p>
+    </div>
+
+    <p>As you may recall from the first lesson of this chapter, the
+    Greek mathematician Euclid did something very similar to what
+    you are about to do. He boiled down his geometric knowledge to
+    a few assumptions and then proved the rest of what he knew
+    about geometry using those few things. He called the facts he
+    assumed without proof “postulates.” Any fact that he had proved
+    was a “theorem.”</p>
+
+    <div class="problem">
+      <p>Consolidate the list you made in the previous problem with
+      the rest of the class. Discuss which items on it are
+      postulates
+      and which are theorems. Now separate a blank page of your
+      notebook into two columns. Label one column “postulates” and
+      the other “theorems.” Write the items in the class list
+      in
+      the appropriate column. Leave yourself lots of room in both
+      columns to add to the list, probably over multiple pages.</p>
+    </div>
+
+    <p>Hang on to this list. You’ll be referring to it for the
+    remainder of this chapter.</p>
+
+    <p>Now let’s return to the problem of proving the statements
+    from the beginning of this lesson. If you did your job
+    carefully, you’ll have found that the first
+    statement was true — the diagonals of a parallelogram bisect
+    each other.</p>
+
+    <p>Before writing our airtight proof of this fact, it’s
+    important to know where to start. Since we’re proving something
+    about a parallelogram, it’s all right to assume that we $have$ a parallelogram. So let’s draw one…</p>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/replacement parallelogram development.png" >
+    </figure>
+
+    <p>… and label the vertices so that we can talk about them
+    later. So, specifically, $\overline {AD} \parallel \overline
+    {BC} $ and $\overline {AB} \parallel \overline {DC} $. Those
+    are two things we know for sure. It’s also important to be sure
+    of what we want to show about this diagram. Let’s draw in some
+    diagonals and call their intersection point $E$.</p>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/parallelogram%202.svg" >
+    </figure>
+
+    <p>Then what we want to show is that $\overline {AE} \cong
+    \overline {EC} $ and $\overline {BE} \cong \overline {ED} $.</p>
+
+    <p>The comic book hero G.I. Joe used to say “knowing is half
+    the battle.” In the case of proof, knowing what information you
+    have to start with and where you want to end up with is half
+    the battle. Really!</p>
+
+    <p>What we need now is a chain of reasoning, beginning with the
+    facts that $\overline {AD} {\kern 1pt} {\kern 1pt} \left\|
+    {{\kern 1pt} {\kern 1pt} \overline {BC} } \right.$ and
+    $\overline {AB} \parallel \overline {DC} $ and ending with the
+    statement that $\overline {AE} \cong \overline {EC} $ and
+    $\overline {BE} \cong \overline {ED} $. In this chain of
+    reasoning, every step needs to be justified with
+      some reason we <em>know for sure</em>.</p>
+
+    <div class="problem">
+      <p>Try this yourself before reading the proof on the next
+      page.</p>
+    </div>
+
+    <p>When thinking about what will help us to write this proof,
+    let’s think backwards a little bit. We want to show that
+    certain lengths are the same. Look back at your list of
+    postulates. What tools do you have for showing that lengths are
+    the same? Not the results about parallel lines. Not vertical
+    angles or linear pairs. Possibly some statements you have about
+    parallelograms or rhombuses, but in this case the lengths we’re
+    interested in are diagonals rather than sides of those shapes.
+    That really only leaves one thing that could help — congruent
+    triangles.</p>
+
+    <p>If we can show that certain triangles are congruent, then we
+    can conclude that the lengths making them up are also
+    congruent. That should be our strategy in writing this
+    proof.</p>
+
+    <div class="problem">
+      <p>Find some congruent triangles in this diagram that you
+      think would help. Do you know for sure they’re congruent?</p>
+    </div>
+
+    <p class="new-page">Depending on the way you answered question #5, you may have
+    an airtight proof already. Let’s write one out as an example of
+    a chain of reasoning in which all the steps are justified.</p>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/parallelogram%2021.svg" >
+    </figure>
+
+    <ul style="margin-left: 21%; width: 79%;">
+    <li>Given: $\overline {AD} \parallel \overline {BC} $ and
+    $\overline {AB} \parallel \overline {DC} $.</li>
+
+    <li>Goal: Prove that $\overline {AE} \cong \overline {EC} $ and $\overline {BE} \cong \overline {ED} $.</li>
+
+    <li>$\angle DAE \cong \angle BCE$ because they are alternate
+    interior angles of
+    the parallel lines $\overline {AD} $ and $\overline {BC} $.<br><br></li>
+
+    <li>$\angle ADE \cong \angle CBE$ for the same reason.<br><br></li>
+
+    <li>$\overline {AD} \cong \overline {BC} $ because opposite
+    sides of a parallelogram are congruent.<br><br></li>
+
+    <li>Therefore, $\triangle AED \cong \triangle CEB$ by the
+    ASA congruence theorem.<br><br></li>
+
+    <li>$\overline {AE} \cong \overline {EC} $ because they are
+    corresponding parts of congruent triangles.<br><br></li>
+
+    <li>$\overline {BE} \cong \overline {ED} $ for the same
+    reason.<br><br></li>
+    </ul>
+
+    <p>
+    Are we done? YES! We’ve accomplished our goal, showing that the
+    diagonals cut each other in half.</p>
+
+    <p>That proof might have been written with a little more care
+    than you are used to. Your class will have to decide exactly
+    how much writing is expected in a proof. But notice that every
+    step in the argument comes from your list of postulates, so
+    that anyone who accepts the postulates can't disagree with your
+    conclusion — there is no “wiggle room” in this proof.</p>
+
+    <p>Meanwhile, you should have found that it is <em>not</em> true that
+    the diagonals of a parallelogram bisect the angles. You may
+    remember from last year that an example designed to show that
+      something isn’t true is called a <strong>counterexample</strong>. Here’s what a
+    counterexample to this statement might look like:</p>
+    
+    <figure>
+      <img src="../images/06-3-geometric-proof/5 diagram.tif.jpg">
+    </figure>
+
+    <p>You can see from this picture that it doesn’t look true that
+    the angles are bisected, and so it isn’t worth your time to
+    look for a proof.</p>
+
+    <p>In order to start the proof that the diagonals of a
+    parallelogram bisect each other, we had to know exactly what
+    the word “parallelogram” meant. That’s how we knew to start
+    with the statements “$\overline {AB} {\kern 1pt} {\kern 1pt}
+    \left\| {{\kern 1pt} {\kern 1pt} \overline {CD} } \right.$ and
+    $\overline {AD} \parallel \overline {BC} $”. Whenever we write
+    a proof, we’ll have to be very precise about what we mean by
+    the objects we’re talking about. For instance, last year you
+    worked with the definition of a square: a quadrilateral with
+    four congruent sides and four right angles.</p>
+
+    <div class="problem">
+      <p>Come up with a definition for each shape. Then compare
+      notes with your class if you haven’t already done so.</p>
+
+      <p class="problem-part">A rectangle</p>
+
+      <p class="problem-part">A parallelogram</p>
+
+      <p class="problem-part">A rhombus</p>
+
+      <p class="problem-part">A trapezoid</p>
+
+      <p class="problem-part">A kite</p>
+
+      <p class="problem-part">A circle</p>
+    </div>
+
+    <div class="problem">
+      <p>Now begin a section in your notebook labeled
+      “definitions,” again leaving space for you to add definitions
+      as you consider new shapes. Start with the definitions you
+      came up with in Problem 6.</p>
+    </div>
+
+    <div class="problem">
+      <p>Considering the shapes in the previous question might
+        remind you of some <em>more</em> things you know to be true about
+      geometry. Add them to your list of postulates and theorems
+      (which should they be?), and confer again with your
+      classmates.</p>
+    </div>
+
+    <p>Much as you can use congruent triangles to prove things
+    about diagrams, you can also use similar triangles.</p>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/midline theorem replacement.png" >
+    </figure>
+
+    <div class="problem">
+      <p>The diagram has been marked and labeled for you.</p>
+
+      <p class="problem-part">Based on the diagram, write what is
+      given.</p>
+
+      <p class="problem-part">Can you remember the two things you
+      showed about $\overline {DE} $ and $\overline {BC} $ last
+      year? If not, try drawing this diagram with triangles of a
+      few different shapes, and take some measurements in order to
+      make a conjecture.</p>
+
+      <p class="problem-part">With an eye towards proving these
+      results, prove that there are similar triangles in this
+      picture (The three similarity
+      theorems are AA, SSS, and SAS). What is the scale factor?</p>
+
+      <p class="problem-part">Finish proving what you wrote in
+      part b about $\overline {BC} $ and $\overline {DE} $.</p>
+    </div>
+
+    <p>You’ve proven a couple of new things so far in this lesson.
+    The interesting thing is, not only do you know those things,
+    but you have proofs of them. Write the new things you know
+    under the column labeled “theorems” on your list. Whenever you
+    prove something new that you think may come in handy later, or
+    that you just think is interesting or important, add it to this
+    theorem list.</p>
+
+    <p>By the way, is there anything under “postulates” that you
+    could prove and make a theorem?</p>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>In this problem, you will prove that the diagonals of a
+      rectangle are congruent.</p>
+
+      <p class="problem-part">Draw a rectangle that can stand for
+      any rectangle and label the vertices.</p>
+
+      <p class="problem-part">In terms of your diagram, write
+      what is given and what is to be proved.</p>
+
+      <p class="problem-part">Finish the proof.</p>
+    </div>
+
+    <p>In the following five problems, you should mark up the
+    diagram with the starting information before you attempt a
+    proof.</p>
+
+    <div class="problem">
+      <p>Given: $\overline {AB} \cong \overline {EF} $, $\angle
+        A \cong \angle E$, $\angle C \cong \angle D$</p> <p>Prove: $\overline {BC} \cong \overline {DF} $</p>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/Two%20triangles.svg" >
+    </figure>
+    </div>
+    
+    <div class="problem">
+      <p>Given: $\overline {AE} \cong \overline {CE} $,
+        $\overline {BE} \cong \overline {ED} $</p> <p>Prove: $\overline {AD} {\kern 1pt} {\kern 1pt} \left\|
+      {{\kern 1pt} {\kern 1pt} \overline {BC} } \right.$</p><p>(In this problem and in the remaining problems in this
+      lesson, assume that lines that appear to be straight in a
+      figure really are straight.)</p>
+
+    <figure class="fig-50">
+      <img src="../images/06-3-geometric-proof/hourglass replacement.png" >
+    </figure>
+    </div>
+    
+    <div class="problem">
+      <p>There is a joke about a mathematician asked to describe an
+      algorithm for boiling an egg. She responds, “you take a pot,
+      fill it with water, put in an egg, put the pot on the burner,
+      turn the burner on, and wait 20 minutes.” “All right,” you
+      say, but what if the pot is already sitting on the burner,
+      filled with water?” “Then,” she says, “you take the pot off
+      the burner and empty the water, and then you’ve reduced the
+      problem to the previous case.”</p>
+
+      <p class="problem-part">Suppose, in the diagram below, that
+      $\overline {PA} \cong \overline {RK} $, $\angle A \cong
+      \angle K$<br> Prove: The length of $\overline {KA} $ is twice the length of
+      $\overline {KS} $.</p>
+
+      <p class="problem-part">Now suppose instead that
+      $\overline {PA} \cong \overline {RK} $, $\overline {PA}
+      {\kern 1pt} {\kern 1pt} \left\| {{\kern 1pt} {\kern 1pt}
+      \overline {KR} } \right.$ <rb>Prove: The length of $\overline {KA} $ is twice the length
+      of
+      $\overline {KS} $.</p>
+  
+    <figure>
+      <img src="../images/06-3-geometric-proof/Hourglass%202.svg" >
+    </figure>
+  </div>
+    
+    <div class="problem">
+      <p>Given: the angles and sides as marked; W, A, and T are
+      points on a line segment.<p>
+      <p>Prove: $m \angle T = 50^\circ$</p>
+
+    <figure class="fig-50">
+      <img src="../images/06-3-geometric-proof/WATCH.svg" >
+    </figure>
+    </div>
+    
+    <div class="problem">
+      <p>Given: $TI = 3NI$, $RI = 3AI$</p> <p>Prove: $\overline {TR} {\kern 1pt} {\kern 1pt} \left\|
+      {{\kern 1pt} {\kern 1pt} \overline {NA} } \right.$ and $TR =
+      3NA$</p>
+
+    <figure class="fig-50">
+      <img src="../images/06-3-geometric-proof/RI%20is%20three%20times%20AI.svg" >
+    </figure>
+  </div>
+    
+    <div class="problem">
+      <p>Which of these statements appear true, and which are
+      false? If they are true, you don’t need to prove them, but if
+      you think they are false you should provide a
+      counterexample.</p>
+
+      <p class="problem-part">If one isosceles triangle has side
+      lengths of 5 cm and 5 cm, and so does another, then those
+      triangles are congruent.</p>
+
+      <p class="problem-part">In an obtuse triangle, label the
+      longest side c and the other two sides a and b. Then ${a^2}
+      + {b^2} &lt; {c^2}$.</p>
+
+      <p class="problem-part">The three medians of a triangle
+      always cross in a single point.</p>
+
+      <p class="problem-part">If someone tells you three positive
+      integer lengths, you will always be able to draw a triangle
+      that has those lengths.</p>
+    </div>
+
+    <p>For each figure, determine as many missing sides and angles
+    as you can. (You don’t need to write a formal proof of your
+    answers.) You will not be able to find $all$ of the sides and
+    angles. Avoid using trigonometry.</p>
+
+    <div class="problem">
+      <p><img src="../images/06-3-geometric-proof/parallelogram%203.svg" ></p>
+    </div>
+
+    <div class="problem">
+      <p><img src="../images/06-3-geometric-proof/parallelogram%204.svg" ></p>
+    </div>
+
+    <div class="problem">
+      <p>In the diagram below, lines that appear parallel are
+      parallel. Find the length of the line segment .</p>
+
+    <figure>
+
+      <img src="../images/06-3-geometric-proof/midline%20practice%20problem.svg" >
+    </figure>
+    </div>
+    
+    <h2>Going Further:
+    Longer Proofs; Pitfalls When Writing Proofs</h2>
+
+    <p>Sometimes the only way you can see that a statement must be
+    true is to talk yourself through a series of steps in
+    proof-like form. It would be hard to come to know the statement
+    to be proven below, in any other way. In addition, the
+    statement’s proof deals with some complications that you will
+    sometimes come across.</p>
+
+    <figure class="fig-50">
+      <img src="../images/06-3-geometric-proof/demo proof replacement.png" >
+    </figure>
+
+    <p>Given: $\overline {XQ} {\kern 1pt} \cong \overline {XU} $ and$\angle XQY \cong \angle XUZ$.<br>
+    Prove:$\angle UZY \cong \angle QYZ$.</p>
+
+    <p>“<em class="vocab">Working backwards and forwards”</em> will be very important in
+    the planning stages of this proof. At first glance, it seems
+    that we should try to prove triangles $QYZ$ and $UZY$ congruent, since those are the triangles that contain the two
+    angles we want to prove congruent.</p>
+
+    <div class="problem">
+      <p>Find as much evidence as you can that $\triangle QYZ \cong \triangle UZY$.</p>
+    </div>
+
+    <p>In the previous problem you should have found a (shared)
+    side and an angle, which by themselves are not enough to prove
+    the triangles congruent. So we need to find another strategy.
+    It may be that, using some other pair of congruent triangles in
+    the figure, we can find that third piece of information
+    needed
+    to prove $\triangle QYZ \cong \triangle UZY$. Or, perhaps the solution is something completely
+    different. Instead of doing all of our planning backwards,
+    let’s return to thinking forwards and just look for any pair of
+    triangles that might be congruent.</p>
+
+    <div class="problem">
+      <p>Name some other pairs of triangles that might be congruent
+      in the figure. Try to find enough evidence for their
+      congruence.</p>
+    </div>
+
+    <p>The triangles that we can actually prove congruent may have
+    been hard to spot. As a hint, they share angle $X$. If you
+    haven’t already, prove that these two
+    triangles are congruent.</p>
+
+    <p>Now that we have congruent triangles, we can mark all of
+    their sides and angles congruent, as follows:</p>
+
+    <figure class="fig-50">
+      <img src="../images/06-3-geometric-proof/demo proof prettier continuation.png" >
+    </figure>
+
+    <div class="problem">
+      <p>Now we can return to the question of how to prove$\angle
+      UZY \cong \angle QYZ$. Using the information we’ve derived,
+      argue that these angles are congruent.</p>
+    </div>
+
+    <p>One way to complete the proof is to notice that, since we
+    now know $\triangle XYZ$
+    is isosceles, $\angle XZY \cong \angle XYZ$. Since these
+    angles are both composed of two parts, and the parts $\angle
+    XZU$ and$\angle XYQ$ are congruent to each other, that means
+    the remaining parts must be equal as well. In other words,
+    $\angle UZY \cong \angle QYZ$! Though this kind of
+    part/whole reasoning doesn’t appeal to theorems or
+    postulates that are most likely on your list, it is a common
+    type of geometrical reasoning. Your class can decide what kind
+    of language it wants to use for these types of arguments.</p>
+
+    <p>After all that, we have used congruent triangles to figure
+    out why $\angle UZY \cong \angle QYZ$. However, much of the
+    argument was probably done
+    orally, in combination with a marked-up diagram. It is now time
+    to</p>
+
+    <div class="problem">
+      <p>Write a formal proof of the fact that $\angle UZY \cong
+      \angle QYZ$.</p>
+    </div>
+
+    <p>In the proof you just wrote, you took pains to make sure
+    that each statement was correctly justified. However, it is
+    easy to be sloppy when writing proofs. Two examples of proofs
+    follow that illustrate some mistakes that are easy to make.</p>
+
+    <p>Consider the proof below showing that, if a quadrilateral
+    has two pairs of
+    congruent, opposite angles, then the quadrilateral is a
+    parallelogram.</p>
+    
+<ul style="margin-left: 21%; width: 79%;">
+    <li>First, draw a quadrilateral that can stand for any
+    quadrilateral with
+    congruent, opposite angles. Label the vertices $ABCD$, where
+    $\angle A \cong \angle C$ and $\angle B \cong \angle D$.<br><br></li>
+
+    <li>Given: Quadrilateral ABCD, $\angle A \cong \angle C$,
+    $\angle B \cong \angle D$.<br><br></li>
+
+    <li>Prove: $\overline {AB} \parallel \overline {CD} $, $\overline {BC} \parallel \overline {AD} $.<br><br></li>
+
+    <li>Draw the diagonal $\overline {AC} $.<br><br></li>
+
+<li>    $\angle B \cong \angle D$, as given.<br><br></li>
+
+    <li>$\overline {AB} \cong \overline {CD} $ and $\overline
+    {BC} \cong \overline {AD} $, because opposite sides of a
+    parallelogram are congruent.<br><br></li>
+
+    <li>Therefore, $\triangle ABC \cong \triangle CDA$ by the SAS congruence theorem.<br><br></li>
+
+    <li>Then $\angle DAC \cong \angle BCA$ since they are
+    corresponding parts of congruent triangles.<br><br></li>
+
+    <li>That makes $\overline {BC} \parallel \overline {AD} $ since alternate interior angles are
+    congruent.<br><br></li>
+
+    <li>Similarly, $\angle BAC \cong \angle DCA$, again since
+    they are corresponding parts of congruent triangles.<br><br></li>
+
+    <li>So $\overline {AB} \parallel \overline {CD} $.<br><br></li>
+
+    <li>Therefore, $ABCD$ is a parallelogram.<br><br></li>
+    </ul>
+
+    <div class="problem">
+      <p>This proof may seem to work quite well. However, it
+      contains a major error that invalidates the proof entirely.
+      What is this error?</p>
+    </div>
+
+    <div class="problem">
+      <p>This type of error is sometimes called <em class=vocab>circular reasoning</em>. Why do you suppose this phrase is used?</p>
+    </div>
+
+    <div class="problem">
+      <p>Do you still think it’s true that, if a quadrilateral has
+      two pairs of congruent, opposite angles, it must be a
+      parallelogram?</p>
+    </div>
+
+    <p>Finally, here is an example of a proof that just can’t be
+    right: if a triangle is
+    isosceles, then it must be equilateral. You have seen lots of
+    isosceles triangles
+    that are not equilateral, so you know that this proof must
+    contain a mistake! The challenge is to find out what that
+    mistake is. Remember that, if you agree with every step of a
+    proof, you have no choice but to accept its conclusion.</p>
+
+<ul style="margin-left: 21%; width: 79%;">    
+  <li>Given: $\triangle ABC$ with $\overline {AB} \cong \overline {AC} $.<br><br></li>
+
+    <li>Prove: $\overline {AC} \cong \overline {BC} $ (which would
+    also make $\overline {AC}$ congruent to $\overline {AB} $).<br><br></li>
+
+    <li>Draw the median from $C$ and label the point where it hits
+    $\overline {AB} $ as $D$.<br><br></li>
+
+    <li>$\overline {AD} \cong \overline {DB} $ because $\overline
+    {CD} $ is a median.<br><br></li>
+
+    <li>Also, $\angle CDA \cong \angle CDB$ because, as a median,
+    $\overline {CD} $ splits $\overline {AB} $ into two right
+    angles.<br><br></li>
+
+    <li>$\overline {CD} \cong \overline {CD} $ because any line
+    segment is congruent to itself.<br><br></li>
+
+    <li>Therefore, by SAS congruence, $\triangle CAD \cong \triangle CBD$.<br><br></li>
+
+    <li>Since they are corresponding parts of congruent triangles,
+    $\overline {AC} \cong \overline {BC} $.<br><br></li>
+
+    <li>Therefore, all three sides of $\triangle ABC$ are congruent, making it
+    equilateral.</li>
+    </ul>
+    
+    <div class="problem">
+      <p>Find the flaw in the proof above.</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>Which of the following proofs are “airtight”?</p>
+
+      <p class="problem-part">Prove that, in a quadrilateral, if
+      a pair of opposite sides
+      is both congruent and parallel, then the quadrilateral is a
+        parallelogram.<br><br>
+
+      Proof: Draw segments $\overline {AB} $ and $\overline {CD}
+      $ so as to be congruent and parallel. Connect points A and
+      C. Then connect points B and D. Because $\overline {AB} $ and $\overline {CD} $ are congruent and parallel,
+      the line segments $\overline {AC} $ and $\overline {BD} $ have to slope in the
+      same direction. Therefore, $\overline{AC} \parallel \overline{BD}$, and so ABCD is a
+      parallelogram.</p>
+
+      <p class="problem-part">Prove that the diagonals of a
+      rhombus bisect each other.<br><br>
+
+      Proof: We’ve already proven, and put on our theorem list,
+      that the diagonals of a parallelogram bisect each other. A
+      rhombus is a type of parallelogram. Therefore, any
+      statement
+      that applies to a parallelogram also applies to a rhombus,
+      and so the diagonals of a rhombus bisect each other.</p>
+
+      <p class="problem-part">Prove that the diagonals of a
+      parallelogram bisect each other. (We’ve already proved this,
+      but here is an alternate version of a proof.)<br><br>
+
+      Proof: Draw parallelogram $ABCD$, and add diagonals that
+      cross at E. We’re going to show that triangles $AED$ and
+      $CEB$ are congruent. The two pairs of angles needed for
+      congruence are $\angle DAE \cong \angle ACB$ and $\angle
+      ADB \cong \angle DBC$.
+      Those pairs really are congruent because they are both pairs
+      of alternate interior angles created by parallel lines and a
+      transversal. Also, sides $\overline {AD} $ and $\overline
+      {BC} $ are congruent because they are opposite sides of a
+      parallelogram. So now we have enough to show triangles $AED$ and $CEB$ are congruent, by ASA. Therefore, the diagonals do
+      bisect each other: $\overline {DE} \cong \overline {EB} $ and $\overline {AE} \cong \overline {EC} $ as they are
+      corresponding parts of congruent triangles.</p>
+    </div>
+
+    <div class="problem">
+      <p>The following are situations in which you might want to
+      add an extra line to a diagram to help you with a proof. For
+      each situation, say whether there could be multiple lines
+      that fit the description, exactly one line that would fit the
+      description, or whether a line that fits the description
+      might not exist at all.</p>
+
+      <p class="problem-part">Given line line $AB$ and point $C$
+      not on it, draw a line segment from $C$ to $AB$.</p>
+
+      <p class="problem-part">Given line $AB$ and point $C$ not on
+      it, draw a perpendicular line segment from $C$ to line
+      $AB$.</p>
+
+      <p class="problem-part">Given line $AB$ and point $C$ not on
+      it, draw a line through $C$ parallel to line $AB$.</p>
+
+      <p class="problem-part">Given parallelogram $ABCD$, draw
+      diagonal $AC$ so that it bisects angles $A$ and $C$.</p>
+
+      <p class="problem-part">Given triangle $ABC$, draw a line
+      segment from points $D$ and $E$, the midpoints of $\overline
+      {AB} $ and $\overline {BC} $, respectively, so that
+      $\overline {DE} $ is parallel to and half the length of
+      $\overline {AC} $.</p>
+
+      <p class="problem-part">Given triangle $ABC$, draw the
+      perpendicular bisector of side $\overline {AB} $ from
+      $C$.</p>
+    </div>
+  </section>
+
+  <section class="problems">
+  <h2>Problems</h2>
+    <div class="problem">
+      <p>At the beginning of a lesson, you found that the diagonals
+      of a parallelogram do not always bisect the angles from which
+      they are drawn. How about for a rhombus? Prove it or find a
+      counterexample.</p>
+    </div>
+
+    <div class="problem">
+      <p>For which of the following shapes — square, rectangle,
+      parallelogram, trapezoid, kite, rhombus — are the diagonals
+      always perpendicular to each other? Investigate with
+      sketches.</p>
+    </div>
+
+    <div class="problem">
+      <p>For the shapes in the previous problem where the answer is
+      “yes,” prove your response. Before beginning each proof,
+      carefully state the given and what is to be proved. Hint: how
+      can you possibly show that an angle is 90 degrees if you
+      don’t know the measures of any other angles in the
+      figure?</p>
+    </div>
+
+    <p>The angles below are called <strong>central angles</strong> of each circle.
+    (The vertex of each angle is on the center of the circle.)</p>
+  <figure>
+      <img src="../images/06-3-geometric-proof/central angles together.png">   
+  </figure>
+    
+    <p>If you use a straight line segment to connect the points
+      where the angle meets the circle, you get a <em class="vocab">chord</em> of the
+    circle.</p>
+
+    <figure class="two-up">
+    <img src="../images/06-3-geometric-proof/chord 1.png">
+    <img src="../images/06-3-geometric-proof/chord 2 tighter.png">  
+  </figure>  
+    
+    <div class="problem">
+      <p>Prove that if a circle contains two central angles of the
+      same size, then their
+      corresponding chords are congruent.</p>
+    </div>
+
+    <div class="problem">
+      <p>Determine as many missing lengths and angles as you can.
+      For each angle or length you find, give the reason you used
+      to figure it out.</p>
+    </div>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/parallelogram%20in%20triangle.svg" >
+    </figure>
+
+    <div class="problem">
+      <p>Find $x$. Write out the reasoning you used.</p>
+    <figure>
+      <img src="../images/06-3-geometric-proof/hourglass%203.svg" >
+    </figure>
+    </div>
+
+    <div class="problem">
+      <p>If you make an “X” shape in between
+      two parallel lines, as in the figure for
+      the previous problem, will the resulting
+      triangles always be similar? Either prove
+      it, or draw an “X” shape that creates
+      non-similar triangles.</p>
+    </div>
+
+    <div class="problem">
+      <p>Given: S is the midpoint of $\overline {WD} $, R is
+      the midpoint of $\overline {DO} $. Also, $\overline {WD}
+      \cong \overline {DO} $.<br>
+      Prove: $\overline {WR} \cong \overline {SO} $</p>
+    </div>
+
+    <figure class="fig-50">
+    <img src="../images/06-3-geometric-proof/Prove%20WR%20is%20SO%20NS.tif.jpg" >
+    </figure>
+
+    <div class="problem">
+      <p>Emmy and Sophie are standing in the center of the free
+      throw circle on a basketball court. They want to measure
+      their distance to the special free-throw line they put in for
+      Emmy’s little brother — it’s a chord of the circle positioned
+      close to the hoop.</p>
+
+      <p>Emmy says, “It’s easy — we just measure along a perpendicular
+      path from where we are standing to the special free-throw
+      line. After all, that’s how you find the distance from a
+      point to a line.</p>
+
+<p>      Sophie says, “You’re right. And I think the line we measure
+      along will not only be
+      perpendicular to the special free-throw line, but it will
+  <em>bisect</em> the line as well.”</p>
+    </div>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/Emmy%20and%20Sophie.svg" >
+    </figure>
+
+    <p class="problem-part">Is Sophie right? Prove it or find a
+    counterexample.</p>
+
+    <p class="problem-part">Suppose that Emmy and Sophie
+    realize that they don’t have a ruler, but they remember that
+    the radius of the circle they’re standing in is 10 feet, and
+    the length of the special free-throw line is 14 feet. Help them
+    calculate their distance from the line.</p>
+
+    <div class="problem">
+      <p>What’s the distance from the center of a 41-foot radius
+      circle to an 80-foot chord?</p>
+    </div>
+
+    <div class="problem">
+      <p>Someone saw this circle with chord of length $2\sqrt 3 $ drawn in. They connected the endpoints of the chord to the
+      center of the circle. Find as many lengths and angles in this
+      picture as you can. Also find the measure and lengths of each
+      of the 2 arcs that the chord separates the circle into.</p>
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/Circle%20with%20chord%20of%20length%20.svg" >
+    </figure>
+    </div>
+    <div class="problem">
+      <p>Given: $\overline{CB} \cong \overline{CD}$ and $\overline{BA} \cong \overline{DE}$  <br>
+      
+      Prove: $\angle BCF \cong \angle DCF$
+        
+        <figure class="fig-50">
+        <img src="../images/06-3-geometric-proof/10-2-3 geometric proof 41.svg">
+        </figure>
+        
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+    <p class="problem-part">
+    Simplify $\frac{{{x^{ - 3}}{y^{ - 4}}}}{{{x^2}{y^{ - 6}}}}$</p>
+
+    <p class="problem-part">
+    Simplify $x^2 + \left( \frac34 x \right)^2$</p>
+
+    <p class="problem-part">
+    Reduce $\frac{{3{x^2}}}{{6xy - 9{x^3}}}$</p>
+
+    <p class="problem-part">
+    Reduce $\frac{{{x^2} - 1}}{{{x^2} - 2x + 1}}$</p>
+
+    <p class="problem-part">
+    Solve for $x$ if ${x^2} + 1728x = 1729$</p>
+  </div>
+    
+    <div class="problem">
+      <p>Given: $\overline{PT} \cong \overline{WT}$ and $\angle 1 \cong \angle 2$ <br>
+      
+      Prove that $\triangle ZYT$ is
+      isosceles</p>
+      
+      <figure class="fig-50">
+      <img src="../images/06-3-geometric-proof/10-2-3 geometric proof 43.svg">
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Given: $ADCB$ and $EFCB$ are parallelograms.<br>
+       Prove: $\triangle AEB \cong \triangle DFC$
+ 	</p>
+      <figure>
+        <img src="../images/06-3-geometric-proof/overlapping%20triangles%203.svg">
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Given: $\overline {AB} \cong \overline {CB} $,
+      $\overline {AD} \cong \overline {DC} $</p>
+
+      <p class="problem-part">Prove that the two triangles
+      are
+      congruent.</p>
+
+      <p class="problem-part">Can you then show that $\overline
+      {AD} \cong \overline {BC} $?</p>
+      
+      <figure>
+        <img src="../images/06-3-geometric-proof/trick%20fake%20parallelogram.svg">
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>Let ABC be any triangle. Choose point P somewhere on side
+      AB of the triangle, and draw a line through P parallel to
+      $\overline {CB} $. Where this line intersects $\overline
+      {AC} $, label the point Q.</p>
+
+      <p class="problem-part">Prove that $\frac{{AP}}{{AB}} =
+      \frac{{AQ}}{{AC}}$.</p>
+
+      <p class="problem-part">Prove that $\frac{{AP}}{{PB}} =
+      \frac{{AQ}}{{QC}}$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Gina did the previous problem and
+      wonders if it’s possible that $AP = x - 2$, $AB = x - 1$, $AQ = x - 3$, and $AC = x$. What should you tell her?
+      Provide two explanations:</p>
+
+      <p class="problem-part">The first explanation should
+      involve solving an algebraic equation.</p>
+
+      <p class="problem-part">The second explanation should
+      involve considering a proportion.</p>
+    </div>
+
+    <div class="problem">
+      <p>The diagram below was formed by starting with any old
+      quadrilateral, then connecting the midpoints of each
+      side.</p>
+
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/Varignon%20quadrilateral.svg" >
+    </figure>
+
+    <p class="problem-part">Try this several times on your own,
+    with many different quadrilaterals. Form a conjecture about
+    what always happens.</p>
+
+    <p class="problem-part">Prove your conjecture. (Hint: this is
+    a problem where adding extra lines is helpful.)</p>
+      
+    </div> 
+    
+    <h2>Exploring
+    in
+    Depth</h2>
+    
+    <div class="problem">
+      <p>Given: $\overline{RS}$ is the
+      perpendicular
+      bisector of $\overline{PQ}$, and $\angle PST \cong \angle QSV$  <br>
+      
+      Prove: $\overline{ST} \cong \overline{SV}$  </p>
+
+
+    <figure>
+      <img src="../images/06-3-geometric-proof/10-2-3 geometric proof 49.svg" >
+    </figure>
+    </div>
+    
+    <div class="problem">
+      <p>Draw triangle ABC, and choose X to be
+      a point on $\overline {AB} $. Draw $\overline {CX} $.
+      Now add two lines to the picture that are parallel to
+      $\overline {CX} $: one through A and the other through B.
+      Y is the point where the first added line intersects line CB.
+      (You may need to
+      extend $\overline {CB} $ to find this point.) Z is the
+      point where the second added line intersects line AC.</p>
+
+<p>      Now you have the line segments $\overline {AY} $,
+      $\overline {CX} $, and $\overline{BZ}$ . This problem will lead you
+      towards proving a relationship between
+      the lengths of those three segments.</p>
+
+      <p class="problem-part">Find two pairs of similar
+      triangles
+      in this figure, each pair involving
+      the segment $\overline {CX} $.</p>
+
+      <p class="problem-part">Your two pairs of similar triangles
+      allow you to write two proportions. Using these proportions,
+      and facts such as $AB = AX + XB$, find an equation that
+      relates $\overline {AY} $, $\overline {CX} $,
+      and $\overline {BZ} $.</p>
+
+      <p class="problem-part">Prove that your answer is
+      equivalent to $\frac{1}{{AY}} + \frac{1}{{BZ}} =
+      \frac{1}{{CX}}$.</p>
+    </div>
+
+    <p></p>
+  </section>
+
+
+
+
+
+
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

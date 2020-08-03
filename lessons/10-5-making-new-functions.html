@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>making new functions</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/10-5-making-new-functions.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-10   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 5:
+
+
+Making New Functions 
+</h1>
+    
+    
+
+<article>
+
+  <section class="development">
+    <h2>Introduction</h2>
+
+    <p>In previous lessons, you may have used exponential, logarithmic,
+    and power functions to model data. For instance, if you had evidence that the data could
+    be modeled by an exponential function, then your task was to
+    find values for $a$ and $b$ in the function type $f(x) = a{b^x}$.
+    However, one problem in the Exponential Functions lesson involved a kind of exponential
+    function for which it wouldn’t work simply to find $a$ and $b$. A 180$^\circ$ cup of coffee is left out to cool in a 70$^\circ$ room.
+    Below is a graph showing the temperature of the coffee over time.</p>
+    
+   <figure>
+      <img src="../images/10-5-making-new-functions/Lesson 5 - intro graph.tif.jpg">
+    </figure>
+    
+    <p>A function that does a decent job of modeling this data is
+    $f(x) = 99.5{(.895)^x} + 71.$ You can think of the function as
+    a translation
+    of 71 units up of the more familiar function $g(x) =
+    99.5{(.895)^x}$.</p>
+
+    <p>It’s easy to imagine changing the vertical shift of $g$ in
+    order to produce lots of different functions, perhaps
+    corresponding to cooling curves in rooms of different
+    temperatures. More generally, in modeling data it’s useful to
+    be able to start with basic function types and use
+    transformations in order to control the shape and position of
+    those graphs. We will begin our study of this technique by
+    examining more abstract types of functions.</p>
+
+    <h2>Development</h2>
+
+    <p>Below is a graph of a function $f$. Note that $f$ is not one of
+    the function types you have studied before. It does not have a
+    nice formula. But its graph is still enough for you to answer
+    questions about input and output.</p>
+    
+    <figure class="fig-50">
+      <img src="../images/10-5-making-new-functions/Lesson 5 - development.tif.jpg">
+    </figure>
+    
+    <p>A table of values for the function might look like this:</p>
+
+    <table id="table-1" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>1</td>
+
+          <td>2</td>
+
+          <td>3</td>
+
+          <td>4</td>
+
+          <td>5</td>
+
+          <td>6</td>
+
+          <td>7</td>
+
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$f(x)$</p>
+          </td>
+
+          <td>---</td>
+
+          <td>2</td>
+
+          <td></td>
+
+          <td></td>
+
+          <td></td>
+
+          <td></td>
+
+          <td>5</td>
+
+          <td>---</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem">
+<p>
+
+      Fill in the four missing values.
+
+</p>
+</div>
+
+    <p>Note that we say “a table of values” “might” look like this
+    because there are far more points on the graph of this
+    function. If you wanted to, you could use $x = 3.5$ in the
+    table, or even $x = \pi $. The dashes in the table are
+    there because the function is not defined for certain inputs:
+    specifically, for $x &lt; 2$ and $x &gt; 7$. Another way of
+      saying this is that the <em class="vocab">domain</em> of the function is $2 \le x \le
+    7$.</p>
+
+    <div class="problem">
+<p>
+
+      Using the same function f as in problem 1, draw the following
+      graphs. If you need help getting started, remember that an
+      expression like “$f(4) + 2$ ” means “two more than the value
+      of $f(4)$.”
+
+
+</p>
+<p class="problem-part"> $y = f(x) + 2$</p>
+
+      <p class="problem-part"> $y = \frac{1}{2}f(x)$</p>
+
+      <p class="problem-part"> $y = - f(x)$</p>
+    </div>
+
+    <p>In Problem 2, you saw examples of a vertical translation, a
+    vertical contraction, and a reflection over the $x$-axis.
+    Horizontal transformations merit a little more attention.</p>
+
+    <div class="problem">
+<p>
+
+      Much as we can define the function $y = f(x) + 2$, we can
+      define the function $y = f(x - 2)$.
+
+
+</p>
+<p class="problem-part"> Find the output of the function $y
+      = f(x - 2)$ for the input $x = 5$.</p>
+
+      <p class="problem-part"> Make a table of values with the
+      headings $x$ and $y = f(x - 2)$, and fill it in. Take care to
+      think about which values of $x$ it makes sense to use.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Using the values from your table in Problem 3, graph the
+      function $y = f(x - 2)$. How was the graph of $y = f(x)$
+      transformed to make this new graph?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      What is the domain of the function you graphed in
+      Problem 4?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Conjecture a formula (like $y = f(x - 2)$ ) that translates
+      the graph of $y = f(x)$ three units to the left. Then make a
+      table and/or graph to see if you are right.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Now consider the function $y = f(2x)$. First find the output
+      when $x = 2$. Then make a table of values with the headings
+      $x$ and $f(2x)$, and fill it in. Take care to think about
+      which values of $x$ it makes sense to use.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Using the values in your table from Problem 7, graph the
+      function $y = f(2x)$. Describe the transformation of the
+      graph of $y = f(x)$ this represents.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      What is the domain of the function you graphed in
+      Problem 8?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Conjecture a formula that horizontally stretches the graph of
+      $y = f(x)$ so that each point is three times farther away
+      from the y-axis.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Use a similar process to graph $y = f(-x)$ . What transformation of the
+      graph of $y = f(x)$ does this represent?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Find a formula for $f( - x)$ if $f(x) = {x^2} + 2x - 8$.
+      Then sketch the graphs of $y = f(x)$ and $y = f( - x)$ on the
+      same axes.
+
+</p>
+</div>
+
+    <p>Using transformations is one way to build a new function
+    from a known function. You can also combine two functions to
+    get a third.</p>
+
+    <div class="problem">
+<p>
+
+      Let $f$ be the function from the introduction (shown below, on
+      the left), and $g$ be the function defined by the graph below,
+      on the right.
+
+</p>
+
+
+
+<figure class="fig-50 two-up">
+  <img src="../images/10-5-making-new-functions/Lesson 5 - graph 13 left.tif.jpg">
+  <img src="../images/10-5-making-new-functions/Lesson 5 - graph 13 right.tif.jpg">
+  <!-- following div is a "clearfix" hack; without it, the "a." for first problem part doesn't start on next line. -->
+  <div style="float: none; clear: both; display: table;"></div>
+</figure><br>
+
+
+<p class="problem-part"> The function $h$ is defined by the
+      equation $h(x) = f(x) + g(x)$.
+      For example, to find the value of $h(3)$, you would
+      add
+      together the values of $f(3)$ and $g(3)$. Find $h(3)$, then sketch a
+      graph of $h$.</p>
+
+      <p class="problem-part"> Now sketch a graph of $j(x) = f(x) -
+      g(x)$.</p>
+    </div>
+
+    <p>The following exercise illustrates another way to combine
+    functions, known as <em class="vocab">composition</em> of functions. Composition is
+    when you “chain” two functions together, by taking the output
+    of one function and using it as the input to a second function.
+    To see why this might be useful, consider the following
+    situation.</p>
+
+    <div class="problem">
+<p>
+
+      Howie is chewing Super-Bubble gum and blows a super-bubble.
+      The radius (in inches) of his bubble increases with time (in
+      milliseconds) in a way given by the equation $r(t) = 2t^{0.25}$. What is the
+      volume of Howie’s bubble 5
+      milliseconds after he blows it?
+
+</p>
+</div>
+
+    <p>In order to solve the previous problem, you had to do two
+    things. First, you had to find the radius of the bubble at 5
+    milliseconds. Then you had to use the radius you found in order
+    to find the volume of the bubble. In function language, if $V$ is
+    the familiar function $V(r) = \frac{4}{3}\pi {r^3}$ giving the
+    volume of the bubble in terms of the radius, then you first
+    found $r(5)$, and then found $V(r(5))$.</p>
+
+    <div class="problem">
+<p>
+
+
+</p>
+<p>Using the functions $r$ and $V$ as in the previous problem,</p>
+
+      <p class="problem-part"> find $V(r(3))$.</p>
+
+      <p class="problem-part"> find a formula, in terms of $t$, for
+      $V(r(t))$.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let functions $f$ and $g$ be defined as in problem 13.
+
+
+</p>
+<p class="problem-part"> Find $f(g(3))$.</p>
+
+      <p class="problem-part"> Find $g(f(3))$.</p>
+
+      <p class="problem-part"> Find $f(g(5))$.</p>
+
+      <p class="problem-part"> Sketch a graph of $g\left( {f\left(
+      x \right)} \right)$.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      The tribble population grows exponentially, and the level
+      of the squeaky noise they collectively make is directly
+      proportional to the size of their population. Let the tribble
+  functions be defined as follows:</p>
+
+      <p>$P$ outputs the tribble population at time $t$.</p>
+
+      <p>$N$ outputs the noise level produced by a given number
+        of tribbles.</p>
+
+      <p>$D$ outputs the noise level given a time $t$.
+
+</p>
+
+      <p>Express one of these functions as a composition of the two others.</p>
+
+    </div>
+
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+<p>
+
+      Let a function $f$ be defined by the graph below. In your
+      notebook, sketch a graph of each of the following
+      equations.
+
+</p>
+
+<figure class="fig-50">
+	<img src="../images/10-5-making-new-functions/Lesson 5 - graph 18.tif.jpg">
+</figure>
+
+<p class="problem-part"> $y = f(x - 4)$</p>
+
+      <p class="problem-part"> $y = f(x) - 2$</p>
+
+      <p class="problem-part"> $y = f( - x)$</p>
+
+      <p class="problem-part"> $y = - f(x)$</p>
+
+      <p class="problem-part"> $y = f(\frac{1}{2}x)$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Without using your calculator, sketch a reasonable graph of
+      $j(x) = \frac{1}{x}$. Identify the coordinates of three
+      points on the graph. Then, without using your calculator,
+      graph the following equations, including the images of the
+      three points you identified. If the asymptotes move away from
+      the axes, indicate them with dashed lines.
+
+
+</p>
+<p class="problem-part"> $y = j(x) + 1$</p>
+
+      <p class="problem-part"> $y = j(x) - 0.5$</p>
+
+      <p class="problem-part"> $y = 0.4j(x)$</p>
+
+      <p class="problem-part"> $y = - 1.5j(x)$</p>
+
+      <p class="problem-part"> $y = 2j(x - 2)$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Write equations for each of the graphs you sketched in the
+      previous problem.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Each graph below is a transformation of the graph of $y =
+      {0.5^x}$. For each graph, write an equation that models it.
+
+
+</p>
+
+
+      <p class="problem-part">
+      <figure class="fig-50">
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 21 a.tif.jpg">
+      </figure>
+      </p>
+
+      <p class="problem-part">
+      <figure class="fig-50">
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 21 b.tif.jpg">
+      </figure>
+      </p>
+
+      <p class="problem-part">
+      <figure class="fig-50">
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 21 c.tif.jpg">
+      </figure>
+      </p>
+      
+      <p><em>Problem continued on the next page.</em></p>
+      
+      <p class="problem-part new-page">
+      <figure class="fig-50">
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 21 d.tif.jpg">
+      </figure>
+      </p>
+
+      <p class="problem-part">
+      <figure class="fig-50">
+        <img src="../images/10-5-making-new-functions/Lesson5 - graph 21 e.tif.jpg">
+      </figure>
+      </p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Let $a$ and $b$ be functions defined by their graphs below.
+
+
+      <figure class="fig-50">
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 22.tif.jpg">
+      </figure>
+
+
+
+      Sketch a graph of…
+
+
+</p>
+<p class="problem-part"> $y = a(x) + b(x)$</p>
+
+      <p class="problem-part"> $y = a(x) - b(x)$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let $f(x) = 3x$ and $g(x) = 2x + 1$. Sketch the graph of $h(x) = f(x) + g(x)$.
+      What is its formula?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Let $c$ and $d$ be functions defined by their tables below.
+
+
+</p>
+<table id="table-2" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$x$</p>
+            </td>
+
+            <td>
+              <p>0</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+
+            <td>
+              <p>5</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>$c$</p>
+            </td>
+
+            <td>
+              <p>5</p>
+            </td>
+
+            <td>
+              <p>-1</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>0</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>$d$</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>7</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+
+            <td>
+              <p>7</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part"> Find $c(d(3))$</p>
+
+      <p class="problem-part"> Find $c(d(5))$</p>
+
+      <p class="problem-part"> Find $d(c(5))$</p>
+
+      <p class="problem-part"> If possible, find $c(d(2))$ and
+      $d(c(2))$.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let $f(x) = x^2$ and $g(x) = x^3$.
+
+      <p class="problem-part"> Write a formula for $f(g(x))$.</p>
+
+      <p class="problem-part"> Compare your answer in part a to
+      the formula for $f(x)g(x)$.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Give the domain…
+
+
+</p>
+<p class="problem-part"> of the square root function.</p>
+
+      <p class="problem-part"> of the reciprocal function ($f(x) =
+      \frac{1}{x}$ )</p>
+    </div>
+
+  </section>
+
+
+
+  <section class="problems">
+      <h2>Problems</h2>
+    <div class="problem">
+<p>
+
+      Let $f(x) = {x^2} + 2x - 8$.
+
+
+</p>
+<p class="problem-part"> Without using your calculator,
+      graph $f(x)$ and $f(x - 2)$ on the same set of
+      axes.</p>
+
+      <p class="problem-part"> By looking at your graph, find a
+      formula for the function $g(x) = f(x - 2)$.</p>
+
+      <p class="problem-part"> Try the following alternative
+      method for finding a formula for $f(x - 2)$: Start with
+      the fact that $f(x - 2) = {(x - 2)^2} + 2(x - 2) - 8$,
+      then simplify. Why should this method work?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Find a formula for $f(2x)$ if $f(x) = {x^2} + 2x - 8$. Then
+      sketch the graph of $y = f(2x)$.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      $y = f(x)$ is an exponential function that has a $y$-intercept
+      of 2 and is asymptotic to $y = 0$. Find the $y$-intercept and
+      asymptote of $y = - 2f(x)$.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      $(2,5)$ is a point on the graph of the function $y = g(x)$.
+      Identify the coordinates of the corresponding point on the
+      graph of…
+
+
+</p>
+<p class="problem-part"> $h(x) = \frac{1}{2}g( - x)$.</p>
+
+      <p class="problem-part"> $h(x) = - 3g(x)$.</p>
+
+      <p class="problem-part"> $h(x) = 6 - g( - x)$.</p>
+
+      <p class="problem-part"> $h(x) = g(x - 5) + 1$.</p>
+
+      <p class="problem-part">$h(x) = g(-2x)$.</p>
+
+      <p class="problem-part"> $h(x) = c \cdot g(x) + b$.</p>
+
+      <p class="problem-part"> $h(x) = -g(cx)$.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let $g$ be the function defined by the graph below.
+
+
+<figure class="fig-50">
+  <img src="../images/10-5-making-new-functions/Lesson 5 - graph 31 i.tif.jpg">
+</figure>
+
+</p>
+
+
+<style>
+  .subparts--two-up {
+    margin-left: 18px;
+    counter-reset: subpart;
+  }
+  .subparts--two-up li {
+    width: 45%;
+    display: inline-block;
+    position: relative;
+  }
+  .subparts--two-up li:before {
+    counter-increment: subpart;
+    content: counter(subpart, lower-roman) ".";
+    position: absolute;
+    left: -20px;
+  }
+  .subparts--two-up li:nth-child(2n) {
+    margin-left: 8%;
+  }
+  .subparts--two-up li:nth-child(2n + 1) {
+  }
+
+</style>
+<p> For the graphs in parts i through vi,</p>
+
+      <p class="problem-part"> come up with a series of
+      transformations that will turn the graph of g into the graph
+      you see.</p>
+
+      <p class="problem-part"> write an equation for the
+      transformed function (for example, the first function shown
+      below is $y = g(-x)-2$).</p>
+
+      <ol class="subparts subparts--two-up">
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 31 ii.tif.jpg">
+        </li>
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 31 ii .tif.jpg">
+        </li>
+        <li>
+          <!-- shift this image down a bit, because it has less padding in the
+          actual JPG -->
+          <img style="position: relative; top: 5px;"
+            src="../images/10-5-making-new-functions/Lesson 5 - graph 31 iii.tif.jpg">
+        </li>
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 31 iv.tif.jpg">
+        </li>
+        <li >
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 31 v.tif.jpg">
+        </li>
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 31 vi.tif.jpg">
+        </li>
+      </ol>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let $f$ be the function defined by the graph below.
+
+<figure class="fig-50">
+  <img src="../images/10-5-making-new-functions/Lesson 5 - graph 32.tif.jpg">
+</figure>
+
+
+      For each graph in parts i through vi,
+</p>
+
+
+<p class="problem-part"> come up with a series of
+      transformations that will turn the graph of $f$ into the graph
+      you see.</p>
+
+      <p class="problem-part"> write an equation for the
+      transformed function.</p>
+
+      <ol class="subparts subparts--two-up">
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 32 i.tif.jpg">
+        </li>
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 32 ii.tif.jpg">
+        </li>
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 32 iii.tif.jpg">
+        </li>
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 32 iv.tif.jpg">
+        </li>
+        <li>
+          <img src="../images/10-5-making-new-functions/Lesson 5 - graph 32 v.tif.jpg">
+        </li>
+        <li>
+          <!-- shift this image down a bit, because it has less padding in the
+          actual JPG -->
+          <img style="position: relative; top: 2px;"
+            src="../images/10-5-making-new-functions/Lesson 5 - graph 32 vi.tif.jpg">
+        </li>
+      </ol>
+
+    </div>
+
+    <div class="problem">
+<p>
+
+      (continuation of problem 17) When tribbles first appear on
+      the Enterprise, there are four tribbles, collectively
+      squeaking at a noise level of 6 decibels. Five hours after
+      they appear on the Enterprise, there are 30 tribbles,
+      squeaking at a noise level of 45 decibels.
+
+
+</p>
+<p class="problem-part"> Find a formula for the function
+      giving population in terms of time, $P(t) = ...$. Assume
+      that it is an untranslated exponential and therefore has the
+      form $P(t) = a{b^t}$.</p>
+
+      <p class="problem-part"> Find a formula for the function
+      giving noise level in terms of population, $N(P) = ...$.
+      (Recall that the noise level is directly proportional to the
+      size of the tribble population.)</p>
+
+      <p class="problem-part"> Now find a formula for $N(P(t)) =
+      ...$.
+      What does this formula tell you?</p>
+
+      <p class="problem-part"> How loud will it be 24 hours after
+      the arrival of the tribbles?</p>
+
+      <p class="problem-part"> How long did it take until the
+      noise level aboard the Enterprise reached an unbearable 150
+      decibels?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+  (Courtesy of <em>Functions Modeling Change</em>, Connally, et al) The
+      number of pounds of fertilizer, $n = f(A)$, needed to
+      fertilize a lawn is a function of the surface area $A$ of the
+      lawn, in m$^2$. Match each story (a-c) to one expression
+      (i-iii).
+
+
+</p>
+<p class="problem-part"> I figured out how many pounds I
+      needed and then bought 2 extra pounds just in case.</p>
+
+      <p class="problem-part"> I bought enough fertilizer to
+      fertilize my lawn and my neighbor’s lawn, which just happens
+      to be the size of mine.</p>
+
+      <p class="problem-part"> I bought enough fertilizer to cover
+      my lawn and my flower bed; the flower bed measures 2 square
+      meters.</p>
+
+      <ol class="subparts">
+
+        <li> $2f(A)$</li>
+
+        <li>$f(A + 2)$</li>
+
+        <li>$f(A) + 2$</li>
+      </ol>
+    </div>
+
+    <div class="problem">
+
+
+      <p class="problem-part"> Sketch the graph of $y = \left| x \right|$. The point
+        $(0,0)$ is called the <em class="vocab">vertex</em> of this graph. </p>
+
+
+
+<p class="problem-part"> Use transformation reasoning to
+      predict what the graph of $y = \left| {x - h} \right| + k$
+      would look like, including the location of the vertex.</p>
+
+
+
+
+
+<p class="problem-part"> Investigate the effect of the
+      constant $a$ on the graph of $y = a \left| x - h \right| + k$. Does it affect the vertex?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Without using your calculator, sketch an accurate graph of $y = \sin(\frac{\pi}{2} x)$.
+      Include at least two periods. On the same axes, sketch the
+      graph of $y = x$. Now, by using what you know about function
+      addition, sketch a graph of $y = x + \sin (\frac{\pi }{2}x)$.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Sally was asked to find $a(\frac{\pi }{4})$ in the function
+      $a(x) = \sin (x - 3) + 2$, and found the answer 0.75.
+      Without using your calculator in any way, decide if Sally’s
+      answer is plausible.
+
+</p>
+</div>
+
+    <p class="No-Paragraph-Style">Earlier in this lesson, you
+      learned that the <em class="vocab"> domain </em> of a function is the set of allowable
+    inputs. Similarly, the <em class="vocab"> range </em> of a function is the set of
+    outputs that a function might produce. For example, the range
+    of the function $y = {x^2}$ is $y \ge 0$, since you can get
+    any non-negative number you want by squaring some number, but you
+    will never square a number and get an answer that is less than
+    zero.</p>
+
+    <div class="problem">
+<p>
+
+      Give the range of each function.
+
+
+</p>
+<p class="problem-part"> Sally’s function $a$ from the previous problem</p>
+
+      <p class="problem-part"> f(x) = $\frac{1}{x^2}$</p>
+
+      <p class="problem-part"> $g(x) = {e^x}$</p>
+
+      <p class="problem-part"> $h(x) = \log x$</p>
+
+      <p class="problem-part"> $i(x) = {2^x} + 3$</p>
+
+      <p class="problem-part"> $j(x) = \frac{1}{x}$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Give the domain and range of each function. Visual thinking
+      is encouraged. Thinking about transformations should obviate
+      the need for your graphing calculator.
+
+</p>
+
+
+    <p class="problem-part"> $f(x) = \frac{1}{{x + 2}}$</p>
+
+    <p class="problem-part"> $g(x) = \frac{1}{{{{(x +
+    2)}^2}}}$</p>
+
+    <p class="problem-part">$h(x) = \log(x+1)$</p>
+
+    <p class="problem-part"> $i(x) = 2{(x - 3)^2} - 4$</p>
+
+    <p class="problem-part">$j(x) = -2\cos{x}-4$</p>
+
+      </div>
+
+    <div class="problem">
+<p>
+
+      The function $T$ graphed in the figure below gives the winter
+      temperature in °F at a high school at time $t$ hours after
+      midnight.
+
+</p>
+
+<figure>
+  <img src="../images/10-5-making-new-functions/Lesson 5 - graph 40.tif.jpg">
+</figure>
+
+<p class="problem-part"> Graph $c(t) = 142 - T(t)$.</p>
+
+      <p class="problem-part"> Give the range of $T$ and of $c$.</p>
+
+      <p class="problem-part"> Explain why $c$ might describe the
+      cooling schedule of the school
+      during the summer months.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      An investigation into slope…
+
+
+</p>
+<p class="problem-part"> Find the slope of the line that heads in the same direction as the  curve defined
+      by $y = \log x$ at the point (10,1).</p>
+
+      <p class="problem-part"> Make a prediction about the slope
+      of the line heading in the same direction as the curve defined by $y = 3\log x$ at the point (10,3),
+      and see if you are right.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Don’t use a calculator for this problem.
+
+
+</p>
+<p class="problem-part"> Solve: $\frac{2}{{x - 1}} = x +
+      3$</p>
+
+      <p class="problem-part"> Evaluate: ${\log _2}{4^7}$</p>
+
+      <p class="problem-part"> By what factor does
+      $\frac{{{w^5}{x^2}}}{{{y^3}{z^7}}}$ increase if $w$ doubles
+      and $y$ is halved?</p>
+
+      <p class="problem-part"> Solve for $x$: $\sqrt {4x} + x =
+      3$</p>
+
+      <p class="problem-part"> Find all values of $x$ so that <nobr>$25^{-2} = \frac{5^{\frac{48}{x}}}{\left( 5^{\frac{26}{x}} \right) \cdot \left( 25^{\frac{17}{x}}\right)}$</nobr>
+      </p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      The greatest integer function takes an input and outputs the
+      greatest integer
+      that is less than or equal to that input.
+      The greatest integer of $x$ is written $\left\lfloor x \right\rfloor$.
+      Here are some examples: $\left\lfloor 2.7 \right\rfloor=2$,
+      $\left\lfloor -4.5 \right\rfloor= –5$, and $\left\lfloor5\right\rfloor=5$.
+
+
+</p>
+<p class="problem-part"> Sketch a graph of the greatest
+      integer function. When you’re done, ask your teacher about
+      “open circle” notation.</p>
+
+      <p class="problem-part"> Find the domain and range of the
+      greatest integer function.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      The greatest integer function is nicknamed the “floor
+      function,” which suggests the existence of a “ceiling
+      function.” The ceiling function takes an input and outputs
+      the least integer greater than $x$. “Ceiling of $x$” is written
+      $\left\lceil x \right\rceil$.
+
+
+
+
+</p>
+<p class="problem-part"> Sketch a graph of $y = \left\lceil x \right\rceil$.</p>
+
+      <p class="problem-part"> Write a formula for $\left\lceil x \right\rceil$ in terms of
+      $\left\lfloor x \right\rfloor$. Is one graph a translation of the other?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Sketch a graph of $y = \left\lfloor x \right\rfloor + {x^2}$
+      for $ - 2 \le x \le 2$.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+  Define the <em class="vocab">signum function</em> as follows: ${\mathop{\rm sgn}}
+      (x) = 1$ if x is positive, -1 if $x$ is negative, and 0 if $x
+      = 0$. Sketch the graph of…
+
+
+</p>
+<p class="problem-part"> $y = {\mathop{\rm sgn}} (x)$</p>
+
+      <p class="problem-part"> $y = {\mathop{\rm sgn}} (x) - 2$
+      </p>
+
+      <p class="problem-part"> $y = {\mathop{\rm sgn}} (x) + 1$</p>
+
+      <p class="problem-part"> $y = {x^2} + {\mathop{\rm sgn}}
+      (x)$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      The function © tells you how many siblings someone has, so
+      ©(Malia Obama)=1 and ©(Chelsea Clinton)=0.
+
+
+</p>
+<p class="problem-part"> Find ©(you).</p>
+
+      <p class="problem-part"> Give the domain and range of the
+      function ©.</p>
+
+      <p class="problem-part"> The function $ \uparrow$ has the formula $ \uparrow(x)
+       = {x^2} + 1$. Which makes sense: $©(\uparrow(x))$ or $\uparrow(©(x))$?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Below are tables for three functions, $f$, $g$, and $h$. These
+      tables are complete tables — that is, the functions are not
+      defined for any inputs other than the inputs given here.
+
+</p>
+
+
+
+      <table id="table-3" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$x$
+            </td>
+
+            <td>
+              <p>-5</p>
+            </td>
+
+            <td>
+              <p>-2</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>7</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              $f(x)$
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>7</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <table id="table-4" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>2</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>4</p>
+          </td>
+
+          <td>
+            <p>5</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$g(x)$</p>
+          </td>
+
+          <td>
+            <p>-5</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>7</p>
+          </td>
+
+          <td>
+            <p>2</p>
+          </td>
+
+          <td>
+            <p>-2</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="table-5" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            $x$
+          </td>
+
+          <td>
+            <p>-3</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>2</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>7</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            $h(x)$
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>2</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>4</p>
+          </td>
+
+          <td>
+            <p>5</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="problem-part"> Which compositions of functions are
+    possible? That is, can you compute $f(g(x))$ for all values of
+    $x$? How about $g(f(x))$? Find all pairs that work, paying
+    attention to order.</p>
+
+
+<p class="problem-part"> Choose one of the compositions from
+      part a and make a table of values for it.</p>
+
+      <p class="problem-part"> Does $f(f(x))$ exist? How about
+      $g(g(x))$ or $h(h(x))$?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      An investigation into composing functions…
+
+
+</p>
+<p class="problem-part"> Make up tables for two functions, $f$
+      and $g$, such that $h(x) = f(g(x))$ exists. Then make a table
+      for the function $h$.</p>
+
+      <p class="problem-part"> How do the domain and range of the
+      function $h$ relate to the domain and range of the functions $f$
+      and $g$?</p>
+
+      <p class="problem-part"> What (helpful) advice would you
+      give to someone else in the class if they were trying to come
+      up with two functions that could be composed?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let the function a be defined by the graph below.
+</p>
+  <figure>
+    <img src="../images/10-5-making-new-functions/Lesson 5 - graph 50.tif.jpg">
+  <figure>
+
+
+<p class="problem-part"> Sketch the graph of $y = \left|
+      {a(x)} \right|$.</p>
+
+      <p class="problem-part"> Sketch the graph of $y = a \left( \left|
+      {x} \right| \right)$.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let the function b be defined by the graph below.</p>
+  <figure>
+    <img src="../images/10-5-making-new-functions/Lesson 5 - graph 51.tif.jpg">
+  <figure>
+
+
+<p class="problem-part"> Sketch the graph of $y = - \left|
+      {b(x)} \right|$.</p>
+
+      <p class="problem-part"> Sketch the graph of $y = b(\left|
+      { - x} \right|)$.</p>
+
+    </div>
+
+<div class="problem">
+<p class="problem-part">Plot the graph of a function where, for all $x$, $f( - x) =
+      f(x)$. Use the domain $ - 5 \le x \le 5$.
+  </p>
+  
+<p class="problem-part"> Plot the graph of another function
+      that meets the criteria given in part a.</p>
+
+      <p class="problem-part"> Make a conjecture about the graph
+      of any function for which $f( - x) = f(x)$</p>
+    </div>
+
+    <div class="problem">
+<p class="problem-part">Plot the graph of a function where, for all $x$, $f( - x) =
+      - f(x)$. Use the domain $ - 5 \le x \le 5$.
+      </p>
+<p class="problem-part"> Plot the graph of another function
+      that meets the criteria given in part a.</p>
+
+      <p class="problem-part"> Make a conjecture about the graph
+      of any function for which $f( - x) = - f(x)$.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Are there any standard functions you know of that have the
+      properties you conjectured in problems 52 and 53? What are
+      they?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      <p class="problem-part"> Plot the graph of function where, for all $a$ and $b$, if
+      $f(a) = b$, then
+      $f(b) = a$. For example, if $f(2) = 4$,
+      it must also be true that $f(4) = 2$. Use a domain of $ - 5
+      \le x \le 5$.
+
+
+</p>
+<p class="problem-part"> Plot the graph of another function
+      that meets the criteria given in part a.</p>
+
+      <p class="problem-part"> Make a conjecture about the graph
+      of any function for which $f(a) = b$ implies $f(b) = a$. If
+      necessary, make up more examples to test or refine your
+      conjecture.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let the function $g$ be defined by the following chart.
+
+
+</p>
+<table id="table-6" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$x$</p>
+            </td>
+
+            <td>
+              <p>-1</p>
+            </td>
+
+            <td>
+              <p>0</p>
+            </td>
+
+            <td>
+              <p>0.5</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>$g(x)$</p>
+            </td>
+
+            <td>
+              <p>-4</p>
+            </td>
+
+            <td>
+              <p>-3</p>
+            </td>
+
+            <td>
+              <p>-1</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>1.5</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <p class="problem-part"> Plot the points on a graph.</p>
+
+    <p class="problem-part"> From the information you have, make a
+    table and graph of the inverse function for g. The standard
+    notation for this function is “${g^{ - 1}}$,” read “$g$
+    inverse.”</p>
+
+    <p class="problem-part"> Describe any patterns you notice.</p>
+
+    <p class="problem-part"> The graph of ${g^{ - 1}}$ is a
+    transformation of the graph of $g$. Describe this transformation
+    in precise language.</p>
+
+    </div>
+
+
+
+    <div class="problem">
+<p>
+
+      Find a formula for the inverse function of $f(x) = {x^3}$,
+      and graph both $f$ and ${f^{ - 1}}$ on your calculator. Is the
+      transformation you see the same one as in the previous
+      problem? What evidence do you have for this?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      The function $f$ from problem 1 does not have an inverse. Why
+      not? Does the function $g$ from problem 13 have an inverse?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Which functions below DO have inverses?
+
+
+</p>
+<p class="problem-part"> $f(x) = {x^2}$</p>
+
+      <p class="problem-part"> $g(x) = \sqrt x $</p>
+
+      <p class="problem-part"> $h(x) = {x^3}$</p>
+
+      <p class="problem-part"> $i(x) = {2^x}$</p>
+
+      <p class="problem-part"> $j(x) = {x^6}$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Which functions graphed below have inverses?
+
+
+</p>
+	  <p class="problem-part"></p>
+      <figure>
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 60a .tif.jpg">
+      </figure>
+
+      <p class="problem-part"></p>
+      <figure>
+        <img src="../images/10-5-making-new-functions/Lesson 5 - 60b.tif.jpg">
+      </figure>
+
+      <p class="problem-part"></p>
+      <figure>
+        <img src="../images/10-5-making-new-functions/Lesson 5 - 60c.tif.jpg">
+      </figure>
+
+      <p><em>Continued on the next page</em></p>
+      
+      <p class="problem-part new-page"></p>
+       <figure>
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 60d.tif.jpg">
+       </figure>
+    </div>
+
+    <div class="problem">
+<p>
+
+      The following questions refer to the
+      function sketched below.
+
+</p>
+
+       <figure>
+        <img src="../images/10-5-making-new-functions/Lesson 5 - graph 61.tif.jpg">
+       </figure>
+
+<p class="problem-part"> Find the domain and range of the
+      function</p>
+
+      <p class="problem-part"> Sketch the inverse of the function
+      on the same axes</p>
+
+
+<p class="problem-part"> Find the domain and range of the
+      inverse.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Find the domain and range of
+
+
+</p>
+<p class="problem-part"> $f(x) = {2^x}$</p>
+
+      <p class="problem-part"> $g(x) = {\log _2}x$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      The radius of a circle is initially 3 cm. It increases by two
+      centimeters each hour.
+
+
+</p>
+<p class="problem-part"> Find a formula for the area of the
+      circle in terms of time.</p>
+
+      <p class="problem-part"> Sketch three graphs, labeling the
+      axes appropriately:</p>
+
+      <ol class="subparts">
+
+      <li><p>$y = r(t)$ (radius of the circle
+                 vs. time)</p></li>
+
+      <li><p>$y = A(r)$ (area of the circle
+        vs. radius), and</p></li>
+
+      <li><p>$y = A(t)$ (area of the circle
+        vs. time).</p></li>
+
+       </ol>
+
+      <p class="problem-part"> When the circle has a radius of 7
+      cm, what is the rate of change of the area of the circle with
+      respect to the radius? Make sure that your answer includes
+      units.</p>
+
+      <p class="problem-part"> At time t = 2 hours, what is the
+      rate of change of the area of the circle with respect to
+      time? Make sure that your answer includes units.</p>
+    </div>
+
+    <h2>Exploring in Depth</h2>
+
+    <div class="problem">
+<p>
+
+      Graph $f(x) = {x^2}$ and $g(x) = 2x$ on the same axes.
+
+
+</p>
+<p class="problem-part"> Make a rough sketch of what you
+      think a graph of $y = f(x) + g(x)$ would look like. Then see
+      if you are right by graphing the function $y = {x^2} + 2x$
+      .</p>
+
+      <p class="problem-part"> Using the techniques of this
+      lesson, write an equation for the graph you drew in part a.
+      Is the equation equivalent to $y = {x^2} + 2x$?</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Graph the linear function $f(x) = 2x - 6$.
+
+
+</p>
+<p class="problem-part"> Reflect the line you’ve drawn over
+      the line $y = x$.</p>
+
+      <p class="problem-part"> Find an equation for the reflected
+      line. Verify that it is the graph of ${f^{ - 1}}$ .</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      If $f$ and $g$ are inverse functions, find $f(g(x))$.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Let $f(x) = {x^2}$, $g(x) = x - 2$, and $h(x) = 5x$. Write
+      each of the following functions as a composition of $f$, $g$,
+      and/or $h$.
+
+
+</p>
+<p class="problem-part"> $a(x) = 5(x - 2)$</p>
+
+      <p class="problem-part"> $b(x) = 5{x^2}$</p>
+
+      <p class="problem-part"> $c(x) = {x^2} - 2$</p>
+
+      <p class="problem-part"> $d(x) = {(5x)^2} - 2$</p>
+
+      <p class="problem-part"> $e(x) = 5{(x - 2)^2}$</p>
+
+      <p class="problem-part"> $z(x) = (5x - 2)^2$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Find the domain and range of each
+      function.
+
+
+</p>
+	  <p class="problem-part"> $a(x) = \sqrt{x - 5}$</p>
+
+      <p class="problem-part"> $b(x) = \sqrt {{x^2} + x - 6} $</p>
+
+      <p class="problem-part"> $c(x) = \frac{{x + 5}}{{x -
+      3}}$</p>
+
+      <p class="problem-part"> $d(x) = \frac{{{x^2}}}{{(x + 1)(x -
+      2)}}$</p>
+
+      <p class="problem-part"> $e(x) = -x^2 - 7$ </p>
+
+      <p class="problem-part"> $f(x) = \frac{{3x}}{x}$ </p>
+    </div>
+
+    <p class="No-Paragraph-Style">You have been using the “inverse
+    sine” function for years, but thinking about it now, you can
+    see that the sine function does not have an inverse! There are
+    many ways to get an output of 1: when $x$ is 90°, 270°, 450°, etc
+    if you are working in degrees, or when x is $\frac{\pi }{2}$,
+    $\frac{{3\pi }}{2}$, $\frac{{5\pi }}{2}$, etc if you are
+    working in radians. Thus, if someone says, “find ${\sin ^{ -
+    1}}1$,” you wouldn’t know which of the values listed above to
+    give in response.</p>
+
+    <p class="No-Paragraph-Style">The reason we can still talk
+    about the inverse sine function is that we are thinking about
+    only a limited set of inputs (angles) that you can plug in to
+    the function $f(x) = \sin x$. Limiting the allowable inputs in
+      this way is called a <em class="vocab">domain restriction.</em></p>
+
+    <div class="problem">
+<p>
+
+      Use your calculator to take the inverse sine of some angles.
+      Notice the kinds of outputs it gives you. Can you figure out
+      exactly which angles belong to the restricted domain of the
+      sine function?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      In your notebook, sketch a graph of the sine function,
+      showing a few periods, and show in bold the part of the graph
+      that is produced by using inputs from the restricted domain.
+      Does the restriction seem like a logical choice? Would there
+      be other ways to do it?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Do the ${\cos ^{ - 1}}$ and ${\tan ^{ - 1}}$ functions
+      use the same domain restriction as ${\sin ^{ - 1}}$? Play
+      around with your calculator to see. If not, what are the
+      other domain restrictions?
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Let $f(x) = \sqrt x $ and $g(x) = {x^2}$. Do $f(g(x))$ and
+      $g(f(x))$ have the same domain? First answer the question by
+      looking at the algebra, then check your answer by having your
+      calculator graph the unsimplified formula for each
+      composition.
+
+</p>
+</div>
+
+    <div class="problem">
+<p>
+
+      Let $f(x) = 2x$ and $g(x) = \sqrt {16 - {x^2}} $.
+
+
+</p>
+<p class="problem-part"> Find $f(g(x))$ and $g(f(x))$.</p>
+
+      <p class="problem-part"> Give the domain and range of each
+      of the functions in part a.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Let $f(x) = {x^2}$ and $g(x) = 4 - x$.
+
+
+</p>
+<p class="problem-part"> Find $f(g(x))$ and $g(f(x))$ .</p>
+
+      <p class="problem-part"> Give the domain and range of each
+      of the functions in part a.</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Trigonometric functions are not the only common functions
+      that require a domain restriction in order to take their
+      inverse. $f(x) = {x^2}$ does not have an inverse because for
+      a given output, like 4, there are multiple inputs, -2 and 2,
+      that produce that output. However, if you restrict the domain
+      of $f$ to allow only values of $x$ greater than or equal to zero,
+      then the function has an inverse. You can think of the square
+      root function as the inverse of $f(x) = {x^2}$ on this
+      restricted domain.
+
+
+
+</p>
+<p class="problem-part"> For each function below, suggest a domain restriction that
+      would allow the function to have an inverse.</p>
+
+      <p class="problem-part"> For functions i, ii, and iii, find
+      an equation for the inverse of the function (with its domain
+      suitably restricted).</p>
+
+      <ol class="subparts">
+
+        <li><p>$a(x) = {(x - 4)^2} + 3$</p></li>
+
+        <li style="margin-top: 0.5em; margin-bottom: 0.5em"><p>$b(x)=\frac{1}{x^2}$</p></li>
+
+        <li style="margin-top: 0.5em; margin-bottom: 0.5em"><p>$c(x) = \frac{1}{{{{(x +
+          3)}^2}}}$</p></li>
+        <li>
+          <figure style="display: inline-block; vertical-align: top;">
+            <img style="margin: 0"
+              src="../images/10-5-making-new-functions/Lesson 5 - graph 75.tif.jpg">
+          </figure>
+        </li>
+
+      </ol>
+    </div>
+
+    <div class="problem">
+<p>
+
+      If $g(x) = \cos x$, find (using no calculator)…
+
+
+</p>
+<p class="problem-part"> $g(g^{-1}(\frac{1}{2}))$</p>
+
+      <p class="problem-part"> ${g^{ - 1}}(g(45^\circ ))$</p>
+
+      <p class="problem-part"> $g^{-1}(g(37^\circ))$</p>
+    </div>
+
+    <div class="problem">
+<p>
+
+      Will it always be true that…
+
+
+</p>
+<p class="problem-part"> $\cos ({\cos ^{ - 1}}a) = a$?</p>
+
+      <p class="problem-part"> ${\cos ^{ - 1}}(\cos a) = a$?</p>
+    </div>
+  </section>
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>linear systems</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/02-5-linear-systems.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-2   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 5:
+
+
+Linear Systems 
+</h1>
+    
+    
+
+<article>
+
+  <section class="development">
+    
+
+    
+
+    <h2>Introduction</h2>
+
+    <p>In the previous lesson (problem 38), we were asked to prove
+    that the three
+    medians of the triangle $A\left( { - 3,13} \right)$,
+    $B\left( {9,1} \right)$ and $C\left( {-9,1} \right)$ all contained the point $\left(
+    { - 1,5} \right)$, after first finding the equations of the
+    medians. But what if you were not given the point $\left(
+    { - 1,5} \right)$? How would
+    you discover that point from the equations of the medians?</p>
+
+    <p>More generally, given the equations of two lines, how could
+    you find the point where those lines intersect — the solutions
+    that the two equations share? The hunt for solutions that
+    equations share is a useful and sometimes exciting quest, and
+    can reveal interesting relationships between the equations.</p>
+
+    <p>One could answer the question of finding a common solution
+    by guessing, but there are times when guessing is extremely
+    difficult. In this lesson we will explore algebraic methods of
+    exploring common solutions to a set of linear equations —
+    called a linear <em class="vocab">system of equations</em>. At the same time we will
+    use visual approaches to promote better understanding of the
+    relationships between the variables, and the nature and
+    existence of common solutions.</p>
+
+    <h2>Development</h2>
+
+    <p>Recall that the equations of the medians in the previous
+    lesson (problem 38) were:</p>
+
+    <ul class="horizontal">
+      <li>$ \large{\frac{1}{2}x + \frac{11}{2}}$</li>
+      <li>$ \large{y = - 4x + 1}$</li>
+      <li>$ \large{y = \frac{{ - 2}}{5}x + \frac{{23}}{5}}$</li>
+    </ul>
+
+    <p>For the time being let’s just work with the first two
+    equations and try to find a particular ordered pair $\left(
+    {x,y} \right)$ which satisfies both — values of $x$ and $y$ which
+    make both of them work.</p>
+
+    <p>Since the second equation claims that $y$ is equal to $-
+    4x + 1$, it seems okay to replace $y$ by $- 4x + 1$ in the first equation.</p>
+
+    <div class="problem">
+      <p>What does the equation become when $y$ is replaced by $- 4x + 1$? Now solve this equation for $x$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Substitute the value of $x$ you got in problem 1 in the
+      first equation to get the value of $y$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Use your results from problems 1 and 2 to show that the
+      medians all intersect in (contain) a single point.</p>
+    </div>
+
+    <p>The form of the median equations was particularly convenient
+    to make the
+    replacement/substitution for $y$. Could you do a similar
+    replacement if the
+    equations were written in a different form? Fortunately most
+    linear equations
+    can be written in a form similar to one of the median
+    equations. Take a look
+    at the following problem.</p>
+
+    <div class="problem">
+      <p>Find the point where the lines given by the equations $5x
+      + y = 1$ and $x - 5y = 8$ intersect.</p>
+
+      <p class="problem-part">Note that from the first equation
+      we get $y = 1 - 5x$, so replacing $y$ by $1 - 5x$ in the
+      second equation should be fair game. Replace $y$ by $1 - 5x$ in the second equation and solve for $x$.</p>
+
+      <p class="problem-part">Use the value of $x$ you got in part
+      a and the fact that to find the value of $y$. Check to be sure
+      that the values you got for $x$ and $y$ satisfy both of the
+      equations.</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the pair of equations in problem 4 by starting with
+      the second equation. (Express $x$ in terms of $y$ and substitute
+      for $x$ in the first equation.)</p>
+    </div>
+
+    <p>By the way, the method we used to find the solution in
+    problems 1 through 5 is called the <em class="vocab">substitution method</em>.</p>
+
+    <div class="problem">
+      <p>Use the <em class="vocab">method of substitution</em> to solve the following
+      systems of equations:</p>
+
+      <p class="problem-part">$x + 4y = - 29$<br>$3x - 2y = 11$</p>
+
+      <p class="problem-part">$3x - 5y = 4$<br>$5x - y = 3$</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>Use the method of substitution to solve the following
+      systems.</p>
+
+      <p class="problem-part">$x + y = 20$<br>$x - y = 10$</p>
+
+      <p class="problem-part">$x + y = 21$<br>$y = 2x$</p>
+
+      <p class="problem-part">$2p + q = 0$<br>$4p - q = 3$</p>
+
+      <p class="problem-part">$4r - 3s = -11$<br>$s + 2r = 2$</p>
+    </div>
+
+    <div class="problem">
+      <p>Matt claims that he discovered that there is one
+      particular ordered pair that would satisfy all three
+      equations because when he graphed the lines they all met in a
+      single point. Gabbi drew the graphs herself and said that she
+      wasn’t quite sure. Matt could be right but she thought it was
+      too close to call. Check Matt’s claim algebraically.</p>
+      <figure>
+        <ul>
+          <li>$4x + 2y = - 1$</li>
+          <li>$5x - $y$ = 4$</li>
+          <li>$17x + 5y = 1$</li>
+        </ul>
+      </figure>
+    </div>
+  </section>
+
+  <section class="problems">
+    <h2>Problems</h2>
+    
+    <div class="problem">
+      <p>
+        Solve the system of equations below:<br>
+        $5x + 3y = - 2$<br>
+        $7x - 5y = 11$
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Is the ordered triple 
+      $\left( { -2,3,\frac{1}{2}} \right)$ a solution to the following system of
+      equations? Explain your response. If it is not a
+      solution, change one of the equations so that the given
+      ordered triple is a solution.<br>
+      $3y - 2x + 4z = 15$<br>
+      $x - 2z + 3y = 6$<br>
+      $11 + 5x = 6z - y$<br>
+    </div>
+
+    <div class="problem">
+      <p>Determine whether the following three equations share a
+      common solution.<br>
+      $3x + 2y = 4$<br>$5x - 2y = 0$<br>$4x + 3y = 6$
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Create a system of two different equations in two
+      variables that has as a solution the ordered pair $\left( { -
+      1,3} \right)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Jocelyn tells Joey that she has found the intersection
+      point of the two lines $y = - 8x + 33$ and $y = 2x - 8$,
+      and that it is close to the $x$-axis. Without solving the
+      system exactly, can you confirm or debunk Jocelyn’s claim
+      quickly?</p>
+    </div>
+
+    <div class="problem">
+      <p>After the class had completed problem 9 using the
+      substitution method, Sophie (of course) proclaimed that this
+      method was a waste of time and that Jeff had taught her an
+      easier way, and that it was a lot more fun.</p>
+      
+      <p>“Simply multiply both sides of the first equation by 5,
+      multiply both sides of the second equation by 3, and then add
+      your two new equations together. At this point you are pretty
+      much done.”</p>
+      
+      <p>Check out Sophie’s method.</p>
+    </div>
+
+    <div class="problem">
+      <p>“Ah”, declares Sampson, always trying to upstage Sophie, “
+      but we could easily have multiplied the first equation by 7,
+      the second equation by -5, and we’d get pretty much the same
+      thing.”<br><br>
+      
+      Check out Sampson’s approach.</p>
+    </div>
+
+    <p>The method Sampson and Sophie used in problems 14 and 15 to
+    solve the system of equations in
+    problem 9 is called the <em class="vocab">method of elimination</em>.</p>
+
+    <div class="problem">
+      <p>Use the method of elimination to solve the following
+      systems.</p>
+
+      <p class="problem-part">$2x - 5y = 9$<br>
+      $7x + 3y = 11$</p>
+
+      <p class="problem-part">$2x + 3y = - 9$<br>$3x - 2y = 19$</p>
+
+      <p class="problem-part">$7p + 3q = - 1$<br>$5p + 5q = - 5$</p>
+
+      <p class="problem-part">$3r + 7s = 41$<br>
+      $4r + 8s = 48$</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the following system (in your head, if you
+      can!):<br>
+      <br>
+      $5,000,000,000,000x$ <br>
+        $\quad + 6,000,000,000,000y = 28,000,000,000,000$<br>
+      $2 \cdot {10^{ - 5}}x + 3 \cdot {10^{ - 5}}y = 13 \cdot {10^{
+      - 5}}$</p>
+    </div>
+
+    <p>For the next few problems you will find a carefully drawn
+    diagram to be quite useful.</p>
+
+    <div class="problem">
+      <p>When Jamie tried to solve the following systems of
+      equations she encountered all kinds of strange difficulties.
+      Try to figure out why.<br>
+      $6x - 15y = 4$<br>
+      $-4x + 10y = -8$</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the following systems of equations. What is going on
+      here?<br>
+      $6x - 10y = -1$<br>
+      $-9x + 15y = \frac{3}{2}$</p>
+    </div>
+
+    <div class="problem">
+      <p>Determine the area of the triangle formed by the following
+      lines.<br>
+      $y = 4x - 14$<br>
+      $4y = -x - 22$<br>
+      $6y = 7x - 16$</p>
+    </div>
+
+    <div class="problem">
+      <p>You have an aquarium with some one-tailed fish and some
+      two-tailed fish. Total, there are 102 eyes and 62 tails. How
+      many of each kind are there?</p>
+    </div>
+
+    <div class="problem">
+      <p>Here are two functions: € takes a number, multiplies it by
+      3, and subtracts the answer from 8; ∏ takes a number, divides
+      it by 4, then adds 0.125, and finally multiplies the result
+      by 3. Is there any input for which these two functions have
+      the same output?</p>
+    </div>
+
+    <div class="problem">
+      <p>Given $A(0,0)$ and $B(1,1)$, is there a point
+      $C(x,y)$ such that the slope of the line $AC$ is 3 and the
+      slope of the line $BC$ is 2?</p>
+    </div>
+
+    <div class="problem">
+      <p>Use your calculator to solve the following systems of
+      equations within two decimal place accuracy. (Hint: First
+      write both equations in the form $y = mx + b$.)
+      
+      $117x - 144y = 135$<br>$258x + 336y = - 138$</p>
+    </div>
+
+    <div class="problem">
+      <p>A sum of \$20,000 is to be invested in two funds for a
+      year, split among the funds. One fund, the less risky one, is
+      expected to pay 6.3% interest for the year. The second fund
+      is expected to pay an interest of 7.6% for the year. If one
+      wants to earn at least \$1350 in interest at the end of the
+      year, what is the most that can be invested at 6.3%?</p>
+      <p>(You could represent the amount invested at 6.3% by some
+      variable, and the amount invested at 7.6% by another
+      variable. Then try to set up a system of two equations. Or
+      you may try to guess at a solution and use that guess to
+      refine your thinking.)</p>
+    </div>
+
+    <div class="problem">
+      <p>A salesperson, Emma, is offered the
+      following salary plans. In one plan, she gets a straight
+      commission of 5.9% on
+      all sales. In the other plan she gets a
+      commission of 3.1% on sales, and a
+      salary of \$250 per week. How much in sales would Emma have to
+      make in a
+      week to make the straight commission
+      a better offer?</p>
+    </div>
+
+    <div class="problem">
+      <p>Kristin challenged her mother to a race, but demanded a
+      head start of 20 meters. Kristin’s running speed is 5.5
+      meters per second, while her mother’s running speed is 6
+      meters per second. How many seconds after the start of the
+      race will Kristin’s mother catch up with her?</p>
+    </div>
+
+    <div class="problem">
+      <p>Christina’s company processes a roll of film for 30 cents
+      per print, plus a 66
+      cents developing charge. Nate’s company processes a roll for
+      28 cents per print, plus a \$2.10 developing charge. After how
+      many prints will the cost at Christina’s company exceed that
+      of Nate’s?</p>
+    </div>
+
+    <div class="problem">
+      <p>The sum of the digits of a two-digit
+      number is one more than three times the units digit. When the
+      digits of the two-digit number are reversed the number is
+      reduced by 36. First write two equations representing the
+      information, then solve them to find the number.</p>
+    </div>
+
+    <div class="problem">
+      <p>Gina has dimes and quarters (and no other coins) in her
+      pocket. The total value of the 13 coins is \$2.65. First write
+      two equations representing the information, then solve them
+      to find the number of quarters Gina has.</p>
+    </div>
+
+    <div class="problem">
+      <p>You previously saw that the medians of any triangle
+      intersected at a single point. Do the altitudes of a triangle
+      do the same? Test your answer on the triangle, $A\left( {3,3}
+      \right)$, $B\left( {9,6} \right)$ and $C\left( {6,9} \right)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>A two-digit number is equal to four times the sum of its
+      digits. The tens digit is 3 less than the units digit. What
+      is the
+      number?</p>
+    </div>
+
+    <div class="problem">
+      <p>The Matrix games store sells two types of ping-pong sets:
+      A standard set consisting of two paddles and one ball, and a
+      tournament set consisting of four paddles and six balls. The
+      store receives a bulk shipment of 160 paddles and 180 balls.
+      How many of each type of ping-pong set can be made from this
+      shipment?</p>
+    </div>
+
+    <div class="problem">
+      <p>If you added up Fred and Wilma’s ages 15 years ago, you’d
+      get Fred’s current age. What are the possibilities for Fred
+      and Wilma’s ages now?</p>
+    </div>
+
+    <div class="problem">
+      <p>You mail 100 oz of letters. For regular mail, you pay 39
+      cents for the first ounce and 24 cents per additional ounce.
+      For premium mail, you pay 31 cents per ounce. In total, you paid
+      \$26.11. How many ounces did you send, in each kind of
+      mail?</p>
+    </div>
+
+    <div class="problem">
+      <p>It seems that the following lines might form a rhombus.
+      What do you think?<br>
+      $3y - 2x = 5$<br>
+      $y = 2x-1$<br>
+      $3y=2x+13$<br>
+      $y-2x=3$</p>
+    </div>
+
+    <h2>Exploring in Depth</h2>
+    
+    <div class="problem">
+      <p>Try to find the coordinates of the points where:</p>
+
+      <p class="problem-part">the line $y = - 3x$ intersects
+      the graph of the equation $x^2 + y^2 = 100$.</p>
+
+      <p class="problem-part">the line $y = - 10$ intersects
+      the graph of the equation $x^2 + y^2 = 100$.</p>
+    </div>
+
+    <div class="problem">
+      <p>The slope of the line segment from $\left( {6,1} \right)$ to $\left( {x,y} \right)$ is 7, and the slope of the line
+      segment from $\left( {5,6} \right)$ to $\left( {x,y} \right)$ is 3. What
+      is $\left( {x,y} \right)$?</p>
+    </div>
+
+    <div class="problem">
+      <p>The graphs of the following equations intersect at the
+      point $(\frac{1}{2}, \frac{3}{2})$. Find the values of $a$ and $b$.<br>
+      $ax+by=3$<br>
+      $bx-ay=-1$</p>
+    </div>
+
+    <div class="problem">
+      <p>Find a and $b$ if $\left( {10,b} \right)$ solves the
+      following equations.<br>
+      $ax+3y=52$<br>
+      $5x-5y=2a$</p>
+    </div>
+
+    <div class="problem">
+      <p>Paul and John each have some coins. At first, Paul has 4
+      times as many coins as John. Then Paul gives John 6 coins.
+      Now Paul has 2.5 times as many coins as John. How many coins
+      did each of them have originally?</p>
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">
+      Find
+      $( - 5 + 8)[2( - 1 + 3) - 4( - 3 - 2)]$</p>
+
+      <p class="problem-part">Find an equation of the line that
+      goes through the points
+      $(-6, -23)$ and $(8, -2)$.</p>
+
+      <p class="problem-part">Factor $10{x^2}y + 2xy$</p>
+
+      <p class="problem-part">Solve for x: $\frac{5}{{x - 1}} = 3$</p>
+
+      <p class="problem-part">What are the possibilities for $x$ if
+      $|x - 2| &lt; 4$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Construct your own problem similar to the original problem
+      in the introduction to this lesson, but not just a
+      translation of that triangle, in which the coordinates of the
+      point of intersection of the medians are both integers.</p>
+    </div>
+
+    <div class="problem">
+      <p>You are filling an aquarium with plankton and algae. A
+      scoop of plankton weighs
+      .86 lbs, and uses .14 gallons of oxygen in a day. A scoop of
+      algae weighs .71 lbs, and produces .21 gallons of oxygen in a
+      day. You want the total weight to be 12 lbs,
+      and you want the oxygen to balance out perfectly. How many
+      scoops of each should you buy?</p>
+    </div>
+
+    <div class="problem">
+      <p>If Bill had four more books, he’d have half as many as
+      Tony. If Tony had one more book, he’d have as many as Bill
+      and Mimi combined. Mimi has $\frac{3}{4}$ as many books as Tony. How many books does each person
+      have?</p>
+    </div>
+
+    <div class="problem">
+      <p>Find all solutions to the system of
+      inequalities below.<br>
+      $x - y \leq 9$<br>
+      $2x + y \geq 3$
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Write two linear equations that have the solution $(\sqrt
+      {11,} \;\frac{{ - 1}}{3})$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the following system. Think about how you solve
+      linear equations if you’re stuck!<br>
+      $x^2 + y^2 = 100$<br>
+      $x^2 - y^2 = 64$</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the following system.<br>
+      $\frac{x}{y} = 12$<br>
+      $xy = 75$</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the following system.<br>
+      $y=\frac{1}{x}$<br>
+      $y=x^2$</p>
+    </div>
+
+    <div class="problem">
+      <p>Find $a$ and $b$ if $(25,16)$ solves the
+      following system.<br>
+      $y-b=\sqrt{x+a}$<br>
+      $y=\sqrt{x}+a$</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the following system of equations for $x$, $y$ and
+      $w$.<br>
+      $-2x+3y+4w=6$<br>
+      $x+3y-2w=6$<br>
+      $x+y-6w=0$</p>
+    </div>
+  </section>
+
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

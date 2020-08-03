@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>quadratic models and algebra</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/04-1-quadratic-models-and-algebra.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-4   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 1:
+
+
+Quadratic Models And Algebra 
+</h1>
+    
+    
+
+<article>
+
+  <section class="development">
+
+    <h2>Flu Season, Again.</h2>
+
+    <p>One of the most unpleasant aspects of going to school is
+    that when a few people get sick, they can transmit their
+    illness to others very easily, and as a
+    consequence most of the school can end up “catching” it.</p>
+
+    <p>Epidemiologists, when faced with the spread of a disease,
+    try to predict how quickly people will be infected by coming up
+    with equations that seem to fit the data well. One reasonably
+    accurate equation is called the logistic model, and is based on
+    the following idea. Let $I$ stand for the number of people
+    already infected and $N$ stand for the number who are not
+    infected. Then the rate at which the disease is spreading is
+    proportional to the product of $I$ and $N$. For the sake of
+    simplicity let’s call this product the “disease quotient” of
+    $DQ$. Let’s assume, also, that the $DQ$ is exactly equal to the
+    product of $I$ and $N$. The $DQ$ is, therefore, a measure of how
+    quickly the disease is spreading: the higher it is, the more
+    people get infected that day.</p>
+
+    <p>How would you expect $DQ$ to change while the disease is
+    spreading? At what point during the spread of the disease would
+    the disease spread most quickly?</p>
+
+    <h2>Development</h2>
+
+    <p>Let’s look at a specific case — a local high school with 400
+    students.</p>
+
+    <div class="problem">
+      <p>What is the $DQ$ when no students are infected? When 1
+      student is infected? When 70 students are? When 300 are
+      infected?</p>
+    </div>
+
+    <div class="problem">
+      <p>Write an expression describing the $DQ$ if one knows the
+      number $x$ of students that are infected.</p>
+    </div>
+
+    <div class="problem">
+      <p>Rewrite the equation in Problem 2 so that it’s in the form
+      $DQ = ax^2 + bx + c$. What are $a$, $b$, and $c$ in your equation?</p>
+    </div>
+
+    <p>Any equation that can be written in the form $y = a{x^2} +
+    bx + c$, where $a \ne 0$, is called a <em class="vocab">quadratic
+      equation</em>. In this lesson we will be looking at some algebraic
+    tools that can be used to manipulate these equations so as to
+    learn more about how the solutions of such an equation
+    behave.</p>
+
+    <div class="problem">
+      <p>Determine the number of people who are infected if $DQ =
+      0$. You should get two answers.</p>
+    </div>
+
+    <div class="problem">
+      <p>Pick one of your answers from problem 4 and explain why,
+      without talking about the disease quotient or the number
+      infected or not infected, it must be a solution to the
+      equation $x(400-x) = 0$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Think carefully about your answers to Problem 4 and how
+      they solve the equation given in Problem 5. Now, explain why
+      2 and -3/4 are solutions to the equation $\left( {4x + 3}
+      \right)\left( {x - 2} \right) = 0$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve each of the following equations.</p>
+
+      <p class="problem-part">$x\left( {x + 10} \right) = 0$</p>
+
+      <p class="problem-part">$\left( {x - 3} \right)\left( {x +
+      2} \right) = 0$</p>
+
+      <p class="problem-part">$\left( {x + 5} \right)\left( {x +
+      7} \right) = 0$</p>
+
+      <p class="problem-part">$- 2\left( {x - 4} \right)\left(
+      {x + 9} \right) = 0$</p>
+
+      <p class="problem-part">${\left( {x + 1} \right)^2}\left(
+      {3x - 1} \right) = 0$</p>
+
+      <p class="problem-part">$\left( {4x + 5} \right)\left( {x -
+      3} \right)\left( {x + 1} \right) = 0$</p>
+    </div>
+
+    <div class="problem">
+      <p>What must be true about $A$ or $B$ if $A \cdot B = 0$? Can
+      the same thing be said if $A \cdot B = 8$?</p>
+    </div>
+
+    <p>In Problem 8 you’re being asked to conjecture a very important theorem
+    of mathematics that is often referred to as the <em class="vocab">Zero
+      Product Property</em> — anytime you have a product, then it can equal
+    zero only if at least one of its factors is zero.  This is a very powerful
+    theorem in situations in which we can write an equation in the form
+    ${\rm{BLAH}} = 0$, where BLAH can be written as a product. So, it seems
+    useful here to focus on how to write expressions as products, don’t you
+    think?</p>
+
+    <p>There is a way to rewrite expressions ${x^2} + 7x + 10$ as a product of two expressions, so that it looks like $(x+\ldots)(x+ \ldots )$.  You may have seen this technique before: it is called  
+    <em class="vocab">factoring</em>.</p>
+
+    <div class="problem">
+      <p>Working on your own or with your peers, factor ${x^2} + 7x
+      + 10$. When you have an answer, look carefully
+      at your factored form of the expression and how it relates to
+      the original expression.</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the equation ${x^2} + 7x + 6 = 0$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve each of the following equations by factoring.</p>
+
+      <p class="problem-part">${x^2} + 3x + 2 = 0$</p>
+
+      <p class="problem-part">$x^2 + 8x + 12 =0$</p>
+
+      <p class="problem-part">$x^2 + 20x + 64 =0$</p>
+
+      <p class="problem-part">${x^2} + 6x + 9 = 0$</p>
+
+      <p class="problem-part">${x^2} + 5x - 14 = 0$</p>
+    </div>
+
+    <p>In Problem 11 Part e, you needed to resort to negative numbers in order to factor the expression. Try to notice number patterns you see in the original expression and its factored form. Then try the following problems. </p>
+
+    <div class="problem">
+      <p>Factor each of the following expressions.</p>
+
+      <p class="problem-part">${x^2} + 4x - 45$</p>
+
+      <p class="problem-part">${x^2} - 5x - 36$</p>
+
+      <p class="problem-part">${x^2} - x - 42$</p>
+    </div>
+
+    <p>Factoring is not a process reserved
+    for expressions like ${x^2} + 6x + 8$, but can also be done on
+    expressions like $3{x^2} + 7x$. In essence, factoring is a
+    process devoted to reversing distribution: can we rewrite
+    $3{x^2} + 7x$ so that its factored form, when multiplied out,
+    would give us back $3{x^2} + 7x$?</p>
+
+    <div class="problem">
+      <p>Factor $3{x^2} + 7x$. Check your work by doing the
+      distribution.</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve each of the following equations by factoring.</p>
+
+      <p class="problem-part">$2x - 5{x^2} = 0$</p>
+
+      <p class="problem-part">$6{x^2} + 4x = 0$</p>
+
+      <p class="problem-part">$5{x^3} - 12{x^2} = 0$</p>
+
+      <p class="problem-part">${x^3} - 8{x^2} + 16x = 0$</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>Kyle is managing an upcoming concert at school and is
+      concerned about the income generated by the concert just
+      through ticket sales. Over the years he has come to realize
+      that when the price of the ticket increases, the number of
+      people willing to attend goes down. He knows that all 360
+      students will attend if the concert is free, but for each $1
+      increase in the price of the ticket, 20 fewer students will
+      attend.</p>
+
+      <p class="problem-part">How many students will attend if
+      Kyle charges \$2 per ticket? How many if he charges \$5?</p>
+
+      <p class="problem-part">What income will Kyle generate if
+      he charges \$2 per ticket? What if he charges \$8?</p>
+
+      <p class="problem-part">Write an expression for the income
+      $I$ generated by the concert when the price of the ticket is $p$.
+      Is this a quadratic equation?</p>
+
+      <p class="problem-part">Set the expression in Part c equal
+      to zero and solve this equation. Explain the meaning of the
+      solution in the context of the problem situation.</p>
+    </div>
+
+    <div class="problem">
+      <p>Factor each of the following expressions.</p>
+
+      <p class="problem-part">${x^2} + 16x + 15$</p>
+
+      <p class="problem-part">$6x - 10{x^3}$</p>
+
+      <p class="problem-part">${x^2} + 3x - 28$</p>
+
+      <p class="problem-part">${x^2} - 7x - 18$</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve each of the following equations by factoring.</p>
+
+      <p class="problem-part">${x^2} + x - 20 = 0$</p>
+
+      <p class="problem-part">$5x^4 + x^3 =0$</p>
+
+      <p class="problem-part">$x^3 + 5x^2 - 14x =0$</p>
+    </div>
+
+    <h2>Going Further</h2>
+
+    <div class="problem">
+      <p>Graph the equation you came up with in Problem 2 on a
+      calculator. (If you have trouble seeing the graph, take a
+      look at the values you computed in Problem 1.)</p>
+    </div>
+
+    <div class="problem">
+      <p>Use the graph in Problem 18 to determine when the $DQ$ is
+      25600. Explain why both of your answers make sense in terms
+      of the spread of a disease.</p>
+    </div>
+
+    <div class="problem">
+      <p>How many people have been infected if $DQ = 20000$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Determine the maximum $DQ$. How many people are infected at
+      this point?</p>
+    </div>
+
+    <div class="problem">
+      <p>Explain how you can use your answers to Problem 19 to
+      solve Problem 21. Could you have used the answers from
+      Problem 20 to solve problem 21?</p>
+    </div>
+
+    <p>The two numbers that you calculated in Problem 21 serve as the
+    coordinates of a specific point on the graph of the $DQ$ equation. The
+    graph of the equation is called a <em class="vocab">parabola</em>, and the
+    point that you calculated in Problem 21 is called the <em
+      class="vocab">vertex</em> of the parabola. The vertex can be thought of
+    as the point where the parabola
+    turns.</p>
+
+    <div class="problem">
+      <p>The graph of $DQ = x(400-x)$ is symmetric over a vertical line. Write an
+      equation for this line.</p>
+    </div>
+
+    <div class="problem">
+      <p>An answer to Problem 15 Part c could be $I = p\left( {360 - 20p}
+      \right)$. Graph this equation on your calculator, then write an equation
+      for its <em class="vocab">line (or axis) of symmetry.</em> You might look
+      at Problem 15 Part d to help you solve this problem.</p>
+    </div>
+
+    <div class="problem">
+      <p>The graph of $I = p\left( {360 - 20p} \right)$ intersects
+      the $p$-axis. What are the coordinates of the
+      intersection(s)?</p>
+    </div>
+
+    <p>You may recall that the points you found in Problem 25 are
+      referred to as the <nobr>$p$-intercepts</nobr> of the graph of $I = p\left(
+      {360 - 20p} \right)$. They would be called the <nobr>$x$-intercepts,</nobr>
+    if the horizontal axis had been labeled with $x$. Notice that if
+    you determine the intercepts on the horizontal axis of a
+    parabola then you can determine the axis of symmetry and the
+    vertex of the parabola.</p>
+
+    <div class="problem">
+      <p>Determine the vertex of the graph of $y = \left( {x + 5}
+      \right)\left( {x - 4} \right)$ without using the
+      graphing or table features of your calculator.</p>
+    </div>
+
+    <div class="problem">
+      <p>Determine the vertex of the graph of $y = x^2 - 12x + 27$ without using the
+      graphing or table features of your calculator.</p>
+    </div>
+
+    <div class="problem">
+      <p>Describe a process for determining the exact coordinates
+      of the vertex of the graph of $y = {x^2} - 5x - 14$. At no
+      time can the
+      process rely on a graph of the equation.</p>
+    </div>
+    
+    <h2 class="new-page">Practice</h2>
+
+    <div class="problem">
+      <p>Let $y = x^2 - 3x - 54$. Solve the following problems without using the table
+      or graphing features of your calculator.</p>
+
+      <p class="problem-part">Determine the exact coordinates of the
+      $x$-intercepts of the graph of the equation.</p>
+
+      <p class="problem-part">Determine the exact coordinates of
+      the vertex of the graph.</p>
+
+      <p class="problem-part">Write an equation for the axis of
+      symmetry of the graph.</p>
+    </div>
+
+    <div class="problem">
+      <p>The points $\left( {4,10} \right)$, $\left( {8,25}
+      \right)$, and $\left( {26,10} \right)$ are on the graph of a
+      parabola. Write an equation for the parabola’s line of
+      symmetry.</p>
+    </div>
+
+    <div class="problem">
+      <p>If the $x$-coordinate of the vertex of a parabola is
+      $\frac{3}{7}$ and one of its roots is $\frac{5}{6}$, what is
+      its other root? (Answer as a fraction.)</p>
+    </div>
+
+    <div class="problem">
+      <p>For each equation below, determine the exact coordinates
+      of the vertex of the graph.</p>
+
+      <p class="problem-part">$y = {x^2} + 6x + 8$</p>
+
+      <p class="problem-part">$y = 2{x^2} - 5x$</p>
+
+      <p class="problem-part">$y = - 2\left( {{x^2} - x - 12}
+      \right)$</p>
+    </div>
+
+  </section>
+  <section class="problems">
+
+    <h2>Problems</h2>
+    <div class="problem">
+      <p>The King of Prussia wishes to make a magnificent
+      rectangular temple. He has just enough gold to adorn a
+      perimeter of 98 meters. The king wishes his temple to have
+      the greatest possible area, so that as many people can stand
+      in it as possible.</p>
+
+      <p class="problem-part">How can one express the
+      relationship between the length, width and perimeter of the
+      temple in an equation?</p>
+
+      <p class="problem-part">How can one express the
+      relationship between the length, width and area of the temple
+      in an equation?</p>
+
+      <p class="problem-part">By using your answers to Parts a
+      and b, write an expression that allows one to compute the
+      area in terms of the length of the temple alone.</p>
+
+      <p class="problem-part">What length of the temple allows
+      the most people to fit inside?</p>
+
+      <p class="problem-part">For religious reasons, the King of
+      Prussia built a temple that was 18 meters long instead; it
+      only let in $P%$ of the people that the “ideal” temple you
+      computed in Part d would have. What is $P$?</p>
+    </div>
+
+    <div class="problem">
+      <p>The 9th grade is selling tickets to a Rock-Paper-Scissors
+      tournament. Top-secret research has shown that the number ($N$)
+      of high school students who are willing to enter the
+      tournament is highly dependent on the entry fee ($P$). If there
+      were no entry fee, 200 people would enter the tournament; for
+      every dollar the entry fee is above \$0, 50 fewer people will
+      enter.</p>
+
+      <p class="problem-part">Write an expression for the number
+      of students ($N$) entering the tournament in terms of the entry
+      fee ($P$).</p>
+
+      <p class="problem-part">If the entry fee is $\$3.50$, how many
+      tickets will be sold? Also, how much money will the 9th grade
+      take in as income ($I$)?</p>
+
+      <p class="problem-part">Write an equation for $I$ in terms of
+      $N$ and $P$.</p>
+
+      <p class="problem-part">Using part a, now write an equation
+      for $I$ in terms of $P$ alone.</p>
+
+      <p class="problem-part">What entry fees would produce zero
+      income for the 9th grade?</p>
+
+      <p class="problem-part">If the 9th grade wants to make the
+      most money, what should the entry fee be? How much income
+      would the 9th grade then make?</p>
+    </div>
+
+    <div class="problem">
+      <p>So far you haven’t been asked to factor an expression of
+      the form $a{x^2} + bx + c$, where $a \ne 1$ or $0$.</p>
+
+      <p class="problem-part">For example, how would you factor
+      $2{x^2} + 3x + 1$? </p>
+
+      <p class="problem-part">Now try factoring $2{x^2} + 7x + 6$.</p>
+
+      <p class="problem-part">Use your understanding of Parts a
+      and b to factor each of the following expressions.
+        <ol class="subparts">
+        <li>$3x^2 - 2x - 8$</li>
+      	<li>$2{x^2} - 10x + 12$</li>
+      	<li>$-2x^2 + 10x - 12$</li>
+     	<li>$4{x^2} + 4x - 15$</li>
+          </p>
+      </ol>
+      
+    </div>
+
+    <div class="problem">
+      <p>Come up with values for
+      $a$ and $b$ so that $\left( {x + a} \right)(x + b) = {x^2} - c$,
+      where $c$ is some unknown
+      constant.</p>
+    </div>
+
+    <div class="problem">
+      <p>(Continuation of Problem 36) Factor each of the following
+      expressions, if possible. Note that each of these expressions
+      could be called a <em class="vocab">difference of squares</em>.</p>
+
+      <p class="problem-part">${y^2} - 9$</p>
+
+      <p class="problem-part">${x^2} - 100$</p>
+
+      <p class="problem-part">${x^2} - {b^2}$</p>
+
+      <p class="problem-part">${n^4} - 16$</p>
+
+      <p class="problem-part">${x^2} + 25$</p>
+
+      <p class="problem-part">${w^2} - 49{x^2}$</p>
+    </div>
+
+    <div class="problem">
+      <p>Solve each of the following equations.</p>
+
+      <p class="problem-part">${x^2} - 2x = 8$</p>
+
+      <p class="problem-part">$3{x^3} + 11{x^2} - 4x = 0$</p>
+
+      <p class="problem-part">${x^2} = 144$</p>
+
+      <p class="problem-part">${r^2} - 9 = 8r$</p>
+
+      <p class="problem-part">$\left( {x + 6} \right)\left( {x -
+      2} \right) = 9$</p>
+
+      <p class="problem-part">${x^2} + 4.5x + 3.5 = 0$</p>
+
+      <p class="problem-part">$x + \frac{x}{{x - 2}} =
+      \frac{2}{{x - 2}}$</p>
+    </div>
+
+    <div class="problem">
+      <p>Let ${x^2} + 15x - 324 = 0$.</p>
+
+      <p class="problem-part">Find the sum of the solutions
+      and the product of the solutions.</p>
+
+      <p class="problem-part">A quadratic equation ${x^2} + bx +
+      c = 0$ has two solutions that have a sum of 2 and a product
+      of -143. Find $b$ and $c$.</p>
+    </div>
+
+    <div class="problem">
+      <p>$f$ is a function that takes a number, subtracts the square
+      of the number, and then adds 30.</p>
+
+      <p class="problem-part">Write a formula $f(x)$= …</p>
+
+      <p class="problem-part">What is the largest value that $f$
+      can output?</p>
+    </div>
+
+    <div class="problem">
+      <p>25 is a perfect square since $25 = 5 \cdot 5$. Find $d$
+      if $4{x^2} + 12x + d$ is a perfect square.</p>
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">Solve for $x$: $\frac{6}{7} =
+      \frac{{33}}{x}$</p>
+
+      <p class="problem-part">Evaluate $- {(3)^2} + {( - 3)^2}$</p>
+
+      <p class="problem-part">Find an equation for the line that
+      goes through the points $( - 5,4)$ and $(5, - 2)$.</p>
+
+      <p class="problem-part">Solve the inequality $- 4x + 13
+      &lt; x + 3$</p>
+
+      <p class="problem-part">Try to make all the numbers from
+      1-10 by using basic mathematical operations on four 4’s. For
+      example, to make the number 1 you could do $(4 - 4) + (4 \div
+      4)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>$\pi $ is approximately 3.141593. Without using a
+      calculator determine whether ${\pi ^2} - 7\pi + 12$ is
+      negative, positive, or zero.</p>
+    </div>
+
+    <div class="problem">
+      <p>Graph $y = {x^2} + 4x + 7$ on your calculator. Make sure
+      to choose a WINDOW for your calculator that will show the
+      basic shape of the graph.</p>
+
+      <p class="problem-part">Explain why the algebraic methods
+      you know don’t seem to help in determining the exact
+      coordinates of the vertex of the graph.</p>
+
+      <p class="problem-part">Calculate the $y$-intercept of the
+      graph of the equation.</p>
+
+      <p class="problem-part">Now, use your understanding of the
+      symmetry of the graph and the value of the $y$-intercept to
+      determine another point on the graph.</p>
+
+      <p class="problem-part">Calculate the exact coordinates of
+      the vertex of the parabola.</p>
+
+      <p class="problem-part">Calculate the exact coordinates of
+      the vertex of the graph of $y=-x^2 - 9x + 12$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Write an equation for the graph of the parabola given
+      below.</p>
+      <figure class="">
+        <img src="../images/04-1-quadratic-models-and-algebra/9-4-1%20diagram%2045.tif.jpg" >
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>You are selling candy for a price of $p$ dollars per candy
+      bar. 100 people want candy if it’s free, but every time the
+      price goes up by a dollar, 3 fewer people want candy.</p>
+
+      <p class="problem-part">Write an equation for $n$ (the number
+      of people who want candy) in terms of $p$.</p>
+
+      <p class="problem-part">The government charges a candy tax
+      of $\$1.50$ per candy bar. So when someone buys a candy bar,
+      $\$1.50$ of what they pay goes to the tax. Write an equation for
+      how much you earn for selling one candy bar, if you charge a
+      price of $p$.</p>
+
+      <p class="problem-part">Write an equation for $M$, the
+      total amount of money you make, if you charge price $p$. Make
+      sure $M$ is just in terms
+      of $p$.</p>
+
+      <p class="problem-part">Without graphing on your
+      calculator, find the maximum amount of money you can
+      make.</p>
+
+      <p class="problem-part">Determine a value for $p &gt; 0$ that would
+      make no sense in the context of this problem. Explain why.</p>
+
+      <p class="problem-part">Determine the values of $p &gt; 0$ that would
+      lead you to earning zero money.</p> </div>
+
+    <div class="problem">
+      <p>When Alyssa kicks a football,
+      its height (in feet) as a function of time (in seconds)can be
+      written $h(t) = - 16{t^2} + 40t$.</p>
+
+      <p class="problem-part">When will Alyssa’s football hit the
+      ground?</p>
+
+      <p class="problem-part">Find the maximum height it will
+      reach.</p>
+    </div>
+
+    <div class="problem">
+      <p>Hickory, Hunk, and Zeke are building a rectangular pigpen.
+      One side of the pen will be the wall of a barn, and the other
+      three will be made of the 1000 feet of fencing they have.</p>
+
+      <p class="problem-part">Draw a picture of the
+      situation.</p>
+
+      <p class="problem-part">Write a formula for a function,
+      $A(x) = ...$ that outputs the area of the pen when one of the
+      sides perpendicular to the barn has length $x$.</p>
+
+      <p class="problem-part">What value of $x$ should the
+      farmhands choose if they want the pigs to be able to roam
+      over the largest area possible?</p>
+    </div>
+
+    <div class="problem">
+      <p>Without using the graphing or table features of your calculator,
+      determine the exact coordinates of three solutions to the equation $y=x^2
+      - 5x - 24$ that would allow you to sketch a reasonable graph of the
+      equation. Why did you pick these three solutions?</p>
+    </div>
+
+    <h2 class="new-page">Exploring in Depth</h2>
+
+    <div class="problem">
+      <p>For what values of $n$ is $\left( {{n^2} - 3n - 4}
+      \right)\left( {{n^2} + 8n + 2} \right)$ <br>
+        $ \quad = \left( {5n + 12}
+      \right)\left( {{n^2} - 3n - 4} \right)$?</p>
+    </div>
+
+    <div class="problem">
+      <p>You learned how to factor ${x^2} - 1$, but is there a way
+      of factoring ${x^3} - 1$, ${x^4} - 1$, or ${x^{99}} - 1$,
+      for that matter?</p>
+
+      <p class="problem-part">We multiply $x - 1$ by $x + 1$ in
+      order to get ${x^2} - 1$. What should we multiply $x - 1$ by
+      in order to get ${x^3} - 1$?</p>
+
+      <p class="problem-part">What should we multiply $x - 1$ by
+      in order to get ${x^4} - 1$?
+      How about in order to get ${x^7} - 1$?</p>
+
+      <p class="problem-part">${x^4} - 1$ can also be seen as a
+      variation on the expressions in Problem 37. Use this fact to
+      figure out how to factor ${x^3} + {x^2} + x + 1$.</p>
+    </div>
+
+    <div class="problem">
+      <p>The expression $x - 9$ can be factored in the same way
+      that you factored a difference of squares. Come up with this
+      factoring. Is it true that $x - 9$ equals this factoring for
+      all
+      values of $x$? Explain.</p>
+    </div>
+
+    <div class="problem">
+      <p>What, if any, integer values of b are there such that
+      ${x^2} + bx + 71$ is factorable? And, more generally, if
+      ${x^2} + bx + c$ is factorable, what can you say for sure
+        about $c$? about <nobr>$b$?</nobr></p>
+    </div>
+
+    <div class="problem">
+      <p>Solve the following inequalities by using algebra and some
+      number sense.</p>
+
+      <p class="problem-part">$\left( {x - 3} \right)\left( {x +
+      5} \right) \le 0$</p>
+
+      <p class="problem-part">$x^2 + 9x + 14 &gt; 0$</p>
+
+      <p class="problem-part">$- {x^2} \le x - 42$</p>
+
+      <p class="problem-part">$x\left( {x + 3} \right)\left( {x -
+      2} \right) \ge 0$</p>
+    </div>
+  </section>
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>modeling with trigonometry</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/10-2-modeling-with-trig.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-10   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 2:
+
+
+Modeling With Trigonometry 
+</h1>
+    
+    
+
+<article>
+
+  <section class="development">
+
+
+    <h2>Introduction</h2>
+
+    <p>The graph of the sine and cosine functions are very
+    distinctive looking.</p>
+
+      
+      
+    
+    <figure class="fig-50 two-up">
+    <img src="../images/10-2-modeling-with-trig/Lesson%202%20-%20graph%20intro%201.tif.jpg" >
+    <img src="../images/10-2-modeling-with-trig/Lesson%202%20-%20graph%20intro%202.tif.jpg" >
+  </figure>
+    
+    <div class="problem">
+      <p>Which of the figures above is $y = \sin x$? Which is $y =
+      \cos x$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Using your knowledge of trigonometry, find coordinates for
+      a few of the high and low points for each graph, and of the
+        places they cross the <nobr>$x$-axis.</nobr></p>
+    </div>
+
+    <p>Though you’re used to using trigonometry to find missing
+    angles and lengths in diagrams, the special shape of the graph
+    of the sine and cosine functions make them very useful in
+    modeling as well. Graphs that have a shape similar to that of a
+      sine curve are called <em class="vocab">sinusoidal</em> (even if they involve the
+    cosine instead of the sine).</p>
+
+    <div class="problem">
+      <p>Come up with some situations in which a graph with the
+      characteristics of a sine or cosine curve would provide a
+      good model.</p>
+    </div>
+
+    <p>In general, sine and cosine curves are used to model
+      situations that are <em class="vocab">periodic</em>
+    – that have some repeating pattern. (You might be familiar with
+    this word from the periodic table, which is a chart of elements
+    arranged so that, every time you begin a new row in the chart,
+    the elements begin to repeat the same pattern of
+    characteristics that was established in the previous row.) Sine
+    and cosine functions are examples of periodic functions, and
+    the distance you
+    need to go on the $x$-axis before the values of the functions
+      begin to repeat themselves is called the <em class="vocab">period</em>.</p>
+
+    <div class="problem">
+      <p>What is the period of the sine function? How about the
+      period of the cosine?</p>
+    </div>
+
+    <div class="problem">
+      <p>If you are using radians, what is the period of each
+      function?</p>
+    </div>
+
+    <p>Not all situations that are periodic will have the same
+    period. Nor will all be the usual sine or cosine graphs. For
+    example, one situation that lends itself well to trigonometric
+    modeling is the depth of a lake at a fixed location,
+    measured over time as the tide comes in and out. Here is a
+    graph of some
+    data for a particular lake. $D \left ( x \right )$ measures the depth of the water in
+    inches
+    at time $x$ hours after midnight.</p>
+
+     <figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%202%20-%20graph%205.tif.jpg" >
+  </figure>
+    
+    <p>Though the shape of $D(x)$ is similar to that of a sine
+    or cosine curve, clearly its equation is not $y = \sin x$ or
+    $y = \cos x$. However, we can get the equation for this
+    graph by doing various transformations of sine and cosine
+    curves, much like we can take the graph of $y = {x^2}$ and
+    use transformations to turn it into any parabola we choose. In
+    order to figure out how to take a curve like $y = \sin x$ or
+    $y = \cos x$ and turn it into the curve above, we’ll <em class="vocab">take
+      things apart</em> by looking at each of the transformations
+    separately.</p>
+
+    <p></p>
+
+    <h2>Development</h2>
+
+    <p>Let’s first think about how we could change the period of a
+    sine or cosine curve.</p>
+
+    <div class="problem">
+      <p>What type of transformation would changing the period be —
+      a vertical stretch, vertical shift, horizontal stretch, or
+      horizontal shift?</p>
+    </div>
+
+    <p>Suppose we wanted to cut the period of the sine function in
+    half — make it $180^\circ$ instead of $360^\circ$. In other words, the sine
+    function starts to repeat itself after $360^\circ$, but we want
+    to find a different function that repeats itself after $180^\circ$. And put a third way (!) a partial table of values for
+    the sine function looks like this …</p>
+
+    <table id="table-1" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>
+            <p>$30^\circ$</p>
+          </td>
+
+          <td>
+            <p>$60^\circ$</p>
+          </td>
+
+          <td>
+            <p>$90^\circ$</p>
+          </td>
+
+          <td>
+            <p>$120^\circ$</p>
+          </td>
+
+          <td>
+            <p>$150^\circ$</p>
+          </td>
+
+          <td>
+            <p>$180^\circ$</p>
+          </td>
+
+          <td>
+            <p>$210^\circ$</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$\sin x$</p>
+          </td>
+
+          <td>
+            <p>$\frac{1}{2}$</p>
+          </td>
+
+          <td>
+            <p>$\frac{\sqrt{3}}{2}$</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>$\frac{\sqrt{3}}{2}$</p>
+          </td>
+
+          <td>
+            <p>$\frac{1}{2}$</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>$-\frac{1}{2}$</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>…but for our new function the table of values should look
+    like this, taking on all the same values but twice as
+    quickly.</p>
+
+    <table id="table-2" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>$x$</td>
+
+          <td>
+            <p>$15^\circ$</p>
+          </td>
+
+          <td>
+            <p>$30^\circ$</p>
+          </td>
+
+          <td>
+            <p>$45^\circ$</p>
+          </td>
+
+          <td>
+            <p>$60^\circ$</p>
+          </td>
+
+          <td>
+            <p>$75^\circ$</p>
+          </td>
+
+          <td>
+            <p>$90^\circ$</p>
+          </td>
+
+          <td>
+            <p>$105^\circ$</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>The new function’s values</p>
+          </td>
+
+          <td>
+            <p>$\frac{1}{2}$</p>
+          </td>
+
+          <td>
+            <p>$\frac{\sqrt{3}}{2}$</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>$\frac{\sqrt{3}}{2}$</p>
+          </td>
+
+          <td>
+            <p>$\frac{1}{2}$</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>$-\frac{1}{2}$</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem">
+      <p>Come up with a function that looks like $y = \sin x$ but
+      has half the period. If necessary, try a few formulas and
+      test your conjectures.</p>
+    </div>
+
+    <div class="problem">
+      <p>Now try to find a formula for a function like the one
+      above, except it has a period of $90^\circ$. Now find one with a
+      period of $720^\circ$.</p>
+    </div>
+
+    <div class="problem">
+      <p>In terms of $n$, what is the period of the function $y =
+      \sin nx$?</p>
+    </div>
+
+    <div class="problem">
+      <p class="problem-part"> Write an equation for a function related to the sine
+      function that has period P.</p>
+
+      <p class="problem-part"> Does your idea work for cosine as
+      well? Why or why not?</p>
+    </div>
+
+    <div class="problem">
+      <p>See if you can write an equation for a function that has
+      the same period as the function in the tide example. You
+      could pick either sine or cosine… for consistency, let’s use
+      cosine.</p>
+    </div>
+
+    <p>In addition to the change in period, the tide function
+    differs from the sine
+    and cosine functions in other ways. For one thing, it is
+    vertically stretched as compared to those functions.</p>
+
+    <div class="problem">
+      <p>What is the height of the usual cosine function, $y = \cos
+      x$, measured from the $x$-axis to its highest point?</p>
+    </div>
+
+    <div class="problem">
+      <p>How many times its normal height do you need to stretch a
+      cosine curve in order to get the same height as the curve for
+      the depth of water function, $D(x)$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Conjecture an equation for a cosine-based function that
+      would be vertically stretched by the right amount. If you’ve
+      done it right and also changed the period, the graph of your
+      function should be exactly the same shape as $D(x)$.</p>
+    </div>
+
+    <p>The <em class="vocab">amplitude</em> of a sine or cosine curve is defined as <em>half</em> the vertical distance from the top to the bottom of the curve.
+    This was the quantity you found in Problem 12.</p>
+
+    <div class="problem">
+      <p>Why do you suppose the amplitude is defined as <em>half</em> the
+      distance, rather than the entire distance from top to
+      bottom?</p>
+    </div>
+
+    <div class="problem">
+      <p>What’s the amplitude of $f(x) = \sin x$? What’s the
+      amplitude
+      of $D(x)$ ?</p>
+    </div>
+
+    <div class="problem">
+      <p>Write an equation for a sinusoid curve that has amplitude
+      A.</p>
+    </div>
+
+    <p>At this point, our graph has the right shape; we just need
+    to translate it over to the right location. This is something
+    you learned how to do when studying quadratics, though if
+    you’ve forgotten, try experimenting with your calculator when
+    answering the next few questions.</p>
+
+    <div class="problem">
+      <p>By how much do we need to vertically shift the graph?</p>
+    </div>
+
+    <div class="problem">
+      <p>Write an equation for a graph with the same period,
+      amplitude, and vertical shift as $D(x)$ (again using
+      cosine).</p>
+    </div>
+
+    <p>We could make this graph coincide perfectly with $D(x)$
+    by shifting it
+    horizontally.</p>
+
+    <div class="problem">
+      <p>To remind yourself how to do a horizontal shift, first try
+      writing equations that shift the graph of $y = {x^2}$ three
+      units to the right, then three units to the left.</p>
+    </div>
+
+    <div class="problem">
+      <p>Now use the same technique to shift the graph of $y = \cos
+      x$ by 90 degrees to the right, then 90 degrees to
+      the left.</p>
+    </div>
+
+    <div class="problem">
+      <p>It’s not obvious how to do a horizontal shift at the same
+      time that you change the period of a graph. First make a
+      sketch of $y = \cos 90x$. Then write an equation that you
+      could use to shift this graph two units to the right. Check by
+      using your calculator to graph your equation, and refine your
+      equation if necessary.</p>
+    </div>
+
+    <div class="problem">
+      <p>Determine the required horizontal shift needed to turn
+      your graph in Problem 19 into the graph of $D(x)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Now that you have all the tools, write an equation for
+      $D(x)$.</p>
+    </div>
+
+    <p>Having this model allows us to make predictions. For
+    example ...</p>
+
+    <div class="problem">
+      <p>Use your equation for $D(x)$ to predict the depth of
+        the water at <nobr>10:15 pm.</nobr></p>
+    </div>
+
+    <div class="problem">
+      <p>Find all of the times today that the water will have a
+      depth of 65 inches.</p>
+
+      <p class="problem-part"> Algebraically — by solving an equation.</p>
+
+      <p class="problem-part"> Graphically — by using your calculator.</p>
+    </div>
+
+    <h2 class='new-page'>Practice</h2>
+
+    <div class="problem allow-break">
+      <p>For each graph below,</p>
+
+      <p class="problem-part"> say what the period, amplitude, vertical shift, and
+      horizontal shift
+      is, assuming that the graph is a transformation of $y = \cos
+        x$.</p>
+
+      <p class="problem-part"> write an equation for the graph. Check it by graphing
+      the
+        equation on your calculator.</p>
+
+      <p>i.
+
+<figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2027%20i%20.tif.jpg" >
+        </figure></p>
+
+
+      <p class="new-page">ii.
+
+ <figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2027%20ii%20.tif.jpg" >
+        </figure></p>
+
+
+      <p>iii.
+
+<figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2027%20iii%20.tif.jpg" >
+        </figure></p>
+
+
+
+    <p>iv.
+      
+       <figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2027%20iv%20.tif.jpg" >
+       </figure></p>
+      
+    </div>
+
+    <div class="problem">
+      <p>For each graph below,</p>
+
+      <p class="problem-part"> say what the period, amplitude, vertical shift, and
+      horizontal
+      shift is, assuming that the graph is a transformation of
+        $y = \sin x$.</p>
+
+      <p class="problem-part"> write an equation for the graph. Check it by graphing
+      the
+        equation on your calculator.</p>
+
+      <p>i.
+
+<figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2028%20i%20.tif.jpg" >
+        </figure></p>
+
+
+      <p>ii.
+
+ <figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2028%20ii%20.tif.jpg" >
+        </figure></p>
+
+
+      <p class="new-page">iii.
+
+<figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2028%20iii%20.tif.jpg" >
+        </figure></p>
+
+
+      <p>iv.
+        
+<figure class="fig">
+    <img src="../images/10-2-modeling-with-trig/Lesson%203%20Graph%2028%20iv%20.tif.jpg" >
+  </figure></p>
+
+    </div>
+
+    <div class="problem new-page">
+      <p>Find another equation for the function graphed in part i
+      of the
+      previous problem, this time using cosine instead of sine.</p>
+    </div>
+
+    <div class="problem">
+      <p>By identifying the period, amplitude, and shifts, draw a
+      graph of each equation without the aid of your calculator
+        (except to check).</p>
+
+      <p class="problem-part"> $y = 2\sin x + 4$</p>
+
+      <p class="problem-part"> $y = \dfrac {1} {2} \cos (2(x - 180))$</p>
+      <p class="problem-part"> $y = \cos \left( {3\left( {x + 60} \right)} \right)$</p>
+
+      <p class="problem-part"> $y = \sin \left( {3x + 60} \right)$</p>
+    </div>
+
+    <div class="problem">
+      <p>How would you describe to someone the difference between
+      what you do to change the period and the amplitude of a
+      trigonometric graph?</p>
+    </div>
+
+    <div class="problem">
+      <p>Find an equation for a sinusoidal function that has a peak
+      at the point $(2, 9),$ and has its first trough following that
+      peak at $(7, -3).$</p>
+    </div>
+
+    <div class="problem">
+      <p>Write a sinusoidal equation that has each of the
+      following
+      characteristics:</p>
+
+      <p class="problem-part"> Period 36, amplitude .5, horizontal shift 5, vertical
+      shift -7.</p>
+
+      <p class="problem-part"> Period 6, amplitude 3, has a high point at $\left( {7,10}
+      \right)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Zinadine argues that in the function $D\left( x \right)$ the vertical shift should
+      really be 69, because the high point of an untransformed
+      cosine graph is 1 unit above the $x$-axis, but the high point
+      of $D\left( x \right)$ is 70 units above the $x$-axis. Set
+      him straight.</p>
+    </div>
+  </section>
+
+  
+
+ 
+
+  
+
+ 
+
+  
+
+ 
+
+  
+
+ 
+
+  
+
+  
+
+  <section class="problems">
+    <h2>Problems</h2>
+  
+
+   <p>Note to the eager student: though most references to angles
+    in this section use degree measure, feel free to solve the
+    modeling problems using radians. In fact, your teacher may
+    insist!</p>
+
+    <div class="problem">
+      <p>Write an equation for a function involving sine or cosine
+      that has a period of 40 degrees.</p>
+    </div>
+
+    <div class="problem">
+      <p>Write an equation for a function involving sine or cosine
+      that has a period of 91 degrees.</p>
+    </div>
+
+    <div class="problem">
+      <p>Write an equation for a function involving sine or cosine
+      that has a period of $4\pi $ radians.</p>
+    </div>
+
+    <div class="problem">
+      <p>What would be the period —
+      measured in radians — of the
+      function $y = \sin \dfrac{{2\pi }}{3}x$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Which of these equations shifts the graph of $y = \sin
+      x$ or $y = \cos x \; $ six units to the right? How do you know?</p>
+
+      <p class="problem-part"> $y = 4\cos \left( {24\left( {x - 6} \right)} \right) -
+      7$</p>
+
+      <p class="problem-part"> $y = 2\sin \left( {3x - 6} \right) + 4$ </p>
+    </div>
+
+    <div class="problem">
+      <p>Sketch the following transformations: first shift the
+      graph of $y = \cos x \;$ 90 degrees to the right. Then
+      horizontally compress the
+      resulting graph towards the $y$-axis
+      by a factor of two.</p>
+
+    <p class="problem-part"> Write an equation for the
+      resulting graph.</p>
+   
+    <p class="problem-part"> Can you “see” from the
+    equation that there was a shift of 90 degrees?</p>
+
+    <p class="problem-part"> Describe the
+    transformations that must be done on $y = \sin x$ in order to
+    get the graphs of $y = \sin \left( {Ax - B} \right)$ and $y = 
+    \sin \left (A\left( {x - B} \right) \right)$.
+    To what extent does order matter?</p>
+    </div>
+    
+    <div class="problem">
+      <p>Graph the following equations:</p>
+
+      <p class="problem-part"> $y = \sin \left( {10x - 60} \right)$</p>
+    
+
+      <p class="problem-part"> $y = \cos \left( {4x +
+    128} \right)$</p>
+    </div>
+    
+    <div class="problem">
+      <p>Don’t use a calculator for this
+      problem.</p>
+
+      <p class="problem-part"> Solve: $\dfrac{9}{{x + 5}} = x - 5$</p>
+   
+      <p class="problem-part"> Evaluate:
+    $\log 50 + \log 4 - \log 2$</p>
+
+      <p class="problem-part"> Simplify $\sqrt
+    {\dfrac{{{y^3}}}{{{x^2}}}} $</p>
+
+      <p class="problem-part"> Solve the equation ${x^3}\left( {x - 1} \right){\left( {x - 2}
+    \right)^2} = 0.$
+    What is the degree of this equation?</p>
+
+      <p class="problem-part"> Find $k$ if $2^{2015}-2^{2014} + 2^{2013} - 2^{2012} = k \cdot 2^{2012}$</p>
+    </div>
+    
+    <div class="problem">
+      <p>You are at the Inner Harbor on June 22. At 11:30 am, low
+      tide, you find that the depth of the water at the end of a
+      pier is 0.5 ft. At 5 pm, high tide, the water is
+      1.1 ft deep.</p>
+
+      <p class="problem-part"> Find an equation for depth as a function of time that has
+      elapsed since 12 midnight at the beginning of June 22.</p>
+    
+
+      <p class="problem-part"> Use your equation to
+    predict the depth of the water at 8 pm on June 23.</p>
+
+      <p class="problem-part"> At what time does the
+    first low tide occur on June 23?</p>
+
+      <p class="problem-part"> What is the earliest
+    time on June 24 that the water will be 0.85 ft deep?</p>
+    </div>
+    
+    <div class="problem">
+      <p>In August, in Baltimore, the temperature can be modeled by
+      the equation $y = - 11\cos \left( {\frac{\pi }{{12}}\left( {x
+      - 2} \right)} \right) + 74$, where $x$ stands for the number of
+      hours past midnight on Aug. 1, and $y$ stands for the
+      temperature
+      (in Fahrenheit) at time $x$.</p>
+
+      <p class="problem-part"> Use algebra to find all times at
+      which the equation predicts that the temperature will be
+        <em>more than</em> 80°.</p>
+    
+      <p class="problem-part"> What does this
+    equation imply that the maximum temperature will be? Explain
+    your reasoning carefully. (And don’t appeal to your graphing
+    calculator)</p>
+    </div>
+    
+    <div class="problem">
+      <p>A spring is attached to the ceiling of a room. You attach
+      a weight to the bottom of the spring, then let go. Some time
+      later, you start timing the oscillations of the spring. 0.4
+      seconds after you start the time, the spring stretches as far
+      as it will go, to a distance of 24 inches above the floor. It
+      then bounces back up, to a highest point of 50 inches above
+      the floor, at 2 seconds, and continues to oscillate
+      sinusoidally.</p>
+
+      <p class="problem-part"> Sketch the graph of this function.</p>
+    
+      <p class="problem-part"> Find an equation for
+    distance from the floor as a function of time.</p>
+
+      <p class="problem-part"> What was the distance
+    of the weight from the floor when you started the clock?</p>
+
+      <p class="problem-part"> What is the distance
+    of the weight from the floor after 4 seconds?</p>
+
+      <p class="problem-part"> When does the weight
+    first reach a height of 40 inches?</p>
+    </div>
+    
+    <div class="problem">
+      <p>At time zero, someone puts a chalk mark at the top of your
+      unicycle tire, and you immediately begin pedaling in such a
+      way that the wheel makes two complete revolutions per second.
+      The radius of your wheel is 1 foot.</p>
+
+      <p class="problem-part"> Write an equation giving the height (measured from the
+      ground) of the chalk mark as a function of time since you
+      began pedaling. Be sure
+      to show your work in finding the equation.</p>
+    
+      <p class="problem-part"> Use the equation to
+    find the height of the chalk mark 2.3 seconds after you began
+    pedaling.</p>
+
+      <p class="problem-part"> Use the equation to
+    find two
+    times at which the chalk mark
+        will be .8 feet above the ground. Then describe <em>all</em> the times
+    at which the chalk mark will be .8 feet above the ground.</p>
+    </div>
+    
+    <div class="problem">
+      <p>What might the graph of $y = - \sin x$ plausibly look like? Without using your calculator, check a
+      few values in your head.</p>
+    </div>
+
+    <div class="problem">
+      <p>Try graphing $y = - \sin x$ on your
+      calculator. Then try graphing $y = \sin \left( { - x} \right).$ Describe how these graphs differ from the graph of $y = \sin
+      x$ using the language of transformations.</p>
+    </div>
+
+    <div class="problem">
+      <p>Use the results of the previous problem
+      to predict what the graphs of $y = - \cos x$ and $y = \cos
+      \left( { - x} \right)$ will look like. Then test your
+      prediction by graphing them on your calculator. Describe how
+      these graphs
+      differ from the graph of $y = \cos x$ using the language of
+      transformations.</p>
+    </div>
+
+    <div class="problem">
+      <p>Make a table of values for the function $y = {\sin ^{ -
+      1}}x$. Then graph it, taking care
+      to choose a scale appropriate for your
+      values for $x$ and $y$ in the table. Does it
+      appear to be visually related to the graph of $y = \sin x$ in
+      any way?</p>
+    </div>
+
+    <div class="problem">
+      <p>(Hint: visualize!) Make up a sinusoidal function $f\left(
+      x \right)$ that has exactly four
+      solutions to the equation $f\left( x \right) = \frac {1} {2}$ between $0^\circ$ and $360^\circ$. Then make one up that also has four
+      solutions to $f\left( x \right) = \frac {1} {2}$ but also two solutions to $f\left(
+      x \right) = 5$ between $0^\circ$ and $360^\circ$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Go back to the function $D\left( x \right)$, for
+      which
+      you should have found the equation $D\left( x \right) =
+      10\cos \left( {60\left( {x - 1} \right)} \right) + 60$.
+      Recall that $x$, the time, is measured in hours and $D\left ( x \right )$, the
+      depth of the water, is measured in inches.</p>
+
+      <p class="problem-part"> Approximately how many feet per hour was the water level
+      changing
+      at 6 am?</p>
+    
+      <p class="problem-part"> How about at 3 am? Explain the sign of your answer.</p>
+
+      <p class="problem-part"> At what times during the day would you expect the rate of
+    change to be greatest? How about the smallest?</p>
+    </div>
+    
+    <div class="problem">
+      <p>Let $f \left ( x \right ) = 2 \sin x$ and $g \left ( x \right ) = 8 \sin x$.</p>
+
+      <p class="problem-part"> Is there an $x$-value at which the slope of $g$ will be
+      four times greater than the slope of $f$ ? Test
+      your conjecture.</p>
+    
+      <p class="problem-part"> Why is it plausible that the slope of $g$ would always be four
+    times greater than the slope of $f$ ?</p>
+    </div>
+    
+    <div class="problem">
+      <p>The website <br>http://ptaff.ca/soleil/?lang=en_CA<br> creates a
+      “daylight hour graph” for major world cities.</p>
+
+     <p class="problem-part"> Make one for Baltimore on today’s date. Then, using $x$ to
+      represent days of the year and $y$ to represent the number of
+      hours of daylight on that day, write an equation to match the
+       graph you see.</p>
+
+     <p class="problem-part"> Imagine what the daylight hour graph for Vancouver would look
+    like. Would you expect it to be different from the Baltimore
+    graph in any of the following respects: period, amplitude,
+    horizontal shift, vertical shift? Then create a graph for
+    Vancouver and see if you are right.</p>
+    </div>
+    
+    <div class="problem">
+      <p>Here is a table showing the number of daylight hours on
+      the first of each month in the cities of Juneau and
+      Fairbanks,
+      Alaska. (Data from
+        http://www.absak.com/library/average-annual-insolation-alaska)</p>
+
+    <table id="table-3.1" style="position: relative; left: -2em;">
+      <tbody>
+        <tr>
+          <td>
+            <p>City</p>
+          </td>
+
+          <td>
+            <p>Jan</p>
+          </td>
+
+          <td>
+            <p>Feb</p>
+          </td>
+
+          <td>
+            <p>Mar</p>
+          </td>
+
+          <td>
+            <p>Apr</p>
+          </td>
+
+          <td>
+            <p>May</p>
+          </td>
+
+          <td>
+            <p>June</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Juneau</p>
+          </td>
+
+          <td>
+            <p>6:30</p>
+          </td>
+
+          <td>
+            <p>8:15</p>
+          </td>
+
+          <td>
+            <p>10:34</p>
+          </td>
+
+          <td>
+            <p>13:13</p>
+          </td>
+
+          <td>
+            <p>15:43</p>
+          </td>
+
+          <td>
+            <p>17:48</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Fairbanks</p>
+          </td>
+
+          <td>
+            <p>4:00</p>
+          </td>
+
+          <td>
+            <p>6:55</p>
+          </td>
+
+          <td>
+            <p>10:07</p>
+          </td>
+
+          <td>
+            <p>13:35</p>
+          </td>
+
+          <td>
+            <p>17:01</p>
+          </td>
+
+          <td>
+            <p>20:33</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="table-3.2" style="position: relative; left: -2em;" >
+          <tbody>
+            <tr>
+              <td>
+              </td>
+
+              <td>
+                <p>July</p>
+              </td>
+
+              <td>
+                <p>Aug</p>
+              </td>
+
+              <td>
+                <p>Sept</p>
+              </td>
+
+              <td>
+                <p>Oct</p>
+              </td>
+
+              <td>
+                <p>Nov</p>
+              </td>
+
+              <td>
+                <p>Dec</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Juneau</p>
+              </td>
+
+              <td>
+                <p>18:10</p>
+              </td>
+
+              <td>
+                <p>16:30</p>
+              </td>
+
+              <td>
+                <p>14:01</p>
+              </td>
+
+              <td>
+                <p>11:30</p>
+              </td>
+
+              <td>
+                <p>8:55</p>
+              </td>
+
+              <td>
+                <p>6:53</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Fairbanks</p>
+              </td>
+
+              <td>
+                <p>21:25</p>
+              </td>
+
+              <td>
+                <p>18:11</p>
+              </td>
+
+              <td>
+                <p>14:39</p>
+              </td>
+
+              <td>
+                <p>11:19</p>
+              </td>
+
+              <td>
+                <p>7:51</p>
+              </td>
+
+              <td>
+                <p>4:43</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      
+
+    
+
+    <p class="problem-part"> Write equations for the hours of daylight in both Juneau and
+    Fairbanks. Use month of the year for $x$. Note that the numbers
+    in the table are given in “hours:minutes” form, so you’ll have
+    to decide how to
+    convert them to decimal notation.</p>
+
+    <p class="problem-part"> According to the equation/graph you’ve made, what is the day of
+    the year that receives the least daylight? Does this seem
+    right? What data would you need in order to make a more
+    accurate graph?</p>
+
+    <p class="problem-part"> Graph the two equations on your calculator in order to estimate
+    when Juneau and Fairbanks have the same number of hours of
+    daylight. What time of year is this?</p>
+    </div>
+    
+    <div class="problem">
+      <p>Critics of the theory of global warming say that changes
+      in the Earth’s temperature are cyclic. The graph below shows
+        the level of CO<sub>2</sub> in the atmosphere (which directly affects
+      temperature).
+
+ <figure>
+    <img src="../images/10-2-modeling-with-trig/Lesson%202%20-%20graph%2057.tif.jpg" >
+  </figure></p>
+
+      <p>image from
+      http://www.pbs.org/wgbh/warming/etc/graphs.html</p>
+
+      <p class="problem-part"> Approximate some data points, and use these to come up
+        with an equation giving the CO<sub>2</sub> level vs. year.</p>
+
+      <p class="problem-part"> Use this equation to predict what the
+        CO<sub>2</sub> levels should be in the early 21st century, and compare
+    your answer with the graph.</p>
+    </div>
+
+    <h2>Exploring in Depth</h2>
+    
+    <div class="problem">
+      <p>(from Foerster’s $Precaclulus$) The hum you hear on some
+      radios when they are not tuned to a station is a sound wave
+      of 60 cycles per second.</p>
+
+      <p class="problem-part"> Is the 60 cycles per second the period, or is it the
+      frequency? If it is the period, find the frequency. If it is
+      the frequency, find the period.</p>
+    
+      <p class="problem-part"> The <em class="vocab">wavelength</em> of a sound wave is defined as the distance the
+    wave travels in a time equal to one period. If sound travels at
+    1100 ft/sec, find the wavelength of the 60-cycle-per-second
+    hum.</p>
+
+      <p class="problem-part"> The lowest musical note the human ear can hear is about 16
+    cycles per second. In order to play such a note, the pipe on an
+    organ must be exactly half as long as the wavelength. What
+    length of organ pipe would be needed to generate a
+    16-cycle-per-second note?</p>
+    </div>
+    
+    <div class="problem">
+      <p>Make the following graph: put radian
+      measure on the $x$-axis. On the $y$-axis, plot
+        the value for the <em>slope</em> of $y = \sin x$. Plot enough points
+      to get a general sense of
+      the curve, then find an equation for it.</p>
+    </div>
+
+    <div class="problem">
+      <p>Repeat the previous question, this time
+      plotting the slope of $y = \cos x$. Find an equation for this
+      graph as well.</p>
+    </div>
+  </section>
+
+  
+  <section>
+    
+  </section>
+
+ 
+
+  
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

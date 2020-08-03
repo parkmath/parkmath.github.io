@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>combinatorics introduction</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/01-2-combinatorics-introduction.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-1   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 2:
+
+
+Combinatorics Introduction 
+</h1>
+    
+    
+
+<article>
+
+  
+
+  <section class="development">
+
+    <h2>Development</h2>
+
+    <p>John wishes to wear a nice pair of dress pants with a
+    sport-coat when he goes out on his first date tonight. He has 5
+    different pairs of dress pants and 3
+    different sport-coats. John, wishing to make the best possible
+    first impression, decides to try on each combination of a pair
+    of dress pants and a sport-coat. After trying all of these
+    combinations, he will decide which is the best. It will take
+    him approximately five minutes to get dressed, look carefully
+    at the jacket-pants combination, and then get undressed. If it
+    is 5:30 p.m. now, and John wishes to be leaving his house by
+    7:00 p.m., will he make it? It’s not hard to see that John
+    should be interested in the number of jacket-pants combinations
+    that he will be trying on. Determining this number is in the
+    realm of an area of mathematics known as <em class="vocab">combinatorics</em>.</p>
+
+    <div class="problem">
+      <p>How many jacket-pants combinations will John have to
+      try?</p>
+    </div>
+
+    <div class="problem">
+      <p>Write down as many different ways of determining the
+      answer to Problem 1 as you can think of. Compare these ways
+      to the ways of other students in your class. Which method is
+      most visual? Least visual?</p>
+    </div>
+
+    <p>John’s situation is one that can be reasonably solved by
+    listing all of the possible combinations. This approach, while
+    sufficient, is not particularly useful with the task that
+    Imelda Marcos would have had. She reputedly had approximately
+    3000 pairs of shoes, 2000 designer dresses, 500 bras, and 200
+    girdles.</p>
+
+    <div class="problem">
+      <p>How many shoes-dresses combinations did Imelda have?</p>
+    </div>
+
+    <div class="problem">
+      <p>How many shoes-dresses-bras combinations did she have?</p>
+    </div>
+
+    <div class="problem">
+      <p>Can you reasonably answer either Problem 3 or 4 by
+      visualizing? What method(s) used to solve John’s problem can
+      be used with Imelda’s?</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose you were trying to determine the number of
+      combinations of ${n_1}$ things combined with ${n_2}$ things
+      combined with ${n_3}$ things and so on up to ${n_k}$ things.
+      How many combinations are there?</p>
+    </div>
+
+    <p>The result you probably wrote in Problem 6 is known as the
+    <em class="vocab">Multiplication Principle of Counting</em>.</p>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>How many dress and girdle combinations did Imelda
+      Marcos have?</p>
+    </div>
+
+    <div class="problem">
+      <p>You can make a sundae at <em>I Scream</em> by choosing one scoop of
+      ice cream from 6 options (vanilla, chocolate, strawberry,
+      banana, cherry, or coffee), one topping from 4 options
+      (hamburger crumble, pickle pieces, bacon bits, or onion O’s),
+      and one sauce from 3 options (ketchup, mayonnaise, or
+      balsamic). How many different sundaes do you get to choose
+      from? Mmmm!</p>
+    </div>
+
+    <h2 class="new-page">Going Further</h2>
+
+    <p>John’s and Imelda’s problems led to our first significant
+    idea in combinatorics. If this was all there were to
+    combinatorics, however, the subject would not be of much
+    interest to mathematicians, computer scientists, or businesses,
+    nor would this lesson have more pages in it (as you can plainly
+    see that it does). Let’s look at some different situations from
+    what we saw before.</p>
+
+    <div class="problem">
+      <p>The members of the Math Society wish to appoint a slate of
+      officers that will be in charge of its meetings and
+      activities this year. The slate will have 2 positions —
+      President and Secretary. If there are 5 students in the Math
+      Society, how many distinct slates can be formed? By distinct
+      we mean to distinguish the slate consisting of Sheila
+      (President)
+      and Jack (Secretary) from the slate consisting of Jack
+      (President) and Sheila (Secretary). You might think about
+      visualizing in order to get a handle on how to count in this
+      situation.</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose that the slate had 3 positions — President,
+      Secretary, and Treasurer — and there were 6 students in the
+      Math Society. How many distinct slates can be formed now?</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose that the Math Society expanded to 25 students and,
+      therefore, decided that the governing body should have
+      4 positions — President, Vice-President, Secretary, and
+      Treasurer. How many distinct slates can be formed now?</p>
+    </div>
+
+    <div class="problem">
+      <p>In how many different ways can Elsa arrange 5 books on
+      the top shelf of her bookcase? She’s going to arrange them
+      side-by-side and standing up.</p>
+    </div>
+
+    <div class="problem">
+      <p>In how many different ways can Elsa arrange 20 books on
+      the top shelf of her bookcase? Show your work.</p>
+    </div>
+
+    <p class="new-page">Your response to determining the exact amount in Problem 13
+    might be to scream as you realize that you will have to
+    write</p>
+
+    <p>$20 \cdot 19 \cdot 18 \cdot 17 \cdot 16 \cdot 15 \cdot 14
+    \cdot 13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7
+    \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1.$</p>
+
+    <p>Fortunately, Christian Kramp in 1808 showed some foresight
+    and decided to
+    co-opt the exclamation mark for just this situation. Given the
+    above problem, Christian would have written $20!$. (“$20!$” is read as “20 factorial.”)</p>
+
+    <div class="problem">
+      <p>Write $9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3
+      \cdot 2 \cdot 1$ using factorial notation. Write $6!$ without
+      factorial notation.</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose we are going to create a 7-letter “word” by using
+      the letters in the word “numbers”. The “word” doesn’t have to
+      make sense.</p>
+
+      <p class="problem-part">How many different 7-letter words
+      can we create if a letter cannot be used more than once in a
+      word? Can you write your answer using factorial notation?</p>
+
+      <p class="problem-part">How many different 7-letter words
+      can we create if a letter can be used more than once in a
+      word? Can you write your answer using factorial notation?</p>
+
+      <p class="problem-part">What is the probability that a
+      random 7-letter word created from the letters from “numbers”,
+      where each of the letters could be used more than once, also
+      happens to be a 7-letter word that uses each of the letters
+      in “numbers” exactly once?</p>
+    </div>
+
+    <p>Problem 15 Part a could have been written using different,
+    but equivalent, language. A common way of expressing this
+    problem is to ask, “How many different 7-letter words can we
+    create if repetition is not allowed?” The phrase “repetition is
+    not allowed” means in this case that a letter cannot be used
+    more than once in a word. Problem 15 Part b, similarly, could
+    have been written, “How many different 7-letter words can we
+    create if repetition is allowed?” Paying
+    attention to whether repetition is allowed is critical when
+    trying to understand what
+    you are trying to count. In other words, you need to develop
+    the habit of <em class="vocab">re-examine the problem</em> if you’re going to avoid
+    undercounting or overcounting.</p>
+
+    <h2 class="new-page">Practice</h2>
+
+    <div class="problem">
+      <p>In how many ways can 6 people line up for a movie?</p>
+    </div>
+
+    <div class="problem">
+      <p>How many four-letter “words” can be made from the letters
+      A, B, C, D, and E, if any arrangement is counted as a “word”
+      and repetition is not allowed? Now consider using the
+      26-letter alphabet — how many 4-letter words are possible if,
+      again, repetition is not allowed?</p>
+    </div>
+
+    <div class="problem">
+      <p>How many distinct license plates can be created in a state
+      that has a 6-digit license plate (that is, plates have 6
+      digits and no letters) where digits can repeat? How many more
+      license plates would there be if a 7th digit was added?</p>
+    </div>
+
+    <div class="problem">
+      <p>In the picture below, each cylinder is placed in a section
+      of the key. The depth of the section is the “cut”. If you
+      have a key with 6 sections and each can contain one of four
+      different cuts, how many different key configurations are
+      possible?</p>
+      <figure class="fig-50">
+        <img src="../images/01-2-combinatorics-introduction/image10%20key%20BW.tif.jpg" >
+      </figure>
+    </div>
+
+
+    <div class="problem">
+      <p>Over the summer vacation, a student wants to read 14
+      books. In how many different orderings can the student
+      arrange these books for reading?</p>
+    </div>
+
+    <div class="problem">
+      <p>In the upcoming school election, a completed ballot is one
+      in which a student has voted for one person for president,
+      one person for vice-president, one for treasurer, and one for
+      secretary. If there are 5 people running for president, 4 for
+      vice-president, 4 for treasurer, and 3 for secretary, how
+      many distinct, complete ballots could be filled out?</p>
+    </div>
+  </section>
+
+  <section class="problems">
+    
+    <h2>Problems</h2>
+    
+    <p>In each problem you should think very carefully about the
+    information that’s been presented in order to determine what is
+    relevant in solving the problem. Furthermore, you should
+    consider
+    visualizing — not necessarily with a tree diagram, but with
+    slots or boxes — as a way of trying to organize the
+    information. Lastly, if the numbers in the problem are large,
+    don’t be afraid to change them to smaller numbers and,
+    therefore, make the problem a little easier to work with
+    initially. By doing this, you are using or developing an
+    important habit called <em class="vocab">change or simplify the problem.</em></p>
+
+    <div class="problem">
+      <p>Three-digit area codes on phones were introduced after it
+      became clear that the
+      restrictions on the seven-digit phone number
+      limited the number of phones that could be in use. The
+      original restrictions on these three-digit codes were as
+      follows: the first digit can only be a digit from 2-9; the
+      second digit must be 0 or 1; and the last can be any
+      digit.</p>
+
+      <p class="problem-part">How many area codes were
+      possible?</p>
+
+      <p class="problem-part">How many area codes began with the
+      digit 4?</p>
+
+      <p class="problem-part">What is the probability that a
+      random
+      area code begins with the digit 4? What is the probability
+      that it does not begin with a 4?</p>
+
+      <p class="problem-part">How many area codes ended with
+      a 9?</p>
+
+      <p class="problem-part">What’s the probability that a
+      random area code forms an odd number?</p>
+    </div>
+
+    <div class="problem">
+      <p>In the United States, radio and television stations all
+      have three- or four-letter “call signs” that begin with
+      either K or W.
+      Stations east of the Mississippi River
+      start with W, and stations west of the
+      Mississippi start with K.</p>
+
+      <p class="problem-part">In 1928 there were 677 radio
+      stations (and 0 television stations) in the United States. If
+      repetition of letters were allowed (so a station could be
+      called WOW, for example), would it have been possible for
+      each of these stations to have a three-letter call sign?</p>
+
+      <p class="problem-part">Today, using three- or four-letter
+      call signs, how many TV or radio stations total could exist
+      east of the Mississippi if repetition of letters were not
+      allowed?</p>
+
+      <p class="problem-part">Of all the possible 3-letter call
+      signs, what is the probability that if you randomly choose
+      one it will have all of its letters in common with the
+      station WJZ? For example: WJJ or WWZ.</p>
+
+      <p class="problem-part">Of all the possible 4-letter
+      call
+      signs, what is the probability that if you randomly choose
+      one it will
+      have exactly three of its letters in common with WTMD? (For
+      example:
+      KTMM.) How about four letters in common?</p>
+    </div>
+
+    <div class="problem">
+      <p>How many 3-digit numbers can be made from the digits 1
+      through 8 with no repetitions? What’s the chance that one of
+      these numbers will be divisible by 5?</p>
+    </div>
+
+    <div class="problem">
+      <p>A standard combination lock has a three number
+      combination. Each number is in the range 0 to 49 and the
+      order of the numbers matters — i.e., the combination 26-32-7
+      is different from 7-32-26. How many distinct combinations are
+      there?</p>
+    </div>
+
+    <div class="problem">
+      <p>The rule IceCream takes the number of kinds of ice cream a
+      store sells, $n$, and outputs the number of triple-scoop
+      ice-cream cones they can possibly make.
+      It counts in such a way that it matters which flavor is on
+      the top or bottom,
+      and multiple scoops with the same
+      flavor are allowed. Write a formula for $IceCream(n)$  = _____________.</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose you were going to take a 20-question true-false
+      exam. How many possible arrangements of responses are there?
+      An arrangement in this case is a sequence of T’s and F’s that
+      corresponds to how you answered the 20 questions.</p>
+    </div>
+
+    <div class="problem">
+      <p>To get onto computers, there are usually passwords
+      required. Suppose your
+      computer requires a 5-character code with the first three
+      characters being digits (0-9) and the last two being letters
+      from the alphabet.</p>
+
+      <p class="problem-part">How many codes are there?</p>
+
+      <p class="problem-part">If trying each password would take
+      5 seconds, how long would it take to try all of them?</p>
+
+      <p class="problem-part">If you were told that there weren’t
+      any vowels used in the password, how would this affect the
+      amount of time it would take you to try all possible
+      passwords? Also, what is the probability that a password
+      chosen randomly does not have any vowels?</p>
+
+      <p class="problem-part">Would it take less time than in
+      Part c if the 3-digit number were even and any of the letters
+      of the alphabet could be used?</p>
+    </div>
+
+    <div class="problem">
+      <p>The symbol $\circleddash$ takes any integer from 1 to 10 and gives back
+      an integer from 2010 to 2014. How many different rules like
+      this — using these same inputs, and giving as outputs any
+      integer between 2010 and 2014 — could there be?</p>
+    </div>
+
+    <p>In Problems 30-33, you’re going to need to think carefully
+    about the given information and then decide how best to <em class="vocab">prove</em>
+    your answer. You should be prepared to give a step-by-step
+    explanation that would convince any of your classmates. While
+    each of the problems does involving counting, you’ll need to
+    decide whether the Multiplication Principle of Counting is to
+    be used.</p>
+
+    <div class="problem">
+      <p>Show that in any group of five people, there are two
+      people who have an identical number of friends within the
+      group.</p>
+    </div>
+
+    <div class="problem">
+      <p>Daryl says that there are 210 possible 3-person committees
+      that can be formed from 7 people. Alecia disagrees, saying
+      that there are only around half that many. What do you
+      think?</p>
+    </div>
+
+    <div class="problem">
+      <p>Do you have a better chance of getting a sum of 7 with two
+      standard dice or with three?</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose that a class of 15 students is asked to shade one
+      quarter of the area of the rectangle shown below. Only whole
+      squares can be shaded, and the shaded squares cannot share a
+      side. Can each
+      student provide an answer that no one
+      else in the class provides?</p>
+      <figure>
+        <img src="../images/01-2-combinatorics-introduction/Combinatorics image prob 33.png">
+      </figure>
+        
+    </div>
+
+    <div class="problem">
+      <p>A bag contains all the rectangles with
+      perimeter 36 whose dimensions are
+      positive integers. If a rectangle is chosen at random from
+      this bag, what are the chances that it will be a square?</p>
+    </div>
+
+    <div class="problem">
+      <p>Marbles are placed in a hat in a ratio of two red marbles
+      to three blue marbles to five green marbles.</p>
+
+      <p class="problem-part">What is the probability that a
+      marble you choose will be red or blue?</p>
+
+      <p class="problem-part">If there are 180 marbles in the
+      hat, how many of the marbles are blue?</p>
+    </div>
+
+    <div class="problem">
+      <p>How many terms are possible when the following product is
+      multiplied out: $\left( {a + b} \right)\left( {c + d}
+      \right)\left( {e + f} \right)$?</p>
+    </div>
+
+    <div class="problem">
+      <p>You can think of the factorial symbol, !,
+      as taking inputs and outputs, as is the
+      case with many other symbols you’ve
+      encountered.</p>
+
+      <p class="problem-part">For which values of $n$ does $n!$ have
+      odd outputs?</p>
+
+      <p class="problem-part">For which values of $n$ does $n!$ have
+      outputs that are multiples of six?</p>
+    </div>
+
+    <div class="problem">
+      <p>Rewrite as simply as possible.</p>
+
+      <p class="problem-part">$\frac{x!}{(x-1)!}$</p>
+
+      <p class="problem-part">$\frac{x! \cdot x!}{x^2}$</p>
+
+      <p class="problem-part">$\frac{x!}{(x+2)!} \cdot (x^2 + 3x + 2)$</p>
+    </div>
+
+    <div class="problem">
+      <p>Which of the following is $x(yzw)$ equal to? Answer all
+      that are correct:</p>
+
+      <p class="problem-part">$(xy)(zw)$</p>
+
+      <p class="problem-part">$(xy)(xz)(xw)x$ </p>
+
+      <p class="problem-part">$xy + xz + xw$</p>
+
+      <p class="problem-part">$xyzw$</p>
+
+      <p class="problem-part">$zxwy$</p>
+
+      <p class="problem-part">$y(zxw)$</p>
+    </div>
+
+    <div class="problem">
+      <p>Without a calculator determine which
+      is bigger.</p>
+
+      <p class="problem-part">$2^{100}$ or $100^2$</p>
+
+      <p class="problem-part">$2^{100}$ or $100!$</p>
+
+      <p class="problem-part">$100!$ or $50! \cdot 50!$</p>
+
+      <p class="problem-part">$100!/50!$ or $60!/30!$</p>
+    </div>
+
+    <h2 class="new-column">Exploring in Depth</h2>
+
+    <div class="problem">
+      <p>9 girls and 8 boys are standing in a
+      lunch line.</p>
+
+      <p class="problem-part">How many ways can they line up if
+      all the girls are first, followed by the boys? Can you write
+      this answer
+      using factorials?</p>
+
+      <p class="problem-part">(Part a continued) What’s the
+      chance this will happen? Can you write this answer using
+      factorials?</p>
+
+      <p class="problem-part">How many ways can they line up if
+      they alternate gender? Can a boy be first in line? Can you
+      write this answer in terms of factorials?</p>
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">Simplify $(4x+1)\cdot 2 - x$</p>
+
+      <p class="problem-part">Factor ${x^2} - 19x + 84$</p>
+
+      <p class="problem-part">Factor $24{x^2} - 48x$</p>
+
+      <p class="problem-part">Find $\frac{{14}}{5} +
+      \frac{4}{{15}}$</p>
+
+      <p class="problem-part">We can use the symbol $r(x)$ to mean
+      “the reciprocal of $x$.” Find $x$ if
+      $r(x) = r(4) + r(6) + r(12)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Without determining what the explicit value is of $10!$, how
+      would you argue
+      that $10! + 10! \ne 20!$? Is it ever the case
+      that $k! + k! = (2k)!$?</p>
+    </div>
+
+    <div class="problem">
+      <p>The US Open Tennis Championship for women involves a
+      single elimination tournament starting with 64 players
+      (single elimination means that once you lose you’re
+      eliminated from the tournament).</p>
+
+      <p class="problem-part">How many tennis matches are played
+      in the tournament?</p>
+
+      <p class="problem-part">Is it possible to run a single-
+      elimination tournament with less than 64 players, if no
+      player is
+      allowed a “bye”? If so, what
+      number of players can participate
+      in such a tournament? If not,
+      explain why.</p>
+
+      <p class="problem-part">Suppose the tournament was
+      double-elimination — two losses and you’re eliminated. How
+      many matches are played in this tournament?</p>
+    </div>
+
+    <div class="problem">
+      <p>In Morse code, there are two symbols —
+      a dot and a dash. Since there are 26 letters
+      in the alphabet, there would have to be 26 different
+      configurations of dots and dashes to use the Morse code
+      successfully. Will any of the letters require a configuration
+      with a total of five dots and/or dashes? Why?</p>
+    </div>
+  </section>
+
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

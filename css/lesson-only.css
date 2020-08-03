@@ -1,0 +1,913 @@
+/* based on something from Chris Coyier at http://www.css-tricks.com */
+/**
+ * Media query shorthand.  Usage:
+ *
+ * @include mq([condition1], [condition2], [condition3], [...]) {
+ *   // the stuff that should happen under the given conditions.
+ * }
+ *
+ * Each condition should be one of:
+ * - `sm`, `md`, `lg`: translates to `@media screen and (min-width: size) { ... }`, where
+ *   `size` is the Bootstrap-like variable, e.g. `$screen-sm-min`.  Useful
+ *   when you're being "mobile-first".
+ *
+ * - `print`: translates to `@media print`
+ *
+ * - `too-sm`: translates to `@media screen and (max-width: $screen-sm-min - 1) { ... }`.
+ *   Useful when you're being *not* "mobile-first".
+ *
+ * - an arbitrary media query: just does `@media (condition) { ... }`
+ *
+ */
+/**
+ * Clearfix
+ */
+.container:after, .lesson .development:after, .lesson .problems:after, .habit-list dl:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Grid
+ */
+/*
+THE FOLLOWING THREE MIXINS TAKEN FROM TWITTER BOOTSTRAP SASS
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Twitter, Inc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+ */
+.container {
+  margin: 0 auto;
+  padding: 0 18px; }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 756px; } }
+  @media screen and (min-width: 922px) {
+    .container {
+      width: 976px; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1176px; } }
+  @media print {
+    .container {
+      width: 100%;
+      padding: 0 11px; } }
+
+.book-1 h1 + h2 {
+  border-right-color: red; }
+.book-1 .habit-lesson .problem:before {
+  color: red; }
+
+.book-2 h1 + h2 {
+  border-right-color: #00b3d0; }
+.book-2 .habit-lesson .problem:before {
+  color: #00b3d0; }
+
+.book-3 h1 + h2 {
+  border-right-color: #7fbd3c; }
+.book-3 .habit-lesson .problem:before {
+  color: #7fbd3c; }
+
+.book-4 h1 + h2 {
+  border-right-color: #9d4387; }
+.book-4 .habit-lesson .problem:before {
+  color: #9d4387; }
+
+.book-5 h1 + h2 {
+  border-right-color: #045291; }
+.book-5 .habit-lesson .problem:before {
+  color: #045291; }
+
+.book-6 h1 + h2 {
+  border-right-color: #5c8627; }
+.book-6 .habit-lesson .problem:before {
+  color: #5c8627; }
+
+.book-7 h1 + h2 {
+  border-right-color: #ffbe3a; }
+.book-7 .habit-lesson .problem:before {
+  color: #ffbe3a; }
+
+.book-8 h1 + h2 {
+  border-right-color: #9a5c26; }
+.book-8 .habit-lesson .problem:before {
+  color: #9a5c26; }
+
+.book-9 h1 + h2 {
+  border-right-color: #00b3d0; }
+.book-9 .habit-lesson .problem:before {
+  color: #00b3d0; }
+
+.book-10 h1 + h2 {
+  border-right-color: #00b3d0; }
+.book-10 .habit-lesson .problem:before {
+  color: #00b3d0; }
+
+.book-custom-4 h1 + h2 {
+  border-right-color: #e8873a; }
+.book-custom-4 .habit-lesson .problem:before {
+  color: #e8873a; }
+
+.book-custom-1 h1 + h2 {
+  border-right-color: #006062; }
+.book-custom-1 .habit-lesson .problem:before {
+  color: #006062; }
+
+.book-custom-2 h1 + h2 {
+  border-right-color: red; }
+.book-custom-2 .habit-lesson .problem:before {
+  color: red; }
+
+.book- h1 + h2 {
+  border-right-color: #ff8000; }
+.book- .habit-lesson .problem:before {
+  color: #ff8000; }
+
+/* helper mixins */
+@media print {
+  .new-page.new-page {
+    display: block;
+    page-break-before: always !important; } }
+
+@media print {
+  .new-column.new-column {
+    column-break-before: always; } }
+
+.allow-break.allow-break {
+  page-break-inside: auto !important; }
+
+.disallow-break.disallow-break {
+  page-break-inside: avoid !important; }
+
+.allow-break .continued {
+  float: bottom;
+  text-align: right;
+  font-style: italic; }
+  .allow-break .continued:before {
+    content: "Problem continued on next page"; }
+
+.lesson {
+  /* convenience classes for lesson authors/editors to use */
+  /* --- end convenience classes --- */
+  /* problem counter */
+  counter-reset: problem;
+  /* extra line of space between a problem an narrative text that follows it */
+  /* right-align and size the headings */
+  /* main lesson title */
+  /* subheadings for sections within lesson (Introduction, Development, etc.) */
+  /* a problem (see below for section-specific styling) */
+  /* the Development (and Intro and Practice) section */
+  /* the Problems (and Exploring in Depth) section */ }
+  .lesson .fig-50 > * {
+    width: 50%;
+    margin: 0 auto; }
+  .lesson .fig-25 > * {
+    width: 25%;
+    margin: 0 auto; }
+  .lesson .two-up > :first-child,
+  .lesson .three-up > :first-child,
+  .lesson .four-up > :first-child {
+    padding-left: 0; }
+  .lesson .two-up > :last-child,
+  .lesson .three-up > :last-child,
+  .lesson .four-up > :last-child {
+    padding-right: 0; }
+  .lesson .two-up > * {
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px; }
+    @media print {
+      .lesson .two-up > * {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media print {
+      .lesson .two-up > * {
+        float: left;
+        width: 50%; } }
+    @media print {
+      .lesson .two-up > * {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media screen and (min-width: 768px) {
+      .lesson .two-up > * {
+        float: left;
+        width: 50%; } }
+  .lesson .three-up > * {
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px; }
+    @media print {
+      .lesson .three-up > * {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media print {
+      .lesson .three-up > * {
+        float: left;
+        width: 33.33333%; } }
+    @media print {
+      .lesson .three-up > * {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media screen and (min-width: 768px) {
+      .lesson .three-up > * {
+        float: left;
+        width: 33.33333%; } }
+  .lesson .four-up > * {
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px; }
+    @media print {
+      .lesson .four-up > * {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media print {
+      .lesson .four-up > * {
+        float: left;
+        width: 25%; } }
+    @media print {
+      .lesson .four-up > * {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media screen and (min-width: 768px) {
+      .lesson .four-up > * {
+        float: left;
+        width: 25%; } }
+  .lesson em.vocab {
+    font-weight: bold;
+    font-style: normal; }
+  .lesson ul.horizontal {
+    text-align: center; }
+    .lesson ul.horizontal li {
+      display: inline-block; }
+      .lesson ul.horizontal li + li {
+        margin-left: 36px;
+        margin-top: 0; }
+        @media print {
+          .lesson ul.horizontal li + li {
+            margin-left: 24px; } }
+  .lesson ul.bulleted {
+    list-style-type: disc; }
+  .lesson ol.subparts {
+    list-style-type: lower-roman; }
+  .lesson table.vertical-headers {
+    table-layout: fixed; }
+    .lesson table.vertical-headers th {
+      text-align: center;
+      white-space: nowrap;
+      transform-origin: 50% 50%;
+      transform: rotate(-90deg); }
+      .lesson table.vertical-headers th p {
+        margin: 0 -100%;
+        display: inline-block; }
+        .lesson table.vertical-headers th p:before {
+          content: '';
+          width: 0;
+          padding-top: 105%;
+          /* takes width as reference, + 10% for faking some extra padding */
+          display: inline-block;
+          vertical-align: middle; }
+  .lesson .problem + p {
+    margin-top: lines(2); }
+  .lesson h1,
+  .lesson h2 {
+    text-align: right;
+    font-size: 2em; }
+    @media screen and (min-width: 768px) {
+      .lesson h1,
+      .lesson h2 {
+        font-size: 3em; } }
+    @media print {
+      .lesson h1,
+      .lesson h2 {
+        font-size: 3em; } }
+  .lesson h1 {
+    padding: 0;
+    margin-bottom: 1em; }
+    @media print {
+      .lesson h1 {
+        bookmark-level: 1;
+        bookmark-state: closed; } }
+  @media print {
+    .lesson h2 {
+      bookmark-level: 2;
+      bookmark-state: closed; } }
+  .lesson .problem {
+    counter-increment: problem;
+    counter-reset: part;
+    /* don't break up problems */
+    page-break-inside: avoid;
+    /* problem numbers and problem parts */
+    position: relative;
+    /* move the problem content up, relative to the problem number */ }
+    .lesson .problem:before {
+      content: counter(problem);
+      font-family: "Garamond", Georgia, serif;
+      color: #9e9e9e;
+      line-height: 1;
+      font-size: 2.5em;
+      padding-right: .25em; }
+      @media screen and (min-width: 768px) {
+        .lesson .problem:before {
+          float: none;
+          display: inline-block;
+          width: 100px;
+          margin-left: -100px;
+          font-size: 3.5em;
+          text-align: right; } }
+      @media print {
+        .lesson .problem:before {
+          float: none;
+          display: inline-block;
+          width: 100px;
+          margin-left: -100px;
+          font-size: 3.5em;
+          text-align: right; } }
+    @media screen and (min-width: 768px) {
+      .lesson .problem > *:first-child {
+        margin-top: -2.33em; } }
+    @media print {
+      .lesson .problem > *:first-child {
+        margin-top: -2.33em; } }
+    .lesson .problem .problem-part {
+      padding-left: 1em;
+      text-indent: -1em;
+      counter-reset: subpart;
+      counter-increment: part; }
+      .lesson .problem .problem-part:before {
+        content: counter(part,lower-alpha) ". "; }
+        @media print {
+          .lesson .problem .problem-part:before {
+            page-break-after: avoid; } }
+  .lesson .development {
+    margin-left: -18px;
+    margin-right: -18px; }
+    @media print {
+      .lesson .development {
+        margin-left: -12px;
+        margin-right: -12px; } }
+    .lesson .development h2 {
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px; }
+      @media print {
+        .lesson .development h2 {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media screen and (min-width: 768px) {
+        .lesson .development h2 {
+          float: left;
+          width: 87.5%; } }
+      @media screen and (min-width: 768px) {
+        .lesson .development h2 {
+          margin-left: 0%; } }
+      @media print {
+        .lesson .development h2 {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media print {
+        .lesson .development h2 {
+          float: left;
+          width: 87.5%; } }
+      @media print {
+        .lesson .development h2 {
+          margin-left: 0%; } }
+    .lesson .development > * {
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px; }
+      @media print {
+        .lesson .development > * {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media screen and (min-width: 768px) {
+        .lesson .development > * {
+          float: left;
+          width: 75%; } }
+      @media screen and (min-width: 768px) {
+        .lesson .development > * {
+          margin-left: 12.5%; } }
+      @media print {
+        .lesson .development > * {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media print {
+        .lesson .development > * {
+          float: left;
+          width: 75%; } }
+      @media print {
+        .lesson .development > * {
+          margin-left: 12.5%; } }
+    .lesson .development > .problem {
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px; }
+      @media print {
+        .lesson .development > .problem {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media screen and (min-width: 768px) {
+        .lesson .development > .problem {
+          float: left;
+          width: 66.66667%; } }
+      @media screen and (min-width: 768px) {
+        .lesson .development > .problem {
+          margin-left: 20.83333%; } }
+      @media print {
+        .lesson .development > .problem {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media print {
+        .lesson .development > .problem {
+          float: left;
+          width: 66.66667%; } }
+      @media print {
+        .lesson .development > .problem {
+          margin-left: 20.83333%; } }
+  .lesson .problems {
+    margin-left: -18px;
+    margin-right: -18px;
+    /* Problems heading */
+    /* Exploring in Depth heading */
+    /* center figures by default within problems section. */ }
+    @media print {
+      .lesson .problems {
+        margin-left: -12px;
+        margin-right: -12px; } }
+    .lesson .problems > * {
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      margin-top: lines(1); }
+      @media print {
+        .lesson .problems > * {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media screen and (min-width: 768px) {
+        .lesson .problems > * {
+          float: left;
+          width: 50%; } }
+      @media print {
+        .lesson .problems > * {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media print {
+        .lesson .problems > * {
+          float: left;
+          width: 100%; } }
+    .lesson .problems > .problem {
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      margin-top: lines(2); }
+      @media print {
+        .lesson .problems > .problem {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media screen and (min-width: 768px) {
+        .lesson .problems > .problem {
+          float: left;
+          width: 41.66667%; } }
+      @media screen and (min-width: 768px) {
+        .lesson .problems > .problem {
+          margin-left: 8.33333%; } }
+      @media print {
+        .lesson .problems > .problem {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media print {
+        .lesson .problems > .problem {
+          float: left;
+          width: 83.33333%; } }
+      @media print {
+        .lesson .problems > .problem {
+          margin-left: 16.66667%; } }
+    @media print {
+      .lesson .problems {
+        page-break-before: always;
+        column-count: 2;
+        -webkit-column-count: 2;
+        column-fill: auto; }
+        .lesson .problems:after {
+          column-break-after: always; } }
+    .lesson .problems h2:first-of-type {
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px;
+      text-align: left;
+      color: #d6d6d6;
+      font-weight: 700;
+      font-size: 2.5em; }
+      @media print {
+        .lesson .problems h2:first-of-type {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media screen and (min-width: 768px) {
+        .lesson .problems h2:first-of-type {
+          float: left;
+          width: 100%; } }
+      @media screen and (min-width: 768px) {
+        .lesson .problems h2:first-of-type {
+          font-size: 4em;
+          /* reset from the make-column layout above */
+          margin-top: 0;
+          padding: 0;
+          float: none;
+          width: 100%;
+          column-span: all; } }
+      @media print {
+        .lesson .problems h2:first-of-type {
+          font-size: 4em;
+          /* reset from the make-column layout above */
+          margin-top: 0;
+          padding: 0;
+          float: none;
+          width: 100%;
+          column-span: all; } }
+    .lesson .problems h2:nth-of-type(2) {
+      position: relative;
+      min-height: 1px;
+      padding-left: 18px;
+      padding-right: 18px; }
+      @media print {
+        .lesson .problems h2:nth-of-type(2) {
+          padding-left: 12px;
+          padding-right: 12px; } }
+      @media screen and (min-width: 768px) {
+        .lesson .problems h2:nth-of-type(2) {
+          float: left;
+          width: 50%; } }
+      @media screen and (min-width: 768px) {
+        .lesson .problems h2:nth-of-type(2) {
+          margin-left: 50%; } }
+      @media print {
+        .lesson .problems h2:nth-of-type(2) {
+          /* reset from the make-column layout above */
+          padding: 0;
+          float: none;
+          width: 100%;
+          word-spacing: 20em; } }
+    .lesson .problems figure {
+      margin: 0 auto lines(1) auto; }
+  @media print {
+    .lesson h1, .lesson h2 {
+      page-break-after: avoid; }
+    .lesson .problem-part {
+      page-break-inside: avoid; } }
+
+.habit-list {
+  page: habit-list; }
+  .habit-list dl {
+    margin-left: -18px;
+    margin-right: -18px; }
+    @media print {
+      .habit-list dl {
+        margin-left: -12px;
+        margin-right: -12px; } }
+  .habit-list dt,
+  .habit-list dd {
+    font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+    margin-top: lines(1); }
+  .habit-list dt {
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: 700;
+    text-align: right; }
+    @media print {
+      .habit-list dt {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media screen and (min-width: 768px) {
+      .habit-list dt {
+        float: left;
+        width: 25%; } }
+    @media print {
+      .habit-list dt {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media print {
+      .habit-list dt {
+        float: left;
+        width: 25%; } }
+    .habit-list dt:after {
+      content: ":"; }
+  .habit-list dd {
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 18px;
+    padding-right: 18px; }
+    @media print {
+      .habit-list dd {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media screen and (min-width: 768px) {
+      .habit-list dd {
+        float: left;
+        width: 75%; } }
+    @media print {
+      .habit-list dd {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media print {
+      .habit-list dd {
+        float: left;
+        width: 75%; } }
+  @media print {
+    .habit-list dt:nth-of-type(8) {
+      page-break-before: always; }
+    .habit-list dd:nth-of-type(8),
+    .habit-list dt:nth-of-type(8) {
+      margin-top: lines(6); } }
+
+.habit-lesson-page .site-header {
+  margin-bottom: 0; }
+
+.habit-lesson {
+  page: habit-lesson; }
+  .habit-lesson .development {
+    margin-bottom: lines(3);
+    /* grey boxes */ }
+    @media screen and (min-width: 768px) {
+      .habit-lesson .development .problem {
+        /* reset column settings from base lesson style */
+        margin-left: 0;
+        margin-bottom: lines(3);
+        width: 100%;
+        background: #d6d6d6;
+        padding: lines(1) 0; }
+        .habit-lesson .development .problem.new-page {
+          margin-top: lines(5); }
+        .habit-lesson .development .problem:before {
+          position: absolute;
+          width: auto;
+          margin: 0;
+          right: 75%;
+          top: lines(1)/3.5;
+          z-index: 100; }
+        .habit-lesson .development .problem .problem-content {
+          position: relative;
+          min-height: 1px;
+          padding-left: 18px;
+          padding-right: 18px;
+          position: relative;
+          min-height: 1px;
+          padding-left: 18px;
+          padding-right: 18px;
+          background: white;
+          z-index: 50;
+          padding-top: lines(1);
+          padding-bottom: lines(1);
+          min-height: lines(3);
+          /* this would be cleaner as padding on problem-content, but
+             princexml was having issues. */ } }
+    @media screen and (min-width: 768px) and (min-width: 768px) {
+      .habit-lesson .development .problem .problem-content {
+        float: left;
+        width: 66.66667%; } }
+    @media screen and (min-width: 768px) and (min-width: 768px) {
+      .habit-lesson .development .problem .problem-content {
+        margin-left: 16.66667%; } }
+    @media screen and (min-width: 768px) {
+          .habit-lesson .development .problem .problem-content > * {
+            margin-left: 12.5%; }
+          .habit-lesson .development .problem .problem-content:before {
+            content: " ";
+            position: absolute;
+            right: 100%;
+            top: lines(0.5);
+            width: 0;
+            height: 0;
+            border-top: lines(1) solid transparent;
+            border-bottom: lines(1) solid transparent;
+            border-right: lines(1) solid;
+            border-right-color: white; }
+        .habit-lesson .development .problem > *:first-child {
+          margin-top: 0; } }
+    @media print {
+      .habit-lesson .development .problem {
+        /* reset column settings from base lesson style */
+        margin-left: 0;
+        margin-bottom: lines(3);
+        width: 100%;
+        background: #d6d6d6;
+        padding: lines(1) 0; }
+        .habit-lesson .development .problem.new-page {
+          margin-top: lines(5); }
+        .habit-lesson .development .problem:before {
+          position: absolute;
+          width: auto;
+          margin: 0;
+          right: 75%;
+          top: lines(1)/3.5;
+          z-index: 100; }
+        .habit-lesson .development .problem .problem-content {
+          position: relative;
+          min-height: 1px;
+          padding-left: 18px;
+          padding-right: 18px;
+          position: relative;
+          min-height: 1px;
+          padding-left: 18px;
+          padding-right: 18px;
+          background: white;
+          z-index: 50;
+          padding-top: lines(1);
+          padding-bottom: lines(1);
+          min-height: lines(3);
+          /* this would be cleaner as padding on problem-content, but
+             princexml was having issues. */ } }
+    @media print {
+      .habit-lesson .development .problem .problem-content {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media print {
+      .habit-lesson .development .problem .problem-content {
+        padding-left: 12px;
+        padding-right: 12px; } }
+    @media print {
+      .habit-lesson .development .problem .problem-content {
+        float: left;
+        width: 66.66667%; } }
+    @media print {
+      .habit-lesson .development .problem .problem-content {
+        margin-left: 16.66667%; } }
+    @media print {
+          .habit-lesson .development .problem .problem-content > * {
+            margin-left: 12.5%; }
+          .habit-lesson .development .problem .problem-content:before {
+            content: " ";
+            position: absolute;
+            right: 100%;
+            top: lines(0.5);
+            width: 0;
+            height: 0;
+            border-top: lines(1) solid transparent;
+            border-bottom: lines(1) solid transparent;
+            border-right: lines(1) solid;
+            border-right-color: white; }
+        .habit-lesson .development .problem > *:first-child {
+          margin-top: 0; } }
+
+/**
+ *
+ * Our snazzy header.
+ *
+ */
+.habits-textfield {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d6d6d6;
+  line-height: 1;
+  text-align: justify;
+  letter-spacing: -1px;
+  word-break: break-all;
+  overflow: hidden;
+  prince-text-justify: prince-cjk;
+  hyphens: auto; }
+
+[id="0.2-change-or-simplify-the-problem"] .habit-header h2 {
+  font-size: 2.66em; }
+
+.habit-header {
+  margin-bottom: lines(6);
+  font-size: .33em; }
+  @media screen and (min-width: 768px) {
+    .habit-header {
+      font-size: 2em/3; } }
+  @media print {
+    .habit-header {
+      font-size: 1em; } }
+  .habit-header .left,
+  .habit-header .right {
+    height: 6em;
+    position: relative; }
+    .habit-header .left .habits-textfield,
+    .habit-header .right .habits-textfield {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .habit-header .left h1,
+    .habit-header .right h1 {
+      font-size: 7.98em;
+      line-height: 1;
+      position: absolute;
+      bottom: -.11em;
+      right: -.04em;
+      margin: 0; }
+    .habit-header .left h2,
+    .habit-header .right h2 {
+      line-height: 0.92;
+      position: absolute;
+      bottom: .15em;
+      right: .1em;
+      margin: 0;
+      font-size: 3.99em;
+      font-weight: bold;
+      color: #5e5e5e;
+      text-transform: none; }
+      [id="0.2-change-or-simplify-the-problem"] .habit-header .left h2, [id="0.2-change-or-simplify-the-problem"]
+      .habit-header .right h2 {
+        font-size: 2.66em; }
+      .habit-header .left h2:before,
+      .habit-header .right h2:before {
+        position: absolute;
+        right: 100%;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 0.5em solid transparent;
+        border-bottom: 0.5em solid transparent;
+        border-right: 0.5em solid;
+        border-right-color: inherit; }
+  @media print {
+    .habit-header .left h1,
+    .habit-header .right h1 {
+      bottom: -.13em; }
+    .habit-header .left {
+      flow: static(header-left); }
+      .habit-header .left h1 {
+        left: auto;
+        right: 8.33333%; }
+    .habit-header .right {
+      flow: static(header-right); }
+      .habit-header .right h1 {
+        right: auto;
+        left: 8.33333%; }
+      .habit-header .right h2 {
+        right: 0;
+        bottom: -.06em;
+        color: black;
+        letter-spacing: -1px;
+        max-width: 90%; } }

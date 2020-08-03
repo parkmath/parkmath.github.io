@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>logic and geometry</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/06-4-logic-and-geometry.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-6   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 4:
+
+
+Logic And Geometry 
+</h1>
+    
+    
+
+<article>
+
+  <section class="development">
+
+
+
+
+    <h2>Introduction</h2>
+
+    <p>Lewis Carroll, of <em>Alice in Wonderland</em> fame, made the
+    following set of statements in his less famous book, <em>Symbolic
+      Logic</em>.”</p>
+
+    <p>No potatoes of mine, that are new, have been boiled.
+    All my potatoes in this dish are fit to eat.
+    No unboiled potatoes of mine are fit to eat.</p>
+
+    <div class="problem">
+      <p>What, if anything, can you conclude from these three
+      statements?</p>
+    </div>
+
+    <h2>Development</h2>
+
+    <p>It’s a well-known fact that all squares are rectangles, but
+    not all rectangles are squares. We can express these statements
+    in the form below.</p>
+
+    <div style="margin: 3em;"><p>If a figure is a square, then it is a rectangle. (true)<br>
+      If a figure is a rectangle, then it is a square. (false)</p></div>
+
+    <p>You may recall that these statements are called <em class="vocab">converses</em> of
+    each other, as is true of any pair of statements of the
+    form</p>
+
+    <div style="margin: 3em;"><p>If $A$ then $B$.<br>
+      If $B$ then $A$.</p></div>
+
+    <p>You may have seen Venn diagrams at some point in your life.
+    They are handy when thinking about logic. For instance, the
+    statement “All business people are savvy” (or “If a person is a
+    businessman, then he is savvy”) can be represented by the
+    following diagram:</p>
+
+    <figure class="fig-50">
+      <img src="../images/06-4-logic-and-geometry/logic%20diagrams.png" >
+    </figure>
+
+    <p>In this example, Algernon is a savvy businessman, Aberforce
+    is savvy but not a businessman, and Aloysius is neither savvy
+    nor a businessman.</p>
+
+    <div class="problem">
+      <p>Draw a similar diagram illustrating the statement “All
+      savvy people are businessmen.”</p>
+
+      <p class="problem-part">How would you write the statement
+      in “if/then” form?</p>
+
+      <p class="problem-part">Do the diagrams make it clear that
+      the statements “All businessmen are savvy” and “All savvy
+      people are businessmen” mean different things?</p>
+    </div>
+
+    <p>You’ve seen that if/then statements have converses, and that
+    just because the if/then statement is true doesn’t necessarily
+    mean the converse is. Here are two other types of statements
+    you can get from an if/then statement.</p>
+
+    <p>Take the statement “if $A$ then $B$”.<br>
+      “If not-$A$ then not-$B$” is called the <em class="vocab">inverse</em>.<br>
+      “If not-$B$ then not-$A$” is called the <em class="vocab">contrapositive</em>.</p>
+
+    <div class="problem">
+      <p>Pick three “test” statements of the form “if $A$ then $B$.”
+      Then use them to decide if the inverse and/or the
+      contrapositive must be true when the original statement is.
+      If you’re not sure, try drawing Venn diagrams.</p>
+    </div>
+
+    <p>Some statements on your list of theorems and postulates can
+    be written in if/then form as well, and it is worth
+    investigating if their converses are true. For example, you
+    probably have the following statement:</p>
+
+    <p>Opposite sides of a parallelogram are congruent.</p>
+
+    <div class="problem">
+      <p>Write a pair of if/then statements expressing this
+      statement and its converse.</p>
+    </div>
+
+    <div class="problem">
+      <p>If you were going to prove the converse, what would be the
+      given? What would be the result that you are trying to
+      prove?</p>
+    </div>
+
+    <div class="problem">
+      <p>Go ahead and prove the statement “if a quadrilateral has
+      both pairs of opposite sides congruent, then it is a
+      parallelogram.” (Hint: this is a problem where adding
+      something extra to the diagram is useful.)</p>
+    </div>
+
+    <p>Another way of saying what you just proved is that having
+      both pairs of opposite sides congruent is <em class="vocab">sufficient</em> for a
+    quadrilateral to be a parallelogram. In other words, if you
+    have a quadrilateral and you know its opposite sides are
+    congruent, that’s enough — you don’t need to know anything else
+    about it to know that it’s a parallelogram.</p>
+
+    <p>On the other hand, the original statement on your list,
+    “Opposite sides of a parallelogram are congruent,” provides a
+    statement that is true about all parallelograms. This kind of
+      statement is called a <em class="vocab">necessary</em> condition. For if you’ve got
+    a quadrilateral without congruent opposite sides, you know you
+    definitely don’t have a parallelogram. You’re lacking one of
+    the necessary criteria.</p>
+
+    <p>Conditions aren’t always both necessary and sufficient. For
+    example, having four right angles is necessary for a
+    quadrilateral to be a square, but having four right angles is
+    not sufficient for a quadrilateral to be a square. The
+    quadrilateral might be only a rectangle and still have four
+    right angles.</p>
+
+    <p>Also, conditions can be sufficient without being necessary.
+    For example, a closed shape’s having three 60-degree angles is
+    sufficient for the shape to be a triangle, but it is certainly
+    not necessary that a triangle have three 60-degree angles.</p>
+
+    <p>What’s more, necessary and sufficient conditions don’t have
+    to be about shapes. For example, at Park, playing soccer for
+    all four years is sufficient to fill your athletic requirement.
+    Also, being a senior is necessary for taking Senior Studio —
+    you can’t take Senior Studio without being a senior.</p>
+
+    <div class="problem">
+      <p>Is having four congruent sides necessary, sufficient, or
+      both for being a square?</p>
+    </div>
+
+    <div class="problem">
+      <p>Is having four congruent sides necessary, sufficient, or
+      both for being a rhombus?</p>
+    </div>
+
+    <div class="problem">
+      <p>Is playing soccer all four years a necessary condition for
+      Park students to satisfy their athletic requirement? Is being
+      a senior at Park sufficient for taking Senior Studio?</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>Poet Li-Young Lee says “every wise child is a sad child.”
+      According to him, is being a wise child sufficient for being
+      a sad child?</p>
+    </div>
+
+    <div class="problem">
+      <p>Is being seventeen sufficient for having a provisional
+      driver’s license in Maryland?</p>
+    </div>
+
+    <div class="problem">
+      <p>Is being an even number necessary for being divisible by
+      eight?</p>
+    </div>
+
+    <div class="problem">
+      <p>Is being a pair of numbers’ LCM…</p>
+
+      <p class="problem-part">…sufficient for being divisible by
+      each of those numbers?</p>
+
+      <p class="problem-part">…necessary for being divisible by
+      each of those numbers?</p>
+    </div>
+
+    <div class="problem">
+      <p>Is being divisible by 108 a sufficient condition for a
+      number to be divisible by 8? By 6? by 54?</p>
+    </div>
+
+    <div class="problem">
+      <p>You’re organizing your little sister’s blocks. While doing
+      so, you make the following Venn diagram to classify them. Say
+      whether each statement is true.</p>
+
+
+    <figure>
+      <img src="../images/06-4-logic-and-geometry/blocks.png" >
+    </figure>
+
+    <p class="problem-part">If a block is blue, then it is
+    hollow.</p>
+
+    <p class="problem-part">If a block is red, then it is
+    hollow.</p>
+
+    <p class="problem-part">If a block is hollow, then it is
+    red.</p>
+
+    <p class="problem-part">Three of your sister’s blocks are
+    shown in the Venn
+    diagram. Describe each block according to the
+    characteristics described in the picture.</p>
+      
+    </div>
+    
+    <div class="problem">
+      <p>Bill and Ted come up with the following classification
+      system of the students attending their high school.</p>
+
+
+    <figure>
+      <img src="../images/06-4-logic-and-geometry/space%20cadet.png" >
+    </figure>
+
+    <p class="Development---Problem-Flow">According to their
+    scheme,</p>
+
+    <p class="problem-part">Is being hip necessary for being
+    far-out?</p>
+
+    <p class="problem-part">Is being groovy sufficient for being
+    far-out?</p>
+
+    <p class="problem-part">Is being a space-cadet necessary for
+    being far-out?</p>
+
+    <p class="problem-part">Is being far-out necessary for being
+    hip?</p>
+      
+    </div>
+    
+    <div class="problem">
+      <p>Draw a diagram (perhaps a Venn diagram or a “tree”
+      diagram) that clearly indicates which quadrilaterals are
+      types of other quadrilaterals (for instance, a square is a
+      type of rectangle).</p>
+    </div>
+  </section>
+
+  <section class="problems">
+  <h2>Problems</h2>
+    <div class="problem">
+      <p>Draw a Venn Diagram and use it to see what you can
+      conclude from the following Lewis Carroll puzzle.</p>
+
+
+    <ul><li> All babies are
+      illogical.</li>
+    <li>Nobody is despised who can manage
+      a crocodile</li>
+      <li>Illogical persons are despised.</li></ul>
+    </div>
+    <div class="problem">
+      <p>The statement “no circle is a parallelogram” can’t be
+      represented in a Venn
+      diagram as a circle within a circle.</p>
+
+      <p class="problem-part">Write “no circle is a
+      parallelogram” as an if/then statement.</p>
+
+      <p class="problem-part">Draw a Venn diagram that you
+      think captures the meaning of the statement.</p>
+
+      <p class="problem-part">Write the converse, inverse, and
+      contrapositive of that statement. Does the same diagram work
+      for the contrapositive?</p>
+    </div>
+
+    <div class="problem">
+      <p>In the last lesson you proved that if you have two central
+      angles of the same size in a circle, then their corresponding
+      chords are congruent.</p>
+
+      <p class="problem-part">Is the converse of this statement
+      true?</p>
+
+      <p class="problem-part">Either prove the converse or
+      provide a counterexample.</p>
+    </div>
+
+    <div class="problem">
+      <p>In the last lesson you proved that if you draw a line from
+      the center of a circle
+      perpendicular to a chord, the line would bisect the
+      chord.</p>
+
+      <p class="problem-part">Write the converse of this
+      statement in a form that you might be able to prove.</p>
+
+      <p class="problem-part">Is the converse true?</p>
+
+      <p class="problem-part">Either prove it or provide a
+      counterexample.</p>
+    </div>
+
+    <div class="problem">
+      <p>Euclid’s fifth postulate is famous for being more
+      complicated than his others. The postulate is similar to the
+        statement</p>
+
+      <p><em>If, when two lines are cut by a transversal, the alternate
+        interior angles are not equal, then the lines will meet.</em></p>
+
+      <p>Euclid also proved a theorem which states</p>
+
+<p>      <em>If, when two lines are cut by$ a $transversal, the alternate
+      interior angles are equal, then the two lines are
+  parallel.$</em></p>
+
+      <p class="problem-part">How are these two statements
+      related to one another? (Converse? Inverse?
+      Contrapositive?)</p>
+
+      <p class="problem-part">Did Euclid need to prove the second
+      statement separately, or would it have been enough to appeal
+      to the first statement?</p>
+    </div>
+
+    <div class="problem">
+      <p>Dr. Gordon says, “Say you have a statement like ‘if $p$ then
+      $q$’. If this statement is true, then $p$ is sufficient for $q$ and
+      $q$ is necessary for $p$.”</p>
+
+      <p class="problem-part">Test this condition out by trying
+      some examples of statements (like, “If you live in Baltimore,
+      then you live in Maryland.”)</p>
+
+      <p class="problem-part">Explain, in language that an
+      eighth-grader could understand, why Dr. Gordon’s claim is
+      true.</p>
+    </div>
+
+    <div class="problem">
+      <p>In the 2008 presidential campaign, some people were
+      worried about whether Obama could still be a good president
+      even though he lacked military experience. At the same time,
+      General Wesley Clark pointed out that, though McCain
+      had impressive military experience, that experience didn’t
+      necessarily prepare him well for the presidency.</p>
+
+      <p class="problem-part">Are Obama’s critics arguing that
+      military service is necessary to become a good president, or
+      sufficient for being a good president?</p>
+
+      <p class="problem-part">Is Wesley Clark arguing that
+      military service is not necessary to become
+      a good president, or that it is not sufficient?</p>
+    </div>
+
+    <div class="problem">
+      <p>Decide if each of the following is a sufficient condition
+      for a quadrilateral to be a parallelogram. You can think of
+      these as “tests” to decide if the shape is really a
+      parallelogram.</p>
+
+      <p class="problem-part">Both pairs of opposite angles are
+      congruent.</p>
+
+      <p class="problem-part">When you draw a diagonal, a pair of
+      alternate interior angles is congruent.</p>
+
+      <p class="problem-part">One pair of opposite sides and one
+      pair of opposite angles are congruent.</p>
+
+      <p class="problem-part">Two pairs of adjacent (next to each
+      other) angles are supplementary.</p>
+
+      <p class="problem-part">One pair of opposite sides is both
+      parallel and congruent.</p>
+    </div>
+
+    <div class="problem">
+      <p>Two of the statements in the previous problem are true.
+      Write a proof of each of them. (If you’re stuck on a proof,
+        <em class="vocab">work backwards</em>; what do you need to show in order to show
+      that something is a parallelogram? What tools do you have to
+      show those things?)</p>
+    </div>
+
+    <div class="problem">
+      <p>Draw a Venn diagram to illustrate the
+      following statements:</p>
+
+      <p class="problem-part">If you can make it through <em>War and
+        Peace</em>, you’re a superstar.</p>
+
+      <p class="problem-part">If you’re not a superstar, you
+      can’t make it through <em>War and Peace</em>.</p>
+
+      <p class="problem-part">In either diagram, can you have not
+        read <em>War and Peace</em> and yet still be a superstar?</p>
+    </div>
+
+    <div class="problem">
+      <p>Being an ack is a necessary condition for being a kook.
+      Being an ook is a sufficient condition for being an ack.
+      There are 22 acks, 7 ooks, and 10 kooks. Of the acks, 8 are
+      neither ooks nor kooks. Now, supposing you pick a random ack,
+      what is the probability that it will be an ook, but not a
+      kook?</p>
+    </div>
+
+    <div class="problem">
+      <p>Investigate the following:</p>
+
+      <p class="problem-part">Draw a bunch of quadrilaterals
+      where the diagonals are perpendicular and where one diagonal
+      bisects the other (but not necessarily the other way around).
+      It may help to start with the diagonals, then draw in the
+      rest of the shape around them. What shape do these always
+      turn out to be?</p>
+
+      <p class="problem-part">Prove that all quadrilaterals with
+      perpendicular diagonals, one bisecting the other, are this
+      shape.</p>
+
+      <p class="problem-part">Did you just find a necessary
+      condition for a quadrilateral to be this shape, a sufficient
+      condition, or both?</p>
+    </div>
+
+    <div class="problem">
+      <p>Name some necessary conditions for a shape to be a
+      rhombus.</p>
+    </div>
+
+    <div class="problem">
+      <p>Are the conditions you named in the previous problem on
+      your theorem list already? If the class agrees, add them to
+      your theorem list.</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose that someone asked you to prove that, if a
+      quadrilateral is not a parallelogram, at least one pair of
+      opposite sides must not be congruent. Explain why you
+      wouldn’t have to do a lot of work, even though this statement
+      is not on your
+      theorem list.</p>
+    </div>
+
+    <div class="problem">
+      <p>In 9th grade, you learned about a made-up rule, $a \triangle b$, which
+      takes the first number, adds the second number to it, adds
+      the first number to the sum, then takes that whole answer and
+      multiplies it by the
+      second number. For example, $7 \triangle 2$ is 32.</p>
+
+      <p class="problem-part">Also in 9th grade, a mysterious
+      fellow
+      named John claimed: “To get an odd number for your answer
+      from $a \triangle b$ , you need to input odd numbers for $a$ and $b$. Did John
+      get it right?</p>
+
+      <p class="problem-part">Did he identify a necessary or a
+      sufficient condition for getting an odd number, or was his
+      condition both necessary and sufficient?</p>
+    </div>
+
+    <div class="problem">
+      <p>The symbol "&" from the 9th grade means that you take
+      the first number and then add the product of the numbers.
+      About this symbol, John claimed: “To get an odd number for
+      your answer from $a$&$b$, you need to input an odd
+      number for $a$ and an even number for $b$.”</p>
+
+      <p class="problem-part">Did John get this one right?</p>
+
+      <p class="problem-part">Did he identify a necessary or
+      a
+      sufficient condition for getting an odd number, or was his
+      condition both necessary and sufficient?</p>
+    </div>
+
+    <div class="problem">
+      <p><em class="vocab">Rational numbers</em> are those numbers that can be expressed
+      as a fraction (where both numerator and denominator are
+      integers and the denominator doesn’t equal 0, or a repeating
+      decimal (like 4/3, .256256256..., and 8.000000...).
+      Many <em class="vocab">roots</em> (such as square roots, cube roots, and higher
+      roots) are not rational. Some roots of integers work out to
+      be integers themselves, like $\sqrt[4]{{16}} = 2$.
+      However, roots of integers that don’t themselves work out to
+      be integers are never rational; instead, they can be
+      expressed as non-repeating decimals. Examples of these are
+      $\sqrt 2 $ and$\sqrt[3]{7}$.</p>
+
+    <p class="Problems---Problem-flow">Since all numbers can be
+    expressed as
+    repeating or non-repeating decimals, can we conclude that all
+    numbers are either rational or the root of an integer?</p>
+    </div>
+  
+    <div class="problem">
+      <p>Recall from your study of quadratic
+      equations that, so long as $a \ne 0$, the equation
+      $a{x^2} + bx + c = 0$ has as its solutions $x = \frac{{ -
+      b \pm \sqrt {{b^2} - 4ac} }}{{2a}}$.</p>
+
+      <p class="problem-part">What is the converse of this
+      statement? Is it true?</p>
+
+      <p class="problem-part">If the converse is true, then prove
+      it. If it is not true, find a counterexample.</p>
+    </div>
+
+    <div class="problem">
+      <p>Update your theorem list with some of the sufficient
+      conditions you have proven in this lesson.</p>
+    </div>
+    
+    <h2 class="new-column">Exploring
+    in
+    Depth</h2>
+    
+    <p>Many arguments have this type of structure:</p>
+
+    <ul class="bulleted">
+    <li>If a Park Student is in fall semester
+    of 10th grade, then they are taking a “Writing about…”
+    class.</li>
+
+    <li> Gwendolyn is in fall semester of
+    10th grade.</li>
+
+    <li>Therefore, Gwendolyn is taking a “Writing about”
+    class.</li>
+    </ul>
+
+    <p>Aristotle, a Greek philosopher who lived close
+      to the time of Euclid, called this a <em class="vocab">syllogism</em>.
+    A syllogism has the form</p>
+  
+	<ul class="bulleted">
+  
+    <li>If $A$ then $B$</li>
+
+    <li>$A$</li>
+
+    <li>Therefore, $B$.</li>
+    </ul>
+
+    <p>In this example, the statements “if $A$ then $B$” and “$A$” are
+      called <em class="vocab">premises</em> and “therefore, $B$” is called the <em class="vocab">conclusion</em>.
+    Note that if an argument really works, if you agree with the
+    premises you should also agree with the conclusion. (And if you
+    don’t, that’s a sign that something is wrong with the
+    argument!)</p>
+
+    <p>Another form of argument can lead you to form an “if/then”
+    statement as the conclusion. For example,</p>
+
+    <ul class="bulleted">
+    <li> If a Park Student is in fall semester
+    of 10th grade, then they are taking a
+    “Writing about…” class.</li>
+
+    <li>If a student is taking a “Writing about” class, then they
+    have to write a self-reflection.</li>
+
+    <li>Therefore, if a Park student is in fall semester of 10th
+    grade, then they have to write a self-reflection.</li>
+    </ul>
+
+    <p>This type of argument has the form</p>
+
+    
+    <ul class="bulleted">
+    <li>If $A$ then $B$</li>
+
+    <li>If $B$ then $C$</li>
+
+    <li>Therefore, if $A$ then $C$.</li>
+    </ul>
+
+    <p>Note the important thing that allows you to
+    conclude the final step is that “B” occurs as the “then” clause
+    of the first statement and the “if” clause of the second
+    statement.</p>
+
+    <p>Boiling arguments down to their logical structure can be
+    handy, especially when you start using the equivalence of the
+    contrapositive. For example, recall the Lewis Carroll puzzle of
+    problem #18:</p>
+
+    <ul>
+    <li>a) All babies are illogical.</li>
+
+    <li>b) Nobody is despised who can manage a crocodile.</li>
+
+    <li>c) Illogical persons are despised.</li>
+            </ul>
+
+    <p>Suppose you have managed to rewrite the puzzle this way:</p>
+
+    <p>(from a and c) If you are a baby, then you are
+    despised</p>
+
+    <p>(from b) If you can manage a crocodile, then you are not
+    despised.</p>
+      
+
+
+    <p>Right now the premises are written as</p>
+
+    <p>If $A$ then $B$.</p>
+
+    <p>If $C$ then not-$B$.</p>
+
+    <p>It’s difficult to know what we can conclude just now, but if
+    we replace the second premise with its contrapositive, “if $B$
+    then not-$C$,” we can make things match up in the right
+    way:</p>
+
+    <ul style="bulleted">
+    <li>If you are a baby, then you are
+    despised.</li>
+
+    <li>If you are despised, then you cannot manage a
+    crocodile.</li>
+    </ul>
+
+    <p>This allows us to easily see that we can conclude</p>
+
+    <ul style="bulleted">
+    <p>If you are a baby, then you cannot manage a crocodile.</p>
+    </ul>
+    
+    <p>…which is the solution to the puzzle.</p>
+
+    <p>For exercises 38-41 and 43-46, say what, if anything, you
+    can conclude from the premises given.</p>
+
+
+    <div class="problem">
+      <p>If you are on Park’s basketball team,
+      then you are over six feet tall.
+      If you are over six feet tall, you can’t go
+      on the Pirate ride at Six Flags.</p>
+    </div>
+
+    <div class="problem">
+      <p>If you live in Baltimore, you should go
+      see an Orioles game.
+      If you don’t like baseball, then you shouldn’t go see an
+      Orioles game.</p>
+    </div>
+
+    <div class="problem">
+      <p>If it snows a lot, they’ll cancel school.
+      If they don’t cancel school, I’ll scream.</p>
+    </div>
+
+    <div class="problem">
+      <p>If Tom committed the murder, he was
+      in the library at 10 last night.
+      If Tom wasn’t in the library at 10 last night, then he was at
+      home.</p>
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">Simplify $\sqrt {4{a^2}} $</p>
+
+      <p class="problem-part">Factor ${x^2} + 3x - 28$</p>
+
+      <p class="problem-part">Find $x$ if $\frac{{17x}}{{3x + 2}}
+      = 5$</p>
+
+      <p class="problem-part">Expand ${(x + 2)^3}$</p>
+
+      <p class="problem-part">Simplify ${(\frac{{{w^5}{x^{ -
+      2}}y}}{{{{(w{x^2})}^2}{y^{ - 1}}}})^2}$</p>
+    </div>
+
+    <div class="problem">
+      <p>If Jean committed the murder, she was in the library at 10
+      last night.<br>
+      If Jean bought groceries on her way home, then she wasn’t in
+      the library at 10 last night.</p>
+    </div>
+
+    <div class="problem">
+      <p>All brilliant mathematicians have a heart of gold.<br>
+      If you study for hours, then you don’t have a heart of
+      gold</p>
+    </div>
+
+    <div class="problem">
+      <p>If you don’t file a form, you can’t get
+      good service.<br>
+      All people who get good service are
+      content.</p>
+    </div>
+
+    <div class="problem">
+      <p>This puzzle comes from Lewis Carroll, author of <em>Alice in
+        Wonderland</em>.<br>
+      (note: “affected” means “written in a snobby, insincere
+      way”)<br>
+      (other note: assume that all poems are either ancient or
+      modern)</p>
+
+<p>      No affected poetry is popular among people of real taste.<br>
+      No modern poetry is free from affectation.<br>
+      No ancient poem is on the subject of soap-bubbles.<br>
+      All your poems are on the subject of
+      soap-bubbles.</p>
+    </div>
+
+    <div class="problem">
+      <p>Part c of problem #25 might have seemed true. (“One pair
+      of opposite sides and one pair of opposite angles is
+      sufficient for a quadrilateral to be a parallelogram.”) What
+      goes wrong when you try to attempt a proof? Does this suggest
+      a method for finding a counterexample?</p>
+    </div>
+
+    <div class="problem">
+      <p>In fact, P. Halsey published the following “proof” that
+      one pair of opposite sides and angles in a quadrilateral was
+      sufficient for it to be a parallelogram, challenging his
+      readers to find the flaw. Can you?</p>
+      
+        <figure class="fig-50">
+    <img src="../images/06-4-logic-and-geometry/10-2-4%20Logic%20and%20Geometry%2048.svg" >
+  </figure>
+
+
+    <p class="Problems---Problem-flow">(source: Jim Loy’s puzzle
+      pages: http://www.jimloy.com/geometry/quad.htm)</p>
+
+    <p class="Problems---Problem-flow">Given: $\overline {CD} \cong \overline {AB} $, $\angle A
+    \cong \angle C$.<br>
+      Prove: $ABCD$ is a parallelogram.</p>
+
+    <p class="Problems---Problem-flow">Draw perpendiculars from points B and D that intersect the
+    opposite sides of the quadrilateral at E and F, respectively.
+    Then $\Delta DCF \cong \Delta BAE$ by AAS. Since the
+    triangles are congruent, $\overline {AE} \cong \overline {CF}
+      $.</p>
+
+    <p class="Problems---Problem-flow">Also, from the triangle congruency we know $\overline {BE}
+    \cong \overline {FD} $ as well. This means that we can now
+    show $\Delta DEB \cong \Delta BFD$ by Hypotenuse-Leg. From
+      this, we can conclude $\overline {DE} \cong \overline {FB} $.</p>
+
+    <p class="Problems---Problem-flow">Now, the lengths of $\overline {DE} $ and $\overline {EA} $ add up to the length of $\overline {DA} $, and likewise the
+    lengths of $\overline {BF} $ and $\overline {FC} $ add up
+    to the length of $\overline {BC} $. Since $\overline {DA}
+    $ and $\overline {BC} $ are made up of the same-sized
+    “pieces”, they must themselves be congruent. Therefore, $ABCD$ is a parallelogram.</p>
+      
+</div>
+  </section>
+
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>

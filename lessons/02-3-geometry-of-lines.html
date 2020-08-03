@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+	<title>Park School Mathematics</title>
+	
+	<!--
+	NOTE:
+	This <base> element seems to screw up prince, so will need to figure another
+	way to handle relative link/src/etc.
+	-->
+<!-- 	<base href="/">
+ -->
+
+
+	<!-- General META -->
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- Semantic META -->
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+	<!-- Fav Icon -->
+	<link href="TODO" rel="shortcut icon" type="image/x-icon">
+  
+  <title>geometry of lines</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://parkmath.github.io/lessons/02-3-geometry-of-lines.html">
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+  
+
+  <body class="    lesson-page     book-2   ">
+
+    <header class="site-header">
+  <div class="container">
+    <h1>
+      <a href="/">Park School Mathematics</a>
+    </h1>
+  </div>
+</header>
+
+
+    
+
+  
+  
+
+<section class="lesson  new-page">
+  
+  <div class="container">
+    
+      <h1>
+  
+
+
+Lesson 3:
+
+
+Geometry Of Lines 
+</h1>
+    
+    
+<article>
+  
+  <section class="development">
+
+    <h2>Introduction</h2>
+
+    <div class="problem">
+      <p>How would you define parallel lines? How would you decide
+        if two lines were parallel?</p>
+    </div>
+
+    <p>Euclid, Ancient Greek geometer $extraordinaire$, defined
+      parallel lines as lines in a plane which never meet, even
+      when extended indefinitely. Line segments are parallel
+      if they lie on parallel lines.</p>
+
+    <figure class="fig-50"><img src="../images/02-3-geometry-of-lines/9-2-3 diagram 1.tif.jpg"
+      alt="">
+    </figure>
+
+    <p>It was hard for those Greeks to determine if lines were parallel
+      — after all, how could you show <em>for sure</em> that
+      lines never met? What if you thought that lines were parallel,
+      but actually they met at a point 100 miles away? This would
+      happen if lines were very close to being parallel, but
+      not quite.</p>
+
+    <p>Euclid’s parallel lines remain the same distance apart, no
+      matter where you take the measurements. (Think of train
+      tracks with crossbars of equal length.) That might give
+      a more practical way to tell if two lines are parallel
+      — measure their distance apart in two different places
+      and see if you get the same thing. But even that would
+      not be without its problems. Your measuring instruments
+      might not be accurate enough to tell if lines are just
+      skewed enough to meet 100 miles away.</p>
+
+    <p class="new-page">To illustrate how difficult it can be to tell even if two
+       short line segments are parallel, look at the following
+      pair, below.
+    </p>
+
+    <figure class="fig-50">
+      <img src="../images/02-3-geometry-of-lines/image21.png" >
+    </figure>
+
+    <p>In fact, the line segments above were drawn so as NOT to
+      be parallel to one another. They are just slightly off.</p>
+
+    <p>In the 1600s, the French mathematician and philosopher Rene
+      Descartes changed the way people thought about — and did
+      — geometry. The story goes that he was lying in bed one
+      day, staring at the ceiling, and realized that he could
+      describe the position of a bug on his ceiling by counting
+      the number of ceiling cracks up and the number of ceiling
+      cracks over.</p>
+
+    <div class="problem">
+      <p>If you had two line segments on a $grid$, as below, and
+        knew the coordinates of a few points on each line, would
+        you now have a method to decide if they were parallel?</p>
+      <figure class="fig-50">
+        <img src="../images/02-3-geometry-of-lines/image31.PNG" >
+      </figure>
+    </div>
+
+    <p>Descartes’s wonderful idea allowed someone to take a geometric
+      shape — a line — and describe its position exactly by overlaying
+      a grid — a coordinate system. Since these coordinates had
+      numbers attached, all of the sudden people were able to
+      apply much of what they already knew about algebra to geometry.
+      Descartes had allowed people to use multiple points of
+      view when considering geometry problems, switching freely
+      back and forth between an algebraic perspective and a geometric
+      perspective. And, when you thought about the previous problem,
+      so did you.</p>
+
+    <p>The rest is history.</p>
+
+    <h2 class="new-page">Development</h2>
+
+    <p>Say you live in a city where the streets are laid out in
+      a square grid pattern. You start at your house and walk
+      two blocks north, then three blocks east.</p>
+
+    <div class="problem">
+      <p>Draw a picture of this path on a piece of graph paper.
+        What’s the slope of the line segment connecting your
+        house and your ending point? How would you describe its
+        direction?</p>
+    </div>
+
+    <div class="problem">
+      <p>Your friend lives two blocks south of you. She starts at
+        her house, then follows the same pattern as you — two
+        blocks north and three blocks east.</p>
+
+      <p class="problem-part">Draw a picture of your friend’s path, on the same paper
+        as yours.</p>
+
+      <p class="problem-part">Is there a sense in which your path and your friend’s
+        paths are “parallel” (even though neither of you went
+        in a straight line)? Explain this.</p>
+    </div>
+
+    <div class="problem">
+      <p>Draw the points $\left( {1,2} \right)$ and $\left( {2,5}
+        \right)$. Draw the line through them — this is line $m$.</p>
+
+      <p class="problem-part">Line $n$ contains the point $\left( {3,1} \right)$ and
+        is parallel to line $m$. Draw line $n$. The point $\left(
+        {5,c} \right)$ is on line $n$. Find $c$.</p>
+
+      <p class="problem-part">What are the slopes of lines $m$ and $n$?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Discuss this question with a partner: Suppose that you
+        have two lines, one with slope 5 and another with slope
+        $\tfrac{11}{2}$. Will they have to meet somewhere? Try
+        drawing several pairs of lines with these slopes. What
+        keeps happening?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Based on your thinking in the previous problems, say what
+        must be true for two lines to be parallel.</p>
+    </div>
+
+    <p>What about lines that are perpendicular to each other — that
+      is, lines that cross at a 90 degree angle?</p>
+
+    <div class="problem">
+      <p>Can two lines, each with positive slope, be perpendicular?
+        How about two lines, each with a negative slope? Explain
+        with a picture.</p>
+    </div>
+
+    <div class="problem">
+      <p>Draw the line $y = 2x$.</p>
+
+      <p class="problem-part">Is $y = - 2x$ perpendicular to this line? How about $y
+        = \frac{1}{2}x$?</p>
+
+      <p class="problem-part">Take some guesses at the equation for a line that really
+        might be perpendicular to the line $y = 2x$. Check your
+        guesses by drawing this line on the same coordinate system.</p>
+    </div>
+
+    <p>We found that parallel lines have the same slopes. Do the
+      slopes of perpendicular lines also have some relationship?
+      Instead of trying to find a general rule right away, let’s
+      simplify the problem by making up an example.</p>
+
+    <div class="problem">
+      <p>Using graph paper, draw a line segment (not horizontal
+        or vertical), and use a measuring tool (a protractor?
+        the corner of a piece of paper?) to draw another line
+        segment perpendicular to the first. Then calculate the
+        slopes of the two segments you drew. What do you suppose
+        would be more helpful in looking for patterns — writing
+        the slopes in fraction or decimal form?</p>
+    </div>
+
+    <div class="problem">
+      <p>By creating other examples, or by looking at the results
+        of the examples your classmates made up, conjecture a
+        relationship between the slopes of perpendicular lines.</p>
+    </div>
+
+    <div class="problem">
+      <p>Try out your conjecture by using it to answer the following
+        questions. Suppose that lines $p$ and $q$ are perpendicular.
+      </p>
+
+      <p class="problem-part">What’s the slope of line $p$ if line $q$ has slope $\frac{3}{5}$?</p>
+
+      <p class="problem-part">What’s the slope of line $p$ if the equation of line
+        $q$ is $y = \frac{1}{3}x + 1$?</p>
+
+      <p class="problem-part">What’s the slope of line $p$ if the equation of line
+        $q$ is $y = - 2x + 1$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Check your answers to the previous problem by graphing
+        lines that fit the conditions of parts a, b, and c. Now
+        do you think your conjecture is true? If not, use this
+        new information to change your conjecture.</p>
+    </div>
+
+    <p class="new-page">We’ve already found a way, using slope, to describe the direction
+      of your path through a city. We can also use information
+      about evenly-spaced city blocks to calculate your distance.
+    </p>
+
+    <div class="problem">
+      <p>Starting at your house, you walk 2 miles west and 6 miles
+        north. How far away are you now from your house (measuring
+        distance along a straight path)?</p>
+    </div>
+
+    <div class="problem">
+      <p>Your house is at the point $\left( {1,5} \right)$. You
+        walk to the point $\left( {10,4} \right)$.</p>
+
+      <p class="problem-part">How far east or west did you go?
+      </p>
+
+      <p class="problem-part">How far north or south did you go?
+      </p>
+
+      <p class="problem-part">What’s your distance from your house?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Draw the points $\left( { - 2,3} \right)$ and $\left( {2,6}
+        \right)$. Find the distance between them.</p>
+    </div>
+
+    <p>Finally, you can calculate the position $halfway$ between
+      two locations in a city (or on a graph). This position
+      is called the <em class="vocab">midpoint</em>. We can also
+      speak of the midpoint of a line segment connecting two
+      points. Soon, we’ll find a formula that tells you how to
+      find the midpoint of a segment joining $(x_1,y_1)$ and
+      $(x_2, y_2)$. But first let’s try some simpler problems.</p>
+
+    <div class="problem">
+      <p>What would be the midpoint of $\left( {1,5} \right)$ and
+        $\left( {6,10} \right)$? Create some other, simple problems
+        like this where you have to find the midpoint.</p>
+    </div>
+
+    <div class="problem">
+      <p>What would be the midpoint of $\left( {1,0} \right)$ and
+        $\left( {3,y} \right)$? Of $\left( {x,4} \right)$ and
+        $\left( {3,y} \right)$?</p>
+    </div>
+
+    <div class="problem">
+      <p>What’s the midpoint of $(x_1,y_1)$ and $(x_2,y_2)$?
+      </p>
+
+      <p class="problem-part">Write in symbols what the $x$- and $y$-coordinates of
+        the midpoint would be.</p>
+
+      <p class="problem-part">Compare your answer with what other people got. If there
+        are different answers, see if you can do some algebra
+        to make them look the same.</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem">
+      <p>What is the distance between</p>
+
+      <p class="problem-part">$(-2, -5)$ and $\left( {6,10} \right)$?</p>
+
+      <p class="problem-part">$(-2, -5)$ and $\left( { - 6, - 10} \right)$?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Lines $c$ and $d$ are perpendicular. What’s the slope of
+        line $c$, if…</p>
+
+      <p class="problem-part">line $d$ has slope $1\frac{1}{2}$?
+      </p>
+
+      <p class="problem-part">line $d$ has slope $–.25$?</p>
+
+      <p class="problem-part">line $d$ has slope $.24$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Two perpendicular lines intersect at the point $\left(
+        {1,2} \right)$. The first line also contains the point
+        $\left( {5,10} \right)$. Give the exact coordinates of
+        another point on the SECOND line.</p>
+    </div>
+
+    <div class="problem">
+      <p>Line $p$ goes through the points $C\left( {1,8} \right)$ and $D\left( {13, - 4} \right)$. Line $q$ goes through
+        the points $E\left( {-2, 6} \right)$ and $F\left( {10,
+        - 7} \right)$.</p>
+
+      <p class="problem-part">Make a sketch.</p>
+
+      <p class="problem-part">They sure look parallel. Are they?
+      </p>
+
+      <p class="problem-part">How about angle CDF? Is it a right angle? Support your
+        answer with mathematical evidence.</p>
+    </div>
+
+    <div class="problem">
+      <p>Line $p$ goes through the points $\left( {2,4} \right)$ and $\left( {6, - 2} \right)$.</p>
+
+      <p class="problem-part">Find two points on line $p$ other than the given ones.</p>
+
+      <p class="problem-part">Find two points that would be on a line parallel to line
+        $p$.</p>
+
+      <p class="problem-part">Find two points that would be on a line perpendicular
+        to line $p$.</p>
+    </div>
+
+    <div class="problem">
+      <p>There are four lines $l$, $m$, $n$, and $p$ with slopes
+        $\frac{1}{3}$, $-1\frac{1}{2}$, $\frac{2}{3}$, and $-3$,
+        respectively. Are any of the lines parallel? Perpendicular?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>The town of Metropolis is laid out as follows. The gridlines
+        are roads, but if you’re walking you can cut across the
+        blocks diagonally.</p>
+
+      <figure>
+        <img src="../images/02-3-geometry-of-lines/metropolis.png"
+        >
+      </figure>
+
+      <p class="problem-part">What’s the walking distance (how many “units”) from</p>
+      <ul>
+        <li>The Post Office to School?</li>
+        <li>The Quick-E-Freeze to the Dairy Q?</li>
+        <li>The Quick-E-Freeze to the Hospital?</li>
+      </ul>
+
+      <p class="problem-part">Which two buildings in Metropolis are the farthest apart,
+        measured by walking distance? How far apart are they?</p>
+
+      <p class="problem-part">You’re at school and want a cran-root-beer Squidgy. Measured
+        by walking distance, which is closer — the Dairy Q or
+        the Quick-E-Freeze?</p>
+
+      <p class="problem-part">Say that you’re driving now and can’t cut across the
+        city blocks. Which involves the shorter trip from the
+        school — the Dairy Q or the Quick-E-Freeze?</p>
+
+    </div>
+
+    <div class="problem">
+      <p>Here’s the design for the Varsity letter at Ziegelbawr
+        High. </p>
+
+      <figure class="fig-50">
+        <img src="../images/02-3-geometry-of-lines/Ziegelbawr High.png"
+        >
+      </figure>
+
+      <p class="problem-part">The diagonal lines appear to be parallel. Are they?</p>
+
+      <p class="problem-part">What’s the perimeter of the letter?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>A triangle has vertices at $\left( {1,3} \right)$, $\left(
+        { - 3,14} \right)$, and $\left( {-1,-5} \right)$. Find
+        its perimeter.</p>
+    </div>
+  </section>
+
+  <section class="problems">
+    <h2>Problems</h2>
+    <div class="problem">
+      <p>Line $p$ passes through $\left( {0,0} \right)$ and $\left( {2,6} \right)$. It
+        is parallel to line $q$, which passes through $\left(
+        {6,1} \right)$ and $\left( { - 9,m} \right)$. Find $m$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Prove that $\triangle ABC$ is a right triangle if
+        $A = \left( {11, - 18}\right)$, $B = \left( {9,3}\right)$,
+        and $C = \left( {-12, 1}\right)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>You’ve found lots of distances over the course of this
+        lesson.
+      </p>
+
+      <p class="problem-part">Find a formula for the distance between any two points
+        $\left( {{x_1},{y_1}} \right)$ and $\left( {{x_2},{y_2}}
+        \right)$. As a suggestion, you could make up some simpler
+        problems first.</p>
+
+      <p class="problem-part">If it isn’t this way already, write your formula in the
+        form “$d = ...$”</p>
+
+      <figure>
+        <img src="../images/02-3-geometry-of-lines/geom%20of%20lines%20distance%20form.pdf.jpg"
+        >
+      </figure>
+
+    </div>
+
+
+    <p>The formula you wrote in Problem 31 is sometimes called the
+      <em class="vocab">Distance Formula</em>.</p>
+
+    <div class="problem">
+      <p>The line $y = 3x - 4$ contains the points $\left( { - 3,w}
+        \right)$ and $\left( {4,r} \right)$.</p>
+
+      <p class="problem-part">Find $w$ and $r$.</p>
+
+      <p class="problem-part">What is the distance between these two points?</p>
+
+      <p class="problem-part">Find the midpoint of the two points.
+      </p>
+
+      <p class="problem-part">What’s the distance from the midpoint in part c to $\left(
+        { - 3,w} \right)$?</p>
+    </div>
+
+    <p>You’ve probably noticed already that it can be extremely
+      helpful to draw pictures in solving these problems. For
+      instance, in the previous problem, you may have sketched
+      the line and the approximate location of the points before
+      solving for $w$ and $r$. While that wasn’t strictly necessary
+      to solve the problem, it helps you to get a handle on it.
+      For the next five problems, <em class="vocab">visualizing</em>      the situation by drawing a picture or adding things to
+      a picture will make it much easier to decide how to proceed.</p>
+
+    <div class="problem">
+      <p>Consider the point $\left( {0,2} \right)$. If that point
+        was on a line whose slope was 4, find:</p>
+
+      <p class="problem-part">The equation of that line.</p>
+
+      <p class="problem-part">The equation of another line through $\left( {0,2} \right)$,
+        perpendicular to the first line.</p>
+    </div>
+
+    <div class="problem">
+      <p>Two bugs start at the point $\left( {3,5} \right)$. One
+        travels down at a slope of $–2.5$, and the other takes
+        a path perpendicular to the path of the first ant. How
+        far apart are their $x$-intercepts?</p>
+    </div>
+
+    <div class="problem">
+      <p>A line’s $x$-intercept is –5. It has a positive <nobr>$y$-intercept,</nobr>
+        and the distance between the two intercepts is 12.5.
+        Find the $y$-intercept and the slope of the line.</p>
+    </div>
+
+    <div class="problem">
+      <p>Is a line with a slope of $\frac{10}{4}$ steeper or shallower
+        than a line with a slope of $\frac{5}{2}$? How does a
+        line with a slope of $2.5$ compare?</p>
+    </div>
+
+    <div class="problem">
+      <p>Say that a line makes an angle of 15 degrees with the $x$-axis.
+        If you draw another line that makes an angle twice as
+        big, 30 degrees, with the $x$-axis, will the slope of
+        the line double as well?</p>
+
+      <figure>
+        <img src="../images/02-3-geometry-of-lines/geom lines 37.png">
+      </figure>
+
+    </div>
+
+
+    <p class="new-column">For most of the problems remaining in this lesson, you will
+      probably want to draw a picture. But even in most of the
+      problems above, there was work left to do after the picture
+      was drawn. The facts you now know about the slopes of parallel
+      and perpendicular lines give you tools to use algebra to
+      solve problems, as well. Sometimes this will be required,
+      as in the case where your drawing suggests that a line
+      passes through a certain point, but you’ll need to try
+      algebra in order to make certain that it wasn’t just close.
+      In the four problems that follow, don’t forget to draw
+      a picture first, but you will also find <em class="vocab">representing</em>      
+      relationships like slope and midpoint
+      <em class="vocab">symbolically</em> to work to your advantage.</p>
+
+    <div class="problem">
+      <p>If the line through $\left( {8,c} \right)$ and $\left(
+        {6,4} \right)$ is parallel to the line through $\left(
+        {6,8} \right)$ and $\left( {12,18} \right)$, then what
+        must $c$ equal?</p>
+    </div>
+
+    <div class="problem">
+      <p>A triangle is formed by the lines $x = - 5$, $2y = x +
+        1$, and one other line. It has a right angle at the point
+        $(5,3)$. Find the other two vertices of the triangle.</p>
+    </div>
+
+    <div class="problem">
+      <p>The line containing the points $\left( {4,1} \right)$ and
+        $\left( {2,10} \right)$ is perpendicular to a line containing
+        the point $\left( { - 3,7} \right)$. Find where this
+        second line crosses the line $y = x$.</p>
+    </div>
+
+    <div class="problem">
+      <p>What value of $k$ will make the line containing points
+        $\left( {k,4} \right)$ and $\left( {2,1} \right)$ parallel
+        to the line containing $\left( {0,3} \right)$ and $\left(
+        {k,9} \right)$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">Divide $\frac{5}{2}\div\frac{1}{2}$</p>
+
+      <p class="problem-part">Simplify $(-x)(5+x)(-3)$</p>
+
+      <p class="problem-part">Factor ${x^2} - 8x + 16$</p>
+
+      <p class="problem-part">Solve for $x$: $\frac{3}{x} + 1 = 7$</p>
+
+      <p class="problem-part">What are the possibilities for $x$ if $\left| {x - 3}
+        \right| &lt; 4$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Slopes can be represented as decimals as well as fractions.</p>
+
+      <p class="problem-part">Find three points with integer coordinates that the line
+        $y = 2.5x + 1$ goes through.</p>
+
+      <p class="problem-part">Find three points with integer coordinates that the line
+        $y = 1.1x + 3$ goes through.</p>
+    </div>
+
+    <div class="problem">
+      <p>Which two slopes in the list below represent lines that
+        are almost perpendicular? No Calculators!</p>
+
+      <p class="problem-part">$\frac{2951}{986}$</p>
+
+      <p class="problem-part">$\frac{{.25}}{{.76}}$</p>
+
+      <p class="problem-part">$\frac{{ - 7428}}{{22305}}$</p>
+
+      <p class="problem-part">$\frac{{ - 2,994,852}}{{5,987,134}}$</p>
+    </div>
+
+    <div class="problem">
+      <p>Line $p$ has a slope of $\frac{7}{5}$ and is parallel to
+        line $q$, which has a slope of $\frac{{119}}{a}$. Find
+        $a$.
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>In problem 27, you realized that the diagonal lines in
+        the Ziegelbawr High Letter (see below) are not quite
+        parallel. If they’re not parallel, then they must meet
+        somewhere. So where do they meet — above the “Z” or below?
+        How do you know?</p>
+      <figure>
+        <img src="../images/02-3-geometry-of-lines/diagram 46.tif.jpg">
+      </figure>
+    </div>
+
+    <div class="problem">
+      <p>The following pretty picture was made by connecting the
+        midpoints of adjacent sides of a square, then repeating
+        the process on the new quadrilateral formed, etc.</p>
+      <figure>
+        <img src="../images/02-3-geometry-of-lines/geom lines 47.png"
+        >
+      </figure>
+
+      <p class="problem-part">Is the second-biggest quadrilateral a square? (That is,
+        are its sides perpendicular and are they the same length?)</p>
+
+      <p class="problem-part">Are the sides of the third-biggest quadrilateral parallel
+        to the sides of the original square?</p>
+
+      <p class="problem-part">Will all the quadrilaterals you draw be square, even
+        the 100th one? How can you be sure?</p>
+
+    </div>
+
+
+    <div class="problem">
+      <p>You have a square dartboard with corners at (0,0), (0,20),
+        (20,0), and (20,20). Find equations for the boundaries
+        of a “target” shape to hit within the dartboard using
+        the following restrictions:</p>
+
+      <p class="problem-part">You may not use any vertical or horizontal lines, even
+        the edges of the dartboard. The probability of hitting
+        the target (assuming you’ll hit the dartboard) is 1/2.</p>
+
+      <p class="problem-part">You may not use any vertical or horizontal lines, even
+        the edges of the dartboard. The probability of
+        hitting the target (assuming you’ll hit the dartboard)
+        is 1/4.</p>
+    </div>
+
+    <div class="problem">
+      <p>Below is Metropolis again. You’re exactly halfway between
+        school and the post office. How far is the walking distance
+        to the Dairy Q?</p>
+      <figure>
+        <img src="../images/02-3-geometry-of-lines/metropolis.png"
+        >
+      </figure>        
+    </div>
+
+
+    <div class="problem">
+      <p>You’re standing at the point $\left( { - 2,3} \right)$ on the grid on the Metropolis grid (see previous problem).
+        Gripped by the beautiful results you’ve discovered about
+        slope, you decide not to head for the Dairy Q but in
+        a direction perpendicular to the line between school
+        and the post office. This takes you close to the Dairy
+        Q but not quite.</p>
+
+      <p class="problem-part">Find an equation for the line that describes your new
+        path.</p>
+
+      <p class="problem-part">What are the intercepts of this line?
+      </p>
+
+      <p class="problem-part">When you’re at the $x$-intercept, are you closer to school
+        or to the post office?</p>
+
+      <p class="problem-part">Is the result you found in part c just a coincidence?
+        For which points on this line would you be closer to
+        school? What is going on here?</p>
+    </div>
+
+    <div class="problem">
+      <p>Suppose you had a square that was 1 unit in length on each
+        side. What would the length of a diagonal be? Can you
+        find the length of the diagonal of the square whose sides
+        are of length $d$?</p>
+    </div>
+
+    <div class="problem">
+      <p>Do the points $\left( {0,0} \right)$, $\left( {3,4} \right)$,
+        and $\left( { - 1,1} \right)$ form an isosceles triangle?
+        That is, are any two sides of the triangle equal in length?
+      </p>
+    </div>
+
+    <div class="problem">
+      <p>Which of the following are equal to each other?</p>
+
+      <p class="problem-part">$\frac{{d-b}}{{c - a}}$</p>
+
+      <p class="problem-part">$\frac{{b - d}}{{a-c}}$</p>
+
+      <p class="problem-part">$\frac{{d - b}}{{a - c}}$</p>
+
+      <p class="problem-part">$\frac{{b - d}}{{c - a}}$</p>
+    </div>
+
+    <div class="problem">
+      <p>The function Slope($c$) takes a line $c$ and outputs the
+        slope of line $c$.</p>
+
+      <p class="problem-part">.Find ${\rm{Slope}}(3x+7y=21)$.</p>
+
+      <p class="problem-part">Make up an equation for a line $d$ such that 
+        ${\rm{Slope}}(d) = \frac{1}{{{\rm{Slope}}}(3x + 7y = 21)}$.</p>
+
+      <p class="problem-part">Lines $e$ and $f$ are perpendicular. Find the 
+        value of ${\rm{Slope}}(e) \cdot {\rm{Slope}}(f)$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Find the equation of the line passing through $\left( {2,5}
+        \right)$ that is parallel to $y = 4x - 6$.</p>
+    </div>
+
+    <div class="problem">
+      <p>The slope of the line $2x + 5y = 10$ added to the slope
+        of the line $kx + 8y = 23$ is zero. Find $k$.</p>
+    </div>
+    
+    <h2>Exploring in Depth</h2>
+
+    <div class="problem">
+      <p>Find the area of the triangle in Problem 30.</p>
+    </div>
+
+    <div class="problem">
+      <p>Starting at the point $\left( {3,4} \right)$, you run in
+        a straight line to the point $\left( {5,2.5} \right)$, running a 10-minute mile.
+        (A mile is a unit on the plane). Then, you run in a straight
+        line to the point $\left( {x,0} \right)$, running an
+        8-minute mile. The total time you ran is 1 hour and 15
+        minutes. Find $x$.</p>
+    </div>
+
+    <div class="problem">
+      <p>A point’s $y$-coordinate is 2 more than its <nobr>$x$-coordinate.</nobr>
+        The slope of the line from the origin to the point is
+        1.125. Find the coordinates of the point.</p>
+    </div>
+
+    <div class="problem">
+      <p>The midpoint of points $A$ and $B$ is $\left( { - 20,6.5} \right)$.
+        The coordinates of point $A$ are $\left( { - 85,52} \right)$.
+        What must be the coordinates of $B$?</p>
+    </div>
+
+    <div class="problem">
+      <p>The point $\left( {x,0} \right)$ is equidistant to — equally
+        far from — $\left( { - 1,0} \right)$ and $\left( {5,1}
+        \right)$. Solve for $x$.</p>
+    </div>
+
+    <div class="problem">
+      <p>Why do you think the definition of slope is as defined
+        — “change in $y$ over change in $x$ ” — and not vice versa,
+        “change in $x$ over change in $y$”?</p>
+    </div>
+
+    <div class="problem">
+      <p>The point $\left( {7,4} \right)$ below represents your
+        location, and the line represents a river. (The scale
+        on this graph is 1.)</p>
+      <figure>
+        <img src="../images/02-3-geometry-of-lines/Geometry of lines problem 63.png">
+      </figure>
+
+      <p class="problem-part">Write an equation for the river’s line.
+      </p>
+
+      <p class="problem-part">Draw a path that you would walk to get as quickly as possible
+        to the river. What is the slope of this path? What is an
+        equation for this path?</p>
+
+      <p class="problem-part">Use your calculator to see the coordinates of the point
+        where you would reach the river. Then find your distance
+        from the river.</p>
+
+      <p class="problem-part">Describe a general strategy for finding the distance from
+        a point to a line.</p>
+
+    </div>
+
+    <div class="problem">
+      <p>Metropolis, again! In Problem 50, you found an equation
+        for your path starting from $\left( { - 2,3} \right)$ and perpendicular to the line containing the school and
+        post office. With luck, you found it to be $y = \frac{3}{2}x + 6$. At what point on this
+        line are you closest to the Dairy Q?</p>
+    </div>
+
+    <div class="problem">
+      <p>Can you find a formula, like the midpoint formula, that
+        gives the coordinates of a point <em>one-third</em> of the way
+        of the distance between two points? Be sure to test your
+        formula on some specific points.</p>
+    </div>
+
+    <div class="problem">
+      <p>Remember that another way of determining if two lines are
+        perpendicular is if their slopes multiply to -1.</p>
+
+      <p class="problem-part">Are lines with a slope of .111… (the 1’s go on forever
+        — this number can also be written as $.\overline {111}
+        $) and a slope of -9 exactly perpendicular?</p>
+
+      <p class="problem-part">What slope is perpendicular to a line with slope $1/9$?</p>
+
+      <p class="problem-part">Now determine the decimal equivalent of $1/9$.</p>
+
+      <p class="problem-part">Are your answers to the previous questions consistent?</p>
+    </div>
+  </section>
+
+</article>
+
+
+
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <h2>Park School Mathematics</h2>
+    <div>
+      
+      <p>This curriculum was written by members (past and present) of the upper 
+school math department at the Park School of Baltimore. This was possible 
+thanks to Park School’s F. Parvin Sharpless Faculty and Curricular 
+Advancement (FACA) program, which supports faculty every summer in major 
+curricular projects. In addition to the support of FACA by the Nathan L. 
+Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this 
+project was also funded by grants from the E. E. Ford Foundation, the 
+Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.</p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+</a> This work is licensed under a 
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+
+<p>© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina 
+Foygel, Tim Howell, Bill Tabrisky, Anand Thakker, members of the mathematics 
+faculty of the <a href="http://parkschool.net">Park School of Baltimore</a>, Inc. 2006- 2014.</p>
+
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML,https://parkmath.github.io/js/mathjax-config.js">
+</script>
+
+  </body>
+
+
+</html>
